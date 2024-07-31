@@ -1,4 +1,4 @@
-<img src=".erb/img/erb-banner.svg" width="100%" />
+<img src=".erb/img/erb-banner.png" width="100%" />
 
 <br>
 
@@ -22,8 +22,8 @@
 Clone the repo and install dependencies:
 
 ```bash
-git clone --depth 1 --branch main https://github.com/RabbyHub/RabbyDesktop.git RabbyDesktop
-cd RabbyDesktop;
+git clone --depth 1 --branch main https://github.com/luxfi/dwallet.git dwallet
+cd dwallet;
 npm install
 ```
 
