@@ -50,6 +50,10 @@ module.exports = {
       'error',
       { varsIgnorePattern: '^_', argsIgnorePattern: '^_' },
     ],
+    parser: '@typescript-eslint/parser',
+    parserOptions: {
+      project: './tsconfig.json',
+    },
     // "endOfLine": "auto",
   },
   parserOptions: {
