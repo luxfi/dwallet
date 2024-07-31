@@ -1,0 +1,59 @@
+.winWrapper {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.dappDropdownMenu {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background: var(--theme-dropdown-bg);
+  border: var(--theme-dropdown-border);
+  box-shadow: var(--theme-dropdown-shadow);
+  border-radius: 8px;
+  font-family: var(--default-font);
+
+  :global {
+    .ant-menu-item-divider {
+      margin: 10px 16px;
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+.dapp-dropdown-item {
+  margin: 0 !important;
+  height: 44px !important;
+  color: #fff;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  &-danger {
+    :global {
+      .ant-menu-title-content > .text {
+        color: #ff6565 !important;
+      }
+    }
+  }
+  &:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid #535761;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.07);
+    border-radius: 4px;
+  }
+  :global {
+    .ant-menu-title-content {
+      margin-left: 12px;
+      > .text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.dapp-dropdown-item-icon {
+  height: 20px;
+  width: 20px;
+  position: static;
+}

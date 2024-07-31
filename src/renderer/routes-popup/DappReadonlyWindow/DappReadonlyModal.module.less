@@ -1,0 +1,144 @@
+@import '~antd/lib/style/themes/default.less';
+
+.DappReadonlyModal {
+  user-select: none;
+
+  :global {
+    .ant-modal-content {
+      width: 520px;
+      min-height: 320px;
+
+      border-radius: 12px;
+      padding: 40px;
+
+      background: var(--theme-modal-content-bg);
+      color: white;
+    }
+
+    .ant-modal-body {
+      padding: 0;
+    }
+
+    .ant-modal-close-x {
+      height: 56px;
+      width: 56px;
+      line-height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      > img.close-icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  .closeIcon {
+    width: 24px;
+    height: 24px;
+
+    > path {
+      stroke: var(--color-purewhite);
+    }
+  }
+}
+
+.DappReadonlyModal {
+  :global {
+    .ant-modal-content {
+      width: 560px;
+    }
+  }
+
+  .header .avatarWrapper {
+    margin: 0 auto;
+    text-align: center;
+
+    .link {
+      @apply flex justify-center items-center mt-16px;
+      text-align: center;
+      color: var(--color-purewhite);
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      overflow: hidden;
+      max-width: 100%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      opacity: 0.8;
+    }
+
+    .loadingWrapper {
+      background-color: #eee;
+      width: 52px;
+      height: 52px;
+      @apply flex justify-center items-center;
+      margin: 0 auto;
+      color: var(--color-primary);
+
+      > svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .avatar {
+      width: 52px;
+      height: 52px;
+      border-radius: 4px;
+    }
+    .loadingWrapper {
+      border-radius: 4px;
+    }
+  }
+
+  .tipContainer {
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: var(--color-purewhite);
+  }
+
+  .buttonContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    > .button.J_add {
+      margin: 0 auto;
+      width: 200px;
+      height: 48px;
+      border-radius: 4px;
+    }
+
+    > .button.J_openInBrowser {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 16px;
+      padding: 0;
+      margin-top: 20px;
+      display: inline-flex;
+      align-items: flex-start;
+      justify-content: center;
+
+      > span {
+        text-align: center;
+        text-decoration-line: underline;
+        color: var(--color-purewhite);
+        opacity: 0.6;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: transparent;
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+@import '@/renderer/css/mixins.less';
+
+.unlock {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* expected_h - expected_pt- expected_pt */
+@centerH: 900px - 224px - 120px;
+@centerHWithUpdate: 900px - 80px * 2;
+.centerWrapper {
+  display: flex;
+  height: 100%;
+  max-height: @centerH;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  // margin-top: -100px;
+
+  .logo {
+    width: 82px;
+    height: 82px;
+
+    .global-draggable();
+  }
+
+  .brandNameSvg {
+    display: block;
+    fill: #fff;
+    height: 34px;
+    width: 243px;
+    margin: 0 auto;
+  }
+
+  .forgetPwd {
+    margin-top: 171px;
+    margin-bottom: 0;
+  }
+
+  &.withUpdate {
+    max-height: @centerHWithUpdate;
+    .forgetPwd {
+      margin-top: 80px;
+      margin-bottom: 90px;
+    }
+  }
+}
+
+.row {
+  flex: 1;
+}
+
+.formArea {
+  width: 100%;
+
+  .input {
+    height: 56px;
+
+    &, &::placeholder {
+      color: var(--r-neutral-foot, #BABEC5);
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
+}
+
+.forgetPwd {
+  color: var(--r-neutral-title-2, #FFF);
+  text-align: center;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+
+  display: block;
+  cursor: pointer;
+
+  opacity: 0.7;
+
+  transition: opacity 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+  }
+}

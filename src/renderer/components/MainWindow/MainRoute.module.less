@@ -1,0 +1,79 @@
+@import '../../css/mixins.less';
+
+.MainWindowRoute {
+  position: relative;
+  height: 100%;
+  max-height: var(--mainwin-mainroute-height);
+  width: 100%;
+  overflow-y: overlay;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+@headerBlockOffset: 10px;
+
+:global {
+  html.os-darwin {
+    :local {
+      .headerBlock:not(.floatingAccountComponent) {
+        position: relative;
+        &::after {
+          content: ' ';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          -webkit-app-region: drag;
+          top: 0;
+          left: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+.headerBlock {
+  padding-top: @headerBlockOffset;
+  height: var(--mainwin-headerblock-offset);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0;
+  padding-right: 0;
+
+  &.floatingAccountComponent {
+    position: absolute;
+    width: 100%;
+
+    .accountComponent {
+      position: absolute;
+      top: 10px;
+      right: 0;
+      z-index: 1;
+    }
+  }
+
+  .pageTitle {
+    align-self: flex-end;
+    padding-left: 48px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    font-weight: 500;
+    font-size: 28px;
+    color: white;
+    margin-bottom: 0;
+  }
+
+  .pageBack {
+    cursor: pointer;
+  }
+
+  .accountComponent {
+    padding-right: @headerBlockOffset;
+    align-self: flex-start;
+  }
+}

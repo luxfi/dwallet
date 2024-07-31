@@ -1,0 +1,52 @@
+diff --git a/node_modules/@debank/common/dist/chain-data.js b/node_modules/@debank/common/dist/chain-data.js
+index c39a205..cacbefe 100644
+--- a/node_modules/@debank/common/dist/chain-data.js
++++ b/node_modules/@debank/common/dist/chain-data.js
+@@ -52,7 +52,7 @@ export var CHAINS_ENUM;
+     CHAINS_ENUM["FSN"] = "FSN";
+     CHAINS_ENUM["PULSE"] = "PULSE";
+     CHAINS_ENUM["ROSE"] = "ROSE";
+-    CHAINS_ENUM["RONIN"] = "RONIN";
++    // CHAINS_ENUM["RONIN"] = "RONIN";
+     CHAINS_ENUM["OAS"] = "OAS";
+     CHAINS_ENUM["ZORA"] = "ZORA";
+     CHAINS_ENUM["LINEA"] = "LINEA";
+@@ -953,22 +953,22 @@ export const CHAINS_RAW = {
+             "1559": true,
+         },
+     },
+-    [CHAINS_ENUM.RONIN]: {
+-        id: 2020,
+-        serverId: "ron",
+-        network: "2020",
+-        name: "Ronin",
+-        nativeTokenSymbol: "RON",
+-        nativeTokenAddress: "ron",
+-        enum: CHAINS_ENUM.RONIN,
+-        hex: "0x7e4",
+-        scanLink: "https://explorer.roninchain.com/tx/_s_",
+-        nativeTokenLogo: "https://static.debank.com/image/chain/logo_url/ron/6e0f509804bc83bf042ef4d674c1c5ee.png",
+-        nativeTokenDecimals: 18,
+-        eip: {
+-            "1559": false,
+-        },
+-    },
++    // [CHAINS_ENUM.RONIN]: {
++    //     id: 2020,
++    //     serverId: "ron",
++    //     network: "2020",
++    //     name: "Ronin",
++    //     nativeTokenSymbol: "RON",
++    //     nativeTokenAddress: "ron",
++    //     enum: CHAINS_ENUM.RONIN,
++    //     hex: "0x7e4",
++    //     scanLink: "https://explorer.roninchain.com/tx/_s_",
++    //     nativeTokenLogo: "https://static.debank.com/image/chain/logo_url/ron/6e0f509804bc83bf042ef4d674c1c5ee.png",
++    //     nativeTokenDecimals: 18,
++    //     eip: {
++    //         "1559": false,
++    //     },
++    // },
+     [CHAINS_ENUM.OAS]: {
+         id: 248,
+         serverId: "oas",

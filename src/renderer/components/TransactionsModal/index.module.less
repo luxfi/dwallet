@@ -1,0 +1,372 @@
+.page {
+  height: 618px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+  overflow: overlay;
+  .container {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+  }
+
+  .empty {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    text-align: center;
+    padding-top: 109px;
+    padding-bottom: 105px;
+
+    &Icon {
+      margin-bottom: 8px;
+      width: 83px;
+      height: 83px;
+    }
+    &Text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      color: rgba(255, 255, 255, 0.4);
+    }
+  }
+
+  .loadingItem {
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  .tx {
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &:first-child {
+      .txStatusFailed {
+        border-top-left-radius: 12px;
+      }
+      .badge .tag:first-child {
+        border-top-left-radius: 12px;
+      }
+    }
+
+    .badge {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      gap: 5px;
+    }
+
+    &Gray {
+      .tx {
+        &Explain,
+        &Info,
+        &Change,
+        &Extra,
+        &Header {
+          opacity: 0.3;
+        }
+      }
+    }
+    .tag {
+      padding: 2px 10px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      border-radius: 0 0 2px 2px;
+      background: rgba(255, 255, 255, 0.15);
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      color: rgba(255, 255, 255, 0.3);
+
+      &:first-child {
+        border-radius: 0 0 2px 0px;
+      }
+
+      &Failed {
+        color: #652b2b;
+      }
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    &Time {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: rgba(255, 255, 255, 0.6);
+      // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      margin-bottom: 9px;
+    }
+    &Hash {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      color: rgba(255, 255, 255, 0.3);
+
+      > a {
+        vertical-align: baseline;
+        color: inherit;
+        text-decoration: underline;
+      }
+    }
+
+    &Explain {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex: 1 1;
+      overflow: hidden;
+      min-height: 37px;
+
+      :global {
+        .name-and-address {
+          .name,
+          .address {
+            font-weight: inherit;
+            font-size: inherit;
+            line-height: inherit;
+            color: inherit;
+          }
+          .name {
+            max-width: 110px;
+          }
+        }
+      }
+
+      &Title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      &Desc {
+        margin-top: 2px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #fff;
+        opacity: 0.6;
+      }
+      &Body {
+        flex: 1;
+        overflow: hidden;
+      }
+    }
+    &Avatar {
+      width: 100%;
+      height: 100%;
+      // object-fit: cover;
+      border-radius: 4px;
+
+      &Container {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        flex-shrink: 0;
+      }
+
+      &Badge {
+        position: absolute;
+        bottom: -4px;
+        right: -7px;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+      }
+    }
+
+    &Change {
+      flex: 1 1;
+      overflow: hidden;
+
+      :global {
+        .token-change {
+          &-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            &:not(:last-child) {
+              margin-bottom: 6px;
+            }
+            &-text {
+              // font-family: 'Roboto', monospace, sans-serif;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 16px;
+              font-variant-numeric: tabular-nums;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              color: #ffffff;
+            }
+          }
+        }
+        .token-icon {
+          width: 20px;
+          height: 20px;
+          flex-shrink: 0;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+        .nft-avatar {
+          display: block;
+          width: 20px;
+          height: 20px;
+          flex-shrink: 0;
+          .ant-image,
+          img {
+            width: 100%;
+            height: 100%;
+            background-color: #e6e6e6;
+            object-fit: cover;
+            display: block;
+            border-radius: 2px;
+          }
+        }
+      }
+    }
+
+    &Extra {
+      margin-left: auto;
+      text-align: right;
+      overflow: hidden;
+    }
+
+    &Gas {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      color: rgba(255, 255, 255, 0.3);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    &Source {
+      margin-top: 8px;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      color: rgba(255, 255, 255, 0.3);
+      margin-bottom: 8px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: right;
+
+      a {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        text-decoration-line: underline;
+        cursor: pointer;
+
+        color: rgba(255, 255, 255, 0.6);
+
+        // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+
+  .colTx {
+    &Info {
+      width: 200px;
+    }
+    &Explain {
+      width: 290px;
+      flex: 4;
+      padding-right: 16px;
+    }
+    &Change {
+      flex: 3;
+    }
+    &Extra {
+      width: 250px;
+    }
+  }
+
+  .tokenDetail {
+    .tag {
+      border-top-left-radius: 0!important;
+    }
+    .txAvatar {
+      width: 28px;
+      height: 28px;
+    }
+
+    .txAvatarBadge {
+      bottom: -2px;
+      right: -2px;
+    }
+
+    .txExplainTitle {
+      font-size: 12px;
+      line-height: 14px;
+      color: #F7FAFC;
+    }
+
+    .txExplainDesc {
+      font-size: 12px;
+      color: #BABEC5;
+      line-height: 14px;
+      margin-top: 4px;
+    }
+
+    .txExplain {
+      gap: 8px;
+    }
+
+    .txChangeItem {
+      justify-content: flex-end;
+    }
+
+    .txChangeItemSuccess {
+      color: #2ABB7F;
+      .txChangeText {
+        color: #2ABB7F;
+      }
+    }
+
+    .txChangeIcon {
+      width: 14px;
+      height: 14px;
+    }
+
+    .txChangeText {
+      font-size: 12px;
+    }
+
+    .txChangeSymbol {
+      font-size: 12px;
+      text-decoration-line: underline;
+      cursor: pointer;
+      margin-left: 4px;
+    }
+  }
+}
+
+.transactionModal {
+  :global {
+    .ant-modal-close-x {
+      padding: 35px 30px;
+    }
+  }
+
+  &Title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 27px;
+  }
+}

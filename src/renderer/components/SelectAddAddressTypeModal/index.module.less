@@ -1,0 +1,223 @@
+.SelectModalContent {
+  padding-bottom: 40px;
+  margin-top: -20px;
+  height: 655px;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .panel {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 0 20px;
+    color: #fff;
+    margin-left: 155px;
+    margin-right: 155px;
+    min-height: 72px;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+    &.panelHD {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      &:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    &.panelContact {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+
+      .title {
+        margin-left: 12px;
+        font-size: 15px;
+      }
+
+      .logo {
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+
+    .body {
+      margin-top: 12px;
+      background: rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .device {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      padding: 14px 0;
+      width: 100px;
+      border-radius: 4px;
+      border: 1px solid transparent;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.1);
+        box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.07);
+      }
+
+      .deviceLogo {
+        width: 32px;
+        position: relative;
+      }
+
+      .deviceName {
+        margin-top: 8px;
+        font-size: 13px;
+        line-height: 1;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      font-weight: 400;
+      flex: 1;
+      margin-left: 12px;
+      line-height: 1.2;
+    }
+
+    .title {
+      font-size: 15px;
+    }
+
+    .subtitle {
+      margin-top: 4px;
+      font-size: 13px;
+      opacity: 0.8;
+    }
+  }
+}
+
+.ContactModalContent {
+  margin: 0 180px 0;
+  height: 613px;
+  padding-top: 15px;
+
+  .input {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 22px 24px;
+    font-size: 15px;
+    color: #fff;
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  .inputWrap {
+    margin-bottom: 200px;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+    right: 0;
+  }
+
+  .button {
+    margin: auto;
+    height: 52px;
+    width: 200px;
+    display: block;
+  }
+
+  .tagGroup {
+    display: flex;
+    margin-top: 20px;
+
+    .tag {
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      padding: 8px 10px;
+      font-size: 13px;
+      color: #fff;
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .ens {
+    margin-top: 12px;
+    display: flex;
+    padding: 18px 12px;
+    font-size: 13px;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    align-items: center;
+
+    .text {
+      flex: 1;
+    }
+  }
+
+  .error {
+    margin-top: 12px;
+    font-size: 13px;
+    color: #ff6f6f;
+  }
+}
+
+.ImportSuccessful {
+  padding: 60px 0 80px;
+  height: 750px;
+
+  .container {
+    margin: auto;
+    text-align: center;
+  }
+
+  .iconWrap {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 24px;
+    display: flex;
+  }
+
+  .icon {
+    margin: auto;
+  }
+
+  .title {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 24px;
+  }
+
+  .addressList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

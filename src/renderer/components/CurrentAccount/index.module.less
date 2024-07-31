@@ -1,0 +1,99 @@
+@import './../../css/mixins.less';
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  height: 40px;
+  padding: 10px 12px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+
+  .content {
+    display: flex;
+    align-items: center;
+
+    > * {
+      flex-shrink: 0;
+    }
+
+    .logo {
+      width: 20px;
+      height: 20px;
+      position: relative;
+    }
+
+    .aliasName {
+      flex-shrink: 1;
+      max-width: 130px;
+      width: 100%;
+      line-height: 2;
+      margin-left: 6px;
+      margin-right: 6px;
+      position: relative;
+      top: -1px;
+      .truncate();
+    }
+  }
+
+  .dockRight {
+    display: flex;
+    align-items: center;
+
+    .addr {
+      flex-shrink: 1;
+      width: 100%;
+      display: inline-flex;
+      justify-items: center;
+      align-items: center;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .dropdownIcon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      margin-left: 4px;
+    }
+
+    .balance {
+      margin-left: 22px;
+      font-size: 13px;
+    }
+  }
+}
+
+.addNewAccount {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  img {
+    display: block;
+  }
+  &:hover {
+    background: rgba(0, 0, 0, 0.4);
+  }
+}

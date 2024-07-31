@@ -1,0 +1,426 @@
+@import '../../css/mixins.less';
+@import '../../css/vars.less';
+
+@route-item-h: 52px;
+@sidebar-footer-h: 100px;
+@sidebar-footer-with-releaseinfo-h: 160px;
+
+@logoWrapper-height: 124px - @TITLEBAR_H;
+
+.Sidebar {
+  position: relative;
+  padding-top: @TITLEBAR_H;
+  // padding-bottom: @sidebar-footer-h;
+
+  width: var(--mainwin-sidebar-w);
+  height: 100vh;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+
+  transition: width var(--mainwin-sidebar-animation-second);
+
+  .navFooter .update {
+    display: none;
+  }
+  &:hover {
+    .menuFold {
+      // display: block;
+      opacity: 1;
+    }
+  }
+
+  .routeItem {
+    padding-left: 0;
+  }
+
+  &.isFold {
+    --mainwin-sidebar-w: 66px;
+
+    .menuFold {
+      top: 72px;
+      right: 22px;
+    }
+
+    .logo {
+      width: 40px;
+      height: 40px;
+      display: none;
+    }
+
+    .routeItemInner {
+      justify-content: center;
+      padding: 0;
+      // padding-left: 12px;
+    }
+
+    .routeTitle {
+      opacity: 0;
+      padding: 0;
+      flex-shrink: 1;
+      display: none;
+    }
+
+    .divider {
+      margin-left: 23px;
+      margin-right: 23px;
+    }
+
+    .addDapp {
+      padding: 12px;
+    }
+  }
+
+  .seCountBadge {
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+
+    :global .ant-badge-count {
+      box-shadow: none;
+    }
+
+    &.inCollapsed {
+      width: unset;
+      height: unset;
+      :global .ant-badge-count {
+        padding: 0;
+      }
+    }
+  }
+}
+
+:global {
+  html.os-win32.__rabbyx-shell-page {
+    :local {
+      .logoWrapper {
+        position: relative;
+
+        &::after {
+          content: ' ';
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 0;
+          height: 100%;
+          width: 12px;
+          -webkit-app-region: none;
+        }
+      }
+    }
+  }
+  html.os-darwin.__rabbyx-shell-page {
+    :local {
+      .logoWrapper {
+        .global-draggable();
+      }
+    }
+  }
+}
+
+.logoWrapper {
+  width: 100%;
+  // leave space for titlebar, avoid draggable region overlap
+  height: @logoWrapper-height;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  > .logo {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.routeList {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+
+  @active-border-w: 4px;
+
+  .routeItem {
+    height: @route-item-h;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+
+    .routeLogo,
+    .routeTitle > *:not(.txPendingCount) {
+      opacity: 0.7;
+    }
+
+    font-size: 14px;
+    color: #fff;
+    .global-draggable(false);
+
+    &.active {
+      background: rgba(0, 0, 0, 0.2);
+      opacity: 1;
+      .routeLogo,
+      .routeTitle > *:not(.txPendingCount) {
+        opacity: 1;
+      }
+      &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 4px;
+        background-color: var(--color-primary);
+      }
+    }
+    &:not(.active):hover {
+      background: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .routeItemInner {
+    padding-left: 20px;
+  }
+
+  .routeLogo {
+    width: 20px;
+    height: 20px;
+  }
+
+  .dappIconWithChain {
+    position: relative;
+
+    .chainLogo {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      right: -5px;
+      bottom: -2px;
+      border-radius: 50%;
+    }
+  }
+
+  .dappIcon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    :global {
+      .ant-image,
+      .ant-image-img {
+        display: block;
+
+        width: 100%;
+        height: 100%;
+      }
+      .ant-image-img {
+        border-radius: 3px;
+        // background-color: #fff;
+      }
+    }
+  }
+
+  .routeItemInner {
+    width: 100%;
+    box-sizing: border-box;
+    height: @route-item-h;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+
+  .routeTitle {
+    -webkit-line-clamp: 1;
+    line-height: 24px;
+    height: 24px;
+
+    word-break: break-all;
+    overflow: hidden;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 20px;
+    opacity: 1;
+    font-weight: 700;
+    font-size: 14px;
+
+    transition: opacity var(--mainwin-sidebar-animation-second);
+
+    &.J_settings {
+      font-size: 14px;
+      text-overflow: initial;
+      display: flex;
+      line-height: 1;
+      align-items: center;
+    }
+
+    .seCountBadge {
+      position: absolute;
+
+      :global .ant-badge-count {
+        position: absolute;
+        top: 12px;
+        right: -4px;
+        padding: 2px;
+        min-width: 16px;
+        height: 16px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      // // another style
+      // top: calc(50% - 8px);
+      // :global .ant-badge-count {
+      //   top: 10px;
+      //   left: 0px;
+      // }
+    }
+  }
+
+  .routeItem:hover {
+    .dappIndicator {
+      .closeIcon {
+        display: block;
+      }
+      .loadingIcon,
+      .indicator {
+        display: none;
+      }
+    }
+  }
+
+  .dappIndicator {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    width: 11px;
+    height: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+
+    .indicator {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    .closeIcon {
+      display: none;
+      cursor: pointer;
+      width: 11px;
+      height: 11px;
+    }
+
+    .loadingIcon {
+      @iconSize: 16px;
+      width: @iconSize;
+      height: @iconSize;
+    }
+  }
+
+  // img.iconClose {
+  //   cursor: pointer;
+  //   position: absolute;
+  //   top: calc(50% - 10px);
+  //   right: 8px;
+  //   visibility: hidden;
+  // }
+
+  // &:hover img.iconClose {
+  //   visibility: visible;
+  // }
+}
+
+.menuFold {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 12px;
+  top: 40px;
+  cursor: pointer;
+  z-index: 100;
+  // display: none;
+  opacity: 0;
+  transition: opacity var(--mainwin-sidebar-animation-second);
+}
+
+.dappsRouteList {
+  display: flex;
+  flex-direction: column;
+  // max-height: calc(100% - @logoWrapper-height);
+  // height: 100%;
+  // overflow: overlay;
+  flex: 1;
+  overflow: hidden;
+
+  .divider {
+    height: 1px;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 8px 20px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+  }
+
+  .dappList {
+    flex: 1;
+    overflow: overlay;
+
+    .routeTitle {
+      font-weight: 500;
+      font-size: 13px;
+    }
+  }
+}
+
+.navFooter {
+  margin-top: auto;
+  padding-top: 8px;
+  padding-bottom: 40px;
+  // position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  // height: @sidebar-footer-h;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  // fallback solution, in case .navFooter must have a background
+  // background-image: linear-gradient(108.92deg, #636876 5.96%, #5E6371 90.79%);
+
+  > * {
+    width: 100%;
+  }
+}
+
+.addDapp {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 12px 10px;
+
+  color: #fff;
+  opacity: 0.7;
+
+  font-size: 13px;
+  line-height: 16px;
+
+  white-space: nowrap;
+  overflow: hidden;
+
+  &Container {
+    padding: 0 12px;
+    margin-bottom: 8px;
+  }
+}

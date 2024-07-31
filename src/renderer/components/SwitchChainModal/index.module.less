@@ -1,0 +1,185 @@
+@import '@/renderer/css/mixins.less';
+
+@modal-pt: 20px;
+
+:global {
+  body.switch-chain-subview {
+    &::-webkit-scrollbar,
+    *::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.SwitchChainModal {
+  :global .ant-modal-content {
+    overflow: hidden;
+  }
+  :global .ant-modal-close-x {
+    padding: 0;
+    margin-top: @modal-pt;
+    margin-right: 16px;
+  }
+}
+
+.SwitchChainModalInner {
+  padding: 30px 16px;
+  padding-top: @modal-pt;
+  padding-bottom: 0;
+  height: 700px;
+  box-sizing: border-box;
+  width: 100%;
+  background: var(--theme-modal-content-bg);
+  box-shadow: var(--theme-modal-content-shadow);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    font-weight: 510;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .search:global {
+    &.ant-input-affix-wrapper {
+      margin-top: @modal-pt;
+      margin-bottom: 14px;
+      height: 36px;
+      font-size: 12px;
+      line-height: 14px;
+      border: 1px solid #5f6572;
+      box-shadow: none;
+      border-radius: 6px;
+      background-color: transparent;
+      color: var(--color-purewhite);
+
+      &.ant-input-affix-wrapper-focused {
+        border: 1px solid var(--color-primary);
+      }
+
+      & input::placeholder {
+        color: #d9d9d9;
+      }
+    }
+  }
+}
+
+.scrollContainer {
+  flex: 1;
+  padding-bottom: 16px;
+  overflow-y: visible;
+  overflow-x: hidden;
+}
+
+.chainList {
+  background: rgba(255, 255, 255, 0.06);
+  margin-bottom: 12px;
+  border-radius: 6px;
+  &:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+}
+
+.searchChainList {
+  padding-top: 46px;
+}
+
+.searchChainInput {
+  height: 36px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.chainItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  padding: 12px;
+  cursor: pointer;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 8px;
+
+  .chainNameFloor {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+
+    & + .chainNameFloor {
+      margin-top: 4px;
+    }
+  }
+
+  .chainBalanceInfo {
+    color: var(--r-neutral-foot, #BABEC5);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &.notSupport {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+  &Left {
+    display: flex;
+    align-items: center;
+  }
+  &Right {
+    display: flex;
+    align-items: center;
+  }
+  &Icon {
+    width: 28px;
+    height: 28px;
+    img {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+  &Name {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #ffffff;
+  }
+  .chainItemStar {
+    margin-left: 8px;
+    display: none;
+    &.block {
+      display: block;
+    }
+  }
+
+  &:hover .chainItemStar {
+    display: block;
+  }
+
+  &Checked {
+    margin-left: auto;
+  }
+
+  &:last-child::after {
+    display: none;
+  }
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.07);
+    .chainItemStar {
+      display: block;
+    }
+  }
+
+  .actionPin {
+    cursor: pointer;
+    margin-left: 4px;
+
+    color: var(--color-primary);
+  }
+}

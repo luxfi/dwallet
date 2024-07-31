@@ -1,0 +1,40 @@
+.mainWindow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100%;
+  max-height: var(--mainwin-mainroute-height);
+}
+
+.welcomeScreen {
+  user-select: none;
+}
+
+.ImportPage {
+  user-select: none;
+  height: 100%;
+}
+
+.dappViewWrapper {
+  padding: var(--dappViewPaddingOffsetToSidebar);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.dappViewGasket {
+  background: #ffeef9;
+  flex-shrink: 1;
+  border-radius: 0 6px 6px 6px;
+  height: 100%;
+  max-height: calc(100% - var(--dappViewPaddingOffset) - 70px);
+}
+
+:global {
+  html.os-darwin {
+    :local {
+      .dappViewGasket {
+        max-height: calc(100% - var(--dappViewPaddingOffset) - 10px);
+      }
+    }
+  }
+}

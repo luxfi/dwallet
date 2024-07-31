@@ -1,0 +1,248 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~antd/dist/antd.less';
+@import './vars.less';
+@import './mixins.less';
+@import './overwrite-antd.less';
+@import './ant-message.less';
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  font-family: var(--default-font);
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  -webkit-user-drag: none;
+}
+
+.modal-dapp-mngr {
+  .ant-modal-close-x {
+    @size: 64px;
+
+    width: @size;
+    height: @size;
+    line-height: @size;
+    font-size: 24px;
+  }
+
+  .ant-modal-header {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom: 0;
+  }
+
+  .ant-modal-content {
+    background: var(--color-purewhite);
+    box-shadow: 0px 8px 80px rgba(19, 20, 26, 0.21);
+    border-radius: 12px;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.global-dragheadbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 32px;
+  z-index: 1;
+  -webkit-app-region: drag;
+}
+
+.global-nodrag,
+[data-nodrag] {
+  -webkit-app-region: no-drag;
+}
+
+.rabby-tabs {
+  flex: 1;
+
+  .ant-tabs-nav::before {
+    display: none;
+  }
+
+  .ant-tabs-nav-list {
+    margin: auto;
+    background: #707280;
+    border-radius: 8px;
+    padding: 4px;
+  }
+
+  .ant-tabs-ink-bar {
+    display: none;
+  }
+
+  .ant-tabs-tab {
+    padding: 7px 34px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 13px;
+    transition: all 0.3s ease-in-out;
+    margin: 0 !important;
+
+    &.ant-tabs-tab-active {
+      background: #fff;
+    }
+
+    &.ant-tabs-tab-disabled {
+      color: #fff;
+    }
+  }
+
+  &.walletconnect {
+    .ant-tabs-nav-list {
+      border-radius: 4px;
+      padding: 2px;
+    }
+
+    .ant-tabs-tab {
+      width: 98px;
+      border-radius: 2px;
+      display: flex;
+      justify-content: center;
+      padding: 8px 0;
+      line-height: 1;
+    }
+  }
+}
+
+.curve-modal {
+  .ant-modal-content {
+    background: var(--theme-modal-content-bg);
+    color: rgba(255, 255, 255, 0.6);
+    border-radius: 6px;
+    .ant-modal-close-icon {
+      svg {
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+  }
+}
+
+.remove-binding-popover {
+  .ant-popover-inner {
+    background: var(--theme-dropdown-bg);
+    box-shadow: var(--theme-dropdown-shadow);
+    border-radius: 8px;
+  }
+}
+
+
+.ErrorModal {
+  .ant-modal-content {
+    background: var(--theme-modal-content-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+  }
+
+  .ant-modal-confirm-title,
+  .ant-modal-confirm-content,
+  .ant-modal-close {
+    color: #fff !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .anticon-close-circle {
+    display: none;
+  }
+
+  .ant-modal-close-icon {
+    display: block;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .ant-modal-confirm-btns {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.rabby-antd-input-item {
+  .ant-form-item-control .ant-form-item-control-input .ant-form-item-control-input-content input {
+    border-radius: 6px;
+    background: var(--r-neutral-card-1, rgba(255, 255, 255, 0.06));
+    color: var(--r-neutral-body, #D3D8E0);
+
+    &:hover, &:active {
+      background: var(--r-neutral-card-1, rgba(255, 255, 255, 0.06));
+    }
+
+    &, &::placeholder {
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    &::placeholder {
+      color: var(--r-neutral-foot, #BABEC5);
+    }
+  }
+
+  &:not(.ant-form-item-has-error) .ant-form-item-control-input-content input {
+    border: 1px solid var(--r-neutral-line, rgba(255, 255, 255, 0.10));
+
+    &:hover, &:active {
+      color: var(--r-neutral-title-1, #F7FAFC);
+      border: 1px solid var(--r-neutral-foot, #BABEC5);
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .ant-form-item-explain-error {
+    margin-top: 4px;
+  }
+}
+
+.ant-btn.ant-btn-background-ghost.rabby-antd-default-button {
+  border-radius: 4px;
+  color: var(--r-neutral-foot, #BABEC5);
+  border: 0.5px solid var(--r-neutral-foot, #BABEC5);
+
+  &:hover, &:active {
+    border-radius: 4px;
+    color: var(--r-neutral-body, #D3D8E0);
+    border: 0.5px solid var(--r-neutral-body, #D3D8E0);
+    background: var(--r-neutral-card-1, rgba(255, 255, 255, 0.06));
+  }
+}
+
+.common-light-modal {
+  .ant-modal-header {
+    height: 64px;
+  }
+
+  .ant-modal-close-x {
+    .hover-to-lighten;
+
+    .icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

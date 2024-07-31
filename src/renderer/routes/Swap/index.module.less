@@ -1,0 +1,67 @@
+.approvalModal {
+  .title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 auto;
+    margin-top: 32px;
+  }
+  .desc {
+    max-width: 420px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 24px;
+    color: #ffffff;
+  }
+  :global {
+    .ant-modal-close-x {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .anticon-exclamation-circle {
+      display: none;
+    }
+    .ant-modal-body {
+      padding: 0;
+    }
+    .ant-modal-content {
+      width: 500px;
+      height: 284px;
+      background: var(--theme-modal-content-bg);
+      box-shadow: var(--theme-modal-content-shadow);
+      border-radius: 6px;
+    }
+
+    .ant-modal-confirm-body
+      > .anticon
+      + .ant-modal-confirm-title
+      + .ant-modal-confirm-content {
+      margin-left: 0;
+    }
+
+    .ant-modal-confirm-btns {
+      display: flex;
+      justify-content: center;
+      margin-top: 48px;
+      margin-bottom: 32px;
+      .ant-btn-primary {
+        width: 298px;
+        height: 48px;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 20px;
+      }
+      .ant-btn-default:first-child {
+        display: none;
+      }
+    }
+  }
+}

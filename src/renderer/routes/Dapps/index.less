@@ -1,0 +1,267 @@
+.dapps {
+  user-select: none;
+  .dapp-matrix {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  // &.J_add
+
+  .dapp-block {
+    position: relative;
+    cursor: pointer;
+    min-width: 270px;
+    width: 100%;
+
+    background: linear-gradient(91.8deg, #fefefe 0%, #e2e4ed 100%);
+    box-shadow: 0px 24px 32px -10px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &.ant-dropdown-open,
+    &:hover {
+      // background-color: rgba(var(--color-primary-rgb), 0.2);
+      background: linear-gradient(
+          0deg,
+          rgba(134, 151, 255, 0.2),
+          rgba(134, 151, 255, 0.2)
+        ),
+        linear-gradient(91.8deg, #fefefe 0%, #e2e4ed 100%);
+    }
+
+    &.is-add,
+    .anchor {
+      padding: 22px 20px;
+    }
+
+    .dapp-icon-with-chain {
+      margin-right: 12px;
+      position: relative;
+      width: 32px;
+      height: 32px;
+      flex-shrink: 0;
+      .ant-image {
+        width: 100%;
+      }
+      img {
+        border-radius: 5px;
+      }
+    }
+
+    .dapp-block-badge {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .tag {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      padding: 0 5px;
+      border-radius: 6px 0 6px 0;
+      display: flex;
+      gap: 4px;
+
+      color: #ffffff;
+
+      .dapp-indicator {
+        background: #5b5e68;
+        margin-left: 0;
+      }
+      &-ipfs {
+        background: #00d0d0;
+      }
+      &-ens {
+        background: #75a4ff;
+      }
+      &-local {
+        background: #f4bd3c;
+      }
+    }
+    .dapp-indicator {
+      margin-left: 5px;
+      margin-top: 5px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: #5b5e68;
+
+      &.loading {
+        @iconSize: 16px;
+
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: @iconSize;
+        height: @iconSize;
+        background-color: transparent;
+      }
+    }
+
+    &.is-add {
+      cursor: pointer;
+      justify-content: flex-start;
+
+      .dapp-favicon {
+        margin-right: 24px;
+      }
+
+      .text {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  .dapp-block .anchor {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .trancute {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .dapp-block .anchor .infos {
+    overflow: hidden;
+    .dapp-alias {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      color: var(--color-title);
+      margin-bottom: 0;
+      .trancute;
+    }
+    .dapp-url {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      color: var(--color-paragraph);
+      .trancute;
+    }
+
+    .dapp-alias + .dapp-url {
+      margin-top: 4px;
+    }
+  }
+
+  .dapp-block .menu-entry {
+    visibility: hidden;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    &.is-pinned {
+      visibility: visible;
+    }
+  }
+
+  .dapp-block:hover .menu-entry {
+    visibility: visible;
+  }
+}
+
+.dapps-dropdown-operations {
+  .ant-dropdown-menu {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background: var(--theme-dropdown-bg);
+    border: var(--theme-dropdown-border);
+    box-shadow: var(--theme-dropdown-shadow);
+    border-radius: 8px;
+    font-family: var(--default-font);
+    width: 210px;
+  }
+  .ant-dropdown-menu-item-icon {
+    width: 20px;
+    height: 20px;
+    position: static;
+    margin-right: 12px;
+  }
+
+  .dapp-dropdown-item {
+    margin: 0 !important;
+    height: 44px !important;
+    color: #fff;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    &-danger {
+      .text {
+        color: #ff6565 !important;
+      }
+    }
+    &:hover {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid #535761;
+      box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.07);
+      border-radius: 4px;
+    }
+
+    .text {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .dapps {
+    .dapp-matrix {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .dapps {
+    .dapp-matrix {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+}
+
+@media screen and (min-width: 1690px) {
+  .dapps {
+    .dapp-matrix {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+  }
+}
+
+@media screen and (min-width: 1980px) {
+  .dapps {
+    .dapp-matrix {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+  }
+}
+
+@media screen and (min-width: 2270px) {
+  .dapps {
+    .dapp-matrix {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .dapp-block {
+      width: 270px;
+    }
+  }
+}

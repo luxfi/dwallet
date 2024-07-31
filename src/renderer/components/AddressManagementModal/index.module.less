@@ -1,0 +1,401 @@
+@import '@/renderer/css/mixins.less';
+.MainContainer {
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  max-height: 600px;
+  height: 600px;
+  background: var(--theme-dropdown-bg);
+  border: var(--theme-dropdown-border);
+  box-shadow: var(--theme-dropdown-shadow);
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  .title {
+    color: #f7f8f9;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 510;
+    line-height: normal;
+    margin-bottom: 12px;
+  }
+
+  .refreshButton {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    img {
+      opacity: 0.6;
+      cursor: pointer;
+    }
+  }
+  .addAddress {
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    right: 52px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+
+    .keyword {
+      color: white;
+      border-radius: 6px;
+      width: 220px;
+      height: 32px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.06);
+      box-shadow: none;
+      &:global(.ant-input-affix-wrapper-focused),
+      &:focus,
+      &:hover {
+        border: 1px solid #7084ff;
+        box-shadow: none;
+      }
+      :global(.ant-input-clear-icon) {
+        color: white;
+      }
+    }
+    .addr {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      .text {
+        color: #d3d8e0;
+        font-size: 13px;
+      }
+      img {
+        width: 16px;
+      }
+    }
+  }
+
+  .header {
+    .divider {
+      color: #ffffff;
+      opacity: 0.3;
+      text-align: center;
+      margin-bottom: 16px;
+
+      .text {
+        position: relative;
+        font-size: 12px;
+
+        &::after,
+        &::before {
+          content: '';
+          border-bottom: 1px solid #e5e9ef;
+          position: absolute;
+          width: 52px;
+          top: 50%;
+        }
+
+        &::after {
+          left: -66px;
+        }
+
+        &::before {
+          right: -66px;
+        }
+      }
+    }
+  }
+  .body {
+    padding-bottom: 20px;
+    overflow-y: overlay;
+    flex: 1;
+    .chrome-like-scrollbar();
+
+    .group {
+      margin-bottom: 24px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.AccountItem {
+  margin: 0 20px 8px 0;
+  display: flex;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    .pin {
+      display: block;
+    }
+    .action {
+      opacity: 100%;
+    }
+    .trash {
+      opacity: 100%;
+    }
+
+    .checkIcon {
+      opacity: 100%;
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    border-radius: 6px;
+    flex: 1;
+
+    &.noAction {
+      .checkIcon {
+        .check {
+          display: none;
+        }
+        .uncheck {
+          display: none;
+        }
+      }
+      &:hover {
+        border: 1px solid #7084ff;
+
+        .arrowHover {
+          display: block;
+        }
+        .arrow {
+          display: none;
+        }
+
+        .main:hover,
+        .action:hover {
+          background: inherit;
+          .checkIcon {
+            .check {
+              display: none;
+            }
+            .uncheck {
+              display: none;
+            }
+          }
+          .arrowHover {
+            display: block;
+          }
+          .arrow {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .main {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding-left: 16px;
+    height: 60px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    cursor: pointer;
+    &:hover {
+      background: rgba(255, 255, 255, 0.08);
+      .checkIcon {
+        .check {
+          display: block;
+        }
+        .uncheck {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .pin {
+    display: none;
+    &.pinned {
+      display: block;
+    }
+  }
+
+  .index {
+    color: #707280;
+    font-size: 12px;
+  }
+
+  .logo {
+    margin-right: 12px;
+    width: 24px;
+    height: 24px;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+
+  .action {
+    width: 48px;
+    opacity: 0;
+    padding: 20px 16px;
+    cursor: pointer;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    &:hover {
+      background: rgba(255, 255, 255, 0.08);
+      .arrowHover {
+        display: block;
+      }
+      .arrow {
+        display: none;
+      }
+    }
+    .arrowHover {
+      display: none;
+    }
+    .arrow {
+      display: block;
+    }
+  }
+
+  .trash {
+    display: flex;
+    align-items: center;
+    width: 20px;
+    justify-content: center;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .checkIcon {
+    opacity: 0;
+    padding-right: 16px;
+
+    .check {
+      display: none;
+    }
+  }
+
+  .content {
+    flex: 1;
+    font-size: 13px;
+    color: #fff;
+    word-break: break-all;
+    display: flex;
+    flex-direction: column;
+
+    .part {
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      > * {
+        margin-right: 4px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      &.partAddress {
+        font-size: 12px;
+
+        .balance {
+          margin-left: 8px;
+        }
+      }
+
+      .name {
+        font-weight: 700;
+      }
+
+      .icon {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.CurrentAccount {
+  background: #8697ff;
+  border-radius: 6px;
+  padding: 12px;
+  margin: 0 20px;
+  cursor: pointer;
+
+  .balance {
+    margin-right: 8px;
+  }
+
+  .index {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .logo {
+    margin-right: 12px;
+    position: relative;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    line-height: 18px;
+    flex: 1;
+
+    .part {
+      margin-bottom: 2px;
+      display: flex;
+      align-items: center;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &.partAddress {
+        font-size: 12px;
+
+        .balance {
+          margin-left: 8px;
+        }
+      }
+
+      .name {
+        font-weight: 700;
+      }
+
+      > * {
+        margin-right: 4px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.whitelist {
+  opacity: 0.7;
+}
+
+.copy {
+  opacity: 0.7;
+}
