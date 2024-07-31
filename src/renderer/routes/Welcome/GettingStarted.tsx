@@ -19,7 +19,7 @@ export default function GettingStarted() {
     <div className={styles['page-welcome']}>
       <div className={styles.container}>
         <img
-          src="rabby-internal://assets/icons/welcome/logo.svg"
+          src="rabby-internal://assets/icons/welcome/main-logo.png"
           alt=""
           className={styles.logo}
         />
@@ -34,7 +34,7 @@ export default function GettingStarted() {
           onClick={onClickButton}
           disabled={!isFinishedFetchAccounts}
         >
-          Get started
+          Get Started
         </Button>
       </div>
     </div>

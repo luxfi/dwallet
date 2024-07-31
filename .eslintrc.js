@@ -19,7 +19,7 @@ module.exports = {
     'react/prop-types': 'off',
     'react/require-default-props': 'off',
     'react/jsx-props-no-spreading': 'off',
-    "endOfLine": "auto",
+    // "endOfLine": "auto",
     // '@typescript-eslint/naming-convention': [
     //   'error',
     //   {
