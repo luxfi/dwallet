@@ -19,6 +19,7 @@ module.exports = {
     'react/prop-types': 'off',
     'react/require-default-props': 'off',
     'react/jsx-props-no-spreading': 'off',
+    "endOfLine": "auto",
     // '@typescript-eslint/naming-convention': [
     //   'error',
     //   {
@@ -45,6 +46,8 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'error',
     '@typescript-eslint/naming-convention': 'off',
     'prefer-destructuring': 'off',
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': ['error', { 'varsIgnorePattern': '^_', "argsIgnorePattern": "^_" }],
   },
   parserOptions: {
     ecmaVersion: 2020,
