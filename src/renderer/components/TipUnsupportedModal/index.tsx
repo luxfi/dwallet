@@ -35,7 +35,7 @@ export default function TipUnsupportedModal() {
           </div>
 
           <p className={styles.intro}>
-            Please install Rabby Wallet on {systemReleaseInfo.aboveText} <br />
+            Please install Lux Wallet on {systemReleaseInfo.aboveText} <br />
             Stability and user experience cannot be guaranteed on other version
           </p>
         </div>
