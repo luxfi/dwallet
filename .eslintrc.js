@@ -19,7 +19,6 @@ module.exports = {
     'react/prop-types': 'off',
     'react/require-default-props': 'off',
     'react/jsx-props-no-spreading': 'off',
-    // "endOfLine": "auto",
     // '@typescript-eslint/naming-convention': [
     //   'error',
     //   {
@@ -48,6 +47,7 @@ module.exports = {
     'prefer-destructuring': 'off',
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': ['error', { 'varsIgnorePattern': '^_', "argsIgnorePattern": "^_" }],
+    "endOfLine": "auto",
   },
   parserOptions: {
     ecmaVersion: 2020,
