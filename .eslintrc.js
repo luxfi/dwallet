@@ -46,7 +46,10 @@ module.exports = {
     '@typescript-eslint/naming-convention': 'off',
     'prefer-destructuring': 'off',
     'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': ['error', { 'varsIgnorePattern': '^_', "argsIgnorePattern": "^_" }],
+    '@typescript-eslint/no-unused-vars': [
+      'error',
+      { varsIgnorePattern: '^_', argsIgnorePattern: '^_' },
+    ],
     // "endOfLine": "auto",
   },
   parserOptions: {
