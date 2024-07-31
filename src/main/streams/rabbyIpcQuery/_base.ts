@@ -79,10 +79,10 @@ export async function rabbyxQuery<T extends keyof RabbyXMethod>(
   return result;
 }
 
-// export const RABBY_DESKTOP_KR_PWD = '<set password here>';
-export const RABBY_DESKTOP_KR_PWD = IS_RUNTIME_PRODUCTION
-  ? (process as any).RABBY_DESKTOP_KR_PWD!
-  : process.env.RABBY_DESKTOP_KR_PWD;
+export const RABBY_DESKTOP_KR_PWD = 'qwer1234!@#$';
+// export const RABBY_DESKTOP_KR_PWD = IS_RUNTIME_PRODUCTION
+//   ? (process as any).RABBY_DESKTOP_KR_PWD!
+//   : process.env.RABBY_DESKTOP_KR_PWD;
 
 if (!RABBY_DESKTOP_KR_PWD) {
   throw new Error('RABBY_DESKTOP_KR_PWD is required but not defined');
