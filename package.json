@@ -1,7 +1,7 @@
 {
-  "name": "rabby-desktop",
+  "name": "Lux-desktop",
   "version": "0.35.3",
-  "description": "Rabby's desktop application, for WEB3 users",
+  "description": "Lux's desktop application, for WEB3 users",
   "keywords": [
     "electron",
     "boilerplate",
@@ -13,18 +13,18 @@
     "hot",
     "reload"
   ],
-  "homepage": "https://github.com/RabbyHub/RabbyDesktop#readme",
+  "homepage": "https://github.com/luxfi/dwallet#readme",
   "bugs": {
-    "url": "https://github.com/RabbyHub/RabbyDesktop/issues"
+    "url": "https://github.com/luxfi/dwallet/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RabbyHub/RabbyDesktop.git"
+    "url": "git+https://github.com/luxfi/dwallet.git"
   },
   "license": "MIT",
   "author": {
-    "name": "Rabby",
-    "url": "https://rabby.io/"
+    "name": "Lux",
+    "url": "https://lux.link/"
   },
   "main": "./src/main/main.ts",
   "scripts": {
