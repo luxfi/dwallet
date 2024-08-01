@@ -52,7 +52,7 @@ module.exports = {
     ],
     parser: 'off',
     parserOptions: 'off',
-    // "endOfLine": "auto",
+    'endOfLine': 'auto',
   },
   parserOptions: {
     ecmaVersion: 2020,
