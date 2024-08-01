@@ -1,7 +1,7 @@
 import { Button, Form, message } from 'antd';
 import { useCallback, useEffect, useState } from 'react';
 import clsx from 'clsx';
-import { debounce } from 'lodash';
+// import { debounce } from 'lodash';
 import { requestLockWallet } from '@/renderer/hooks/rabbyx/useUnlocked';
 import { useFormCheckError } from '@/renderer/hooks/useAntdForm';
 import {
@@ -83,7 +83,7 @@ export function SetUpPasswordContent({ className }: { className?: string }) {
         <div>
           <Form.Item
             label="Enter password"
-            className="rabby-antd-input-item"
+            className="lux-antd-input-item"
             name="password"
             rules={[
               {
@@ -105,7 +105,7 @@ export function SetUpPasswordContent({ className }: { className?: string }) {
 
           <Form.Item
             label="Confirm password"
-            className="rabby-antd-input-item"
+            className="lux-antd-input-item"
             name="confirmPwd"
             rules={[
               {
@@ -220,7 +220,7 @@ export function ChangePasswordContent({ className }: { className?: string }) {
           <Form.Item
             label="Current password"
             className={clsx(
-              'rabby-antd-input-item',
+              'lux-antd-input-item',
               form.getFieldError('currentPwd').length > 0 && 'has-error'
             )}
             name="currentPwd"
@@ -237,7 +237,7 @@ export function ChangePasswordContent({ className }: { className?: string }) {
           <Form.Item
             label="New password"
             className={clsx(
-              'rabby-antd-input-item',
+              'lux-antd-input-item',
               form.getFieldError('newPwd').length > 0 && 'has-error'
             )}
             name="newPwd"
@@ -258,7 +258,7 @@ export function ChangePasswordContent({ className }: { className?: string }) {
           <Form.Item
             label="Confirm password"
             className={clsx(
-              'rabby-antd-input-item',
+              'lux-antd-input-item',
               form.getFieldError('confirmPwd').length > 0 && 'has-error'
             )}
             name="confirmPwd"
@@ -373,7 +373,7 @@ export function CancelPasswordContent({ className }: { className?: string }) {
           </div>
           <Form.Item
             label="Current password"
-            className="rabby-antd-input-item"
+            className="lux-antd-input-item"
             name="currentPwd"
             rules={[
               {

@@ -37,7 +37,7 @@ export const QRCodeContainer: React.FC<Props> = ({
       <Tabs
         activeKey={tab}
         onChange={(active) => setTab(active as any)}
-        className="rabby-tabs walletconnect"
+        className="lux-tabs walletconnect"
         items={[
           {
             label: 'QR code',

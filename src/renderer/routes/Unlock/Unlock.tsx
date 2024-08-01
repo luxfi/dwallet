@@ -87,9 +87,7 @@ export const Unlock: React.FC = () => {
           className={clsx(styles.form, 'w-[100%]')}
         >
           <Form.Item
-            className={clsx(
-              'rabby-antd-input-item w-[100%] mb-[40px] text-left'
-            )}
+            className={clsx('lux-antd-input-item w-[100%] mb-[40px] text-left')}
             name="password"
             rules={[
               {

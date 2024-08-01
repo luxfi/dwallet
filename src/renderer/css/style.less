@@ -72,7 +72,7 @@ img {
   -webkit-app-region: no-drag;
 }
 
-.rabby-tabs {
+.lux-tabs {
   flex: 1;
 
   .ant-tabs-nav::before {
@@ -100,10 +100,22 @@ img {
 
     &.ant-tabs-tab-active {
       background: #fff;
+
+      .ant-tabs-tab-btn {
+        color: #3a3939;
+      }
     }
 
     &.ant-tabs-tab-disabled {
       color: #fff;
+    }
+  }
+
+  .ant-tabs-tab:hover {
+    background-color: #e2e2e2;
+
+    .ant-tabs-tab-btn {
+      color: #3a3939;
     }
   }
 
@@ -179,7 +191,7 @@ img {
   }
 }
 
-.rabby-antd-input-item {
+.lux-antd-input-item {
   .ant-form-item-control .ant-form-item-control-input .ant-form-item-control-input-content input {
     border-radius: 6px;
     background: var(--r-neutral-card-1, rgba(255, 255, 255, 0.06));

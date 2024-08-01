@@ -53,7 +53,7 @@ export const MainContainer: React.FC<Props> = ({
     <Tabs
       activeKey={tab}
       onChange={(active) => setTab(active as any)}
-      className="rabby-tabs"
+      className="lux-tabs"
       items={[
         {
           label: `Addresses in ${HDName}`,
