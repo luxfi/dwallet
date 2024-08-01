@@ -29,7 +29,7 @@ if (process.platform === 'darwin') {
       const fileSource = path.resolve(buildDir, `./${item.url}`);
       const blockmapSource = path.resolve(buildDir, `./${item.url}.blockmap`);
 
-      const newUrl = `rabby-wallet-desktop-installer-${arch}-${version}.zip`
+      const newUrl = `lux-wallet-desktop-installer-${arch}-${version}.zip`
 
       if (fileSource !== path.resolve(buildDir, newUrl)) {
         fs.cpSync(fileSource, path.resolve(buildDir, newUrl), { overwrite: true });

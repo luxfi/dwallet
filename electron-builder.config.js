@@ -8,9 +8,9 @@ const PLATFORM = process.platform;
 function getWindowsCert() {
   if (PLATFORM !== "win32") return {};
 
-  const selfSignCert = path.resolve(__dirname, "./scripts/code-signing/rabby-desktop-ca.pfx");
-  const prodCert = path.resolve(__dirname, "./scripts/code-signing/rabby-desktop-ca.p12");
-  const userProdCert = path.resolve(process.env.USERPROFILE, "./.rabby-build/code-signing/rabby-desktop-ca.p12");
+  const selfSignCert = path.resolve(__dirname, "./scripts/code-signing/lux-desktop-ca.pfx");
+  const prodCert = path.resolve(__dirname, "./scripts/code-signing/lux-desktop-ca.p12");
+  const userProdCert = path.resolve(process.env.USERPROFILE, "./.lux-build/code-signing/lux-desktop-ca.p12");
   // console.debug(`[getWindowsCert] userProdCert is ${userProdCert}`);
 
   const finalProdCert = fs.existsSync(userProdCert) ? userProdCert : prodCert;
@@ -43,7 +43,7 @@ module.exports = {
   "appId": "com.debank.RabbyDesktop",
   "asar": true,
   "asarUnpack": "**\\*.{node,dll}",
-  "copyright": "Copyright © 2022 rabby.io",
+  "copyright": "Copyright © 2022 lux.link",
   "files": [
     "dist",
     "node_modules",
@@ -70,7 +70,7 @@ module.exports = {
     }
   },
   "dmg": {
-    "artifactName": "rabby-wallet-desktop-installer-${arch}-${version}.${ext}",
+    "artifactName": "lux-wallet-desktop-installer-${arch}-${version}.${ext}",
     "contents": [
       {
         "x": 130,
@@ -100,7 +100,7 @@ module.exports = {
     ...getWindowsCert(),
   },
   "nsis": {
-    "artifactName": "rabby-wallet-desktop-installer-${arch}-${version}.${ext}",
+    "artifactName": "lux-wallet-desktop-installer-${arch}-${version}.${ext}",
     "uninstallDisplayName": "${productName}",
     "deleteAppDataOnUninstall": true,
     "allowToChangeInstallationDirectory": false,
