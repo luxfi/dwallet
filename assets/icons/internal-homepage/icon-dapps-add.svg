@@ -1,8 +1,8 @@
 <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_13_107)">
-<rect width="56" height="56" rx="28" fill="url(#paint0_linear_13_107)"/>
+<g clip-path="#fff">
+<rect width="56" height="56" rx="28" fill="#fff"/>
 <g filter="url(#filter0_d_13_107)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M29.5 16C29.5 15.1716 28.8284 14.5 28 14.5C27.1716 14.5 26.5 15.1716 26.5 16V26.5H16C15.1716 26.5 14.5 27.1716 14.5 28C14.5 28.8284 15.1716 29.5 16 29.5H26.5V40C26.5 40.8284 27.1716 41.5 28 41.5C28.8284 41.5 29.5 40.8284 29.5 40V29.5H40C40.8284 29.5 41.5 28.8284 41.5 28C41.5 27.1716 40.8284 26.5 40 26.5H29.5V16Z" fill="url(#paint1_linear_13_107)" shape-rendering="crispEdges"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M29.5 16C29.5 15.1716 28.8284 14.5 28 14.5C27.1716 14.5 26.5 15.1716 26.5 16V26.5H16C15.1716 26.5 14.5 27.1716 14.5 28C14.5 28.8284 15.1716 29.5 16 29.5H26.5V40C26.5 40.8284 27.1716 41.5 28 41.5C28.8284 41.5 29.5 40.8284 29.5 40V29.5H40C40.8284 29.5 41.5 28.8284 41.5 28C41.5 27.1716 40.8284 26.5 40 26.5H29.5V16Z" fill="#484848" shape-rendering="crispEdges"/>
 </g>
 </g>
 <defs>

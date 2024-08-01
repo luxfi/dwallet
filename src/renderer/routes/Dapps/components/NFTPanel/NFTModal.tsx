@@ -57,13 +57,13 @@ export const NFTModal: React.FC<Props> = ({ onClose, ...props }) => {
     >
       <div className="flex flex-col text-white overflow-hidden rounded-[8px]">
         <img
-          src="rabby-internal://assets/icons/mint/nft.svg"
+          src="rabby-internal://assets/icons/mint/nft.png"
           className="object-cover h-[368px]"
         />
 
         <section className="p-[20px] space-y-[8px]">
           <h2 className="text-[16px] text-white font-bold">
-            Rabby Desktop Genesis
+            Lux Desktop Genesis
           </h2>
           <div className="divide-y flex flex-col text-[13px]">
             <RowItem label="Amount" value="1" />

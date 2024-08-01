@@ -92,7 +92,7 @@ export const NFTPanel = () => {
           }}
         >
           <img
-            src="rabby-internal://assets/icons/mint/nft.svg"
+            src="rabby-internal://assets/icons/mint/nft.png"
             className={classNames(
               'rounded-[4px]',
               'object-cover',
@@ -114,7 +114,7 @@ export const NFTPanel = () => {
                   mintedData ? 'font-medium' : 'font-bold'
                 )}
               >
-                Rabby Desktop Genesis
+                Lux Desktop Genesis
               </h2>
               <p
                 className={classNames(
