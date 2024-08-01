@@ -238,7 +238,7 @@ export const MainContainer: React.FC = () => {
             className={styles.keyword}
             placeholder="Search"
             prefix={
-              <img src="rabby-internal://assets/icons/address-management/search.svg" />
+              <img src="lux-internal://assets/icons/address-management/search.svg" />
             }
             onChange={(e) => setSearchKeyword(e.target.value)}
             value={searchKeyword}
@@ -246,7 +246,7 @@ export const MainContainer: React.FC = () => {
           />
           <div className={styles.addr} onClick={handleOpen}>
             <span className={styles.text}>Manage Address</span>
-            <img src="rabby-internal://assets/icons/address-management/right.svg" />
+            <img src="lux-internal://assets/icons/address-management/right.svg" />
           </div>
         </div>
 

@@ -69,7 +69,7 @@ export const AddressDeleteModal = ({
       <div className="flex items-center relative w-[48px] h-[48px] mx-auto">
         <img src={addressTypeIcon} className="w-[48px] h-[48px]" />
         <img
-          src="rabby-internal://assets/icons/address-management/delete.svg"
+          src="lux-internal://assets/icons/address-management/delete.svg"
           className="absolute -bottom-4 -right-4"
         />
       </div>

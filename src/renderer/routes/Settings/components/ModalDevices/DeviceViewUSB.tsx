@@ -81,7 +81,7 @@ export default function DeviceViewUSB() {
                   avatar={
                     <Avatar
                       className={styles.deviceAvatar}
-                      src="rabby-internal://assets/icons/developer-kits/usb.svg"
+                      src="lux-internal://assets/icons/developer-kits/usb.svg"
                     />
                   }
                   title={

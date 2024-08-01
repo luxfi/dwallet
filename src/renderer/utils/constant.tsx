@@ -2,71 +2,67 @@ import { CHAINS, CHAINS_ENUM } from '@debank/common';
 
 const IconAmber = 'ui/assets/walletlogo/amber.svg';
 const LogoAmber = 'ui/assets/walletlogo/amber.svg';
-const IconBitBox02 = 'rabby-internal://assets/icons/walletlogo/bitbox.svg';
+const IconBitBox02 = 'lux-internal://assets/icons/walletlogo/bitbox.svg';
 const IconBitBox02WithBorder =
-  'rabby-internal://assets/icons/walletlogo/bitbox.svg';
-const IconCobo = 'rabby-internal://assets/icons/walletlogo/cobo.svg';
-const LogoCobo = 'rabby-internal://assets/icons/walletlogo/cobo.svg';
+  'lux-internal://assets/icons/walletlogo/bitbox.svg';
+const IconCobo = 'lux-internal://assets/icons/walletlogo/cobo.svg';
+const LogoCobo = 'lux-internal://assets/icons/walletlogo/cobo.svg';
 const IconFireblocksWithBorder =
-  'rabby-internal://assets/icons/walletlogo/fireblocks.svg';
-const IconFireblocks =
-  'rabby-internal://assets/icons/walletlogo/fireblocks.svg';
-const IconGnosis = 'rabby-internal://assets/icons/walletlogo/gnosis.svg';
-const IconGridPlus = 'rabby-internal://assets/icons/walletlogo/gridplus.svg';
-const IconImtoken = 'rabby-internal://assets/icons/walletlogo/imtoken.svg';
-const LogoImtoken = 'rabby-internal://assets/icons/walletlogo/imtoken.svg';
-const IconJade = 'rabby-internal://assets/icons/walletlogo/jade.svg';
-const LogoJade = 'rabby-internal://assets/icons/walletlogo/jade.svg';
-const LogoKeystone = 'rabby-internal://assets/icons/walletlogo/keystone.svg';
-const LogoAirGap = 'rabby-internal://assets/icons/walletlogo/airgap.svg';
-const LogoLedgerDark = 'rabby-internal://assets/icons/walletlogo/ledger.svg';
-const LogoLedgerWhite = 'rabby-internal://assets/icons/walletlogo/ledger.svg';
-const IconMath = 'rabby-internal://assets/icons/walletlogo/math.svg';
-const LogoMath = 'rabby-internal://assets/icons/walletlogo/math.svg';
-const IconMetaMask = 'rabby-internal://assets/icons/walletlogo/metamask.svg';
+  'lux-internal://assets/icons/walletlogo/fireblocks.svg';
+const IconFireblocks = 'lux-internal://assets/icons/walletlogo/fireblocks.svg';
+const IconGnosis = 'lux-internal://assets/icons/walletlogo/gnosis.svg';
+const IconGridPlus = 'lux-internal://assets/icons/walletlogo/gridplus.svg';
+const IconImtoken = 'lux-internal://assets/icons/walletlogo/imtoken.svg';
+const LogoImtoken = 'lux-internal://assets/icons/walletlogo/imtoken.svg';
+const IconJade = 'lux-internal://assets/icons/walletlogo/jade.svg';
+const LogoJade = 'lux-internal://assets/icons/walletlogo/jade.svg';
+const LogoKeystone = 'lux-internal://assets/icons/walletlogo/keystone.svg';
+const LogoAirGap = 'lux-internal://assets/icons/walletlogo/airgap.svg';
+const LogoLedgerDark = 'lux-internal://assets/icons/walletlogo/ledger.svg';
+const LogoLedgerWhite = 'lux-internal://assets/icons/walletlogo/ledger.svg';
+const IconMath = 'lux-internal://assets/icons/walletlogo/math.svg';
+const LogoMath = 'lux-internal://assets/icons/walletlogo/math.svg';
+const IconMetaMask = 'lux-internal://assets/icons/walletlogo/metamask.svg';
 const IconMnemonicInk =
-  'rabby-internal://assets/icons/walletlogo/mnemonic-ink.svg';
+  'lux-internal://assets/icons/walletlogo/mnemonic-ink.svg';
 const IconMnemonicWhite =
-  'rabby-internal://assets/icons/walletlogo/IconMnemonic-white.svg';
-const LogoMnemonic =
-  'rabby-internal://assets/icons/walletlogo/mnemoniclogo.svg';
-const IconOnekey = 'rabby-internal://assets/icons/walletlogo/onekey.svg';
-const IconOneKey18 = 'rabby-internal://assets/icons/walletlogo/onekey.svg';
-const LogoOnekey = 'rabby-internal://assets/icons/walletlogo/onekey.svg';
+  'lux-internal://assets/icons/walletlogo/IconMnemonic-white.svg';
+const LogoMnemonic = 'lux-internal://assets/icons/walletlogo/mnemoniclogo.svg';
+const IconOnekey = 'lux-internal://assets/icons/walletlogo/onekey.svg';
+const IconOneKey18 = 'lux-internal://assets/icons/walletlogo/onekey.svg';
+const LogoOnekey = 'lux-internal://assets/icons/walletlogo/onekey.svg';
 const IconPrivateKeyWhite =
-  'rabby-internal://assets/icons/walletlogo/private-key-white.svg';
+  'lux-internal://assets/icons/walletlogo/private-key-white.svg';
 const IconPrivateKeyInk =
-  'rabby-internal://assets/icons/walletlogo/privatekeylogo.svg';
+  'lux-internal://assets/icons/walletlogo/privatekeylogo.svg';
 const LogoPrivateKey =
-  'rabby-internal://assets/icons/walletlogo/privatekeylogo.svg';
-const LogoTp = 'rabby-internal://assets/icons/walletlogo/tp.svg';
-const IconTokenpocket = 'rabby-internal://assets/icons/walletlogo/tp.svg';
-const IconTrezor = 'rabby-internal://assets/icons/walletlogo/trezor.svg';
-const IconTrezor24Border =
-  'rabby-internal://assets/icons/walletlogo/trezor.svg';
-const IconTrezor24 = 'rabby-internal://assets/icons/walletlogo/trezor.svg';
-const LogoTrezor = 'rabby-internal://assets/icons/walletlogo/trezor.svg';
-const LogoTrust = 'rabby-internal://assets/icons/walletlogo/trust.svg';
-const IconTrust = 'rabby-internal://assets/icons/walletlogo/trust.svg';
-const LogoCoolWallet =
-  'rabby-internal://assets/icons/walletlogo/coolwallet.svg';
+  'lux-internal://assets/icons/walletlogo/privatekeylogo.svg';
+const LogoTp = 'lux-internal://assets/icons/walletlogo/tp.svg';
+const IconTokenpocket = 'lux-internal://assets/icons/walletlogo/tp.svg';
+const IconTrezor = 'lux-internal://assets/icons/walletlogo/trezor.svg';
+const IconTrezor24Border = 'lux-internal://assets/icons/walletlogo/trezor.svg';
+const IconTrezor24 = 'lux-internal://assets/icons/walletlogo/trezor.svg';
+const LogoTrezor = 'lux-internal://assets/icons/walletlogo/trezor.svg';
+const LogoTrust = 'lux-internal://assets/icons/walletlogo/trust.svg';
+const IconTrust = 'lux-internal://assets/icons/walletlogo/trust.svg';
+const LogoCoolWallet = 'lux-internal://assets/icons/walletlogo/coolwallet.svg';
 const IconWatchPurple =
-  'rabby-internal://assets/icons/walletlogo/watch-purple.svg';
+  'lux-internal://assets/icons/walletlogo/watch-purple.svg';
 const IconWatchWhite =
-  'rabby-internal://assets/icons/walletlogo/IconWatch-white.svg';
-const LogoDefiant = 'rabby-internal://assets/icons/walletlogo/defiant.svg';
-const LogoDefiantWhite = 'rabby-internal://assets/icons/walletlogo/defiant.svg';
+  'lux-internal://assets/icons/walletlogo/IconWatch-white.svg';
+const LogoDefiant = 'lux-internal://assets/icons/walletlogo/defiant.svg';
+const LogoDefiantWhite = 'lux-internal://assets/icons/walletlogo/defiant.svg';
 const LogoWalletConnect =
-  'rabby-internal://assets/icons/walletlogo/walletconnect28.svg';
+  'lux-internal://assets/icons/walletlogo/walletconnect28.svg';
 const IconWalletConnect =
-  'rabby-internal://assets/icons/walletlogo/walletconnect28.svg';
-const IconBinance = 'rabby-internal://assets/icons/walletlogo/binance.png';
-const IconBitcoin = 'rabby-internal://assets/icons/walletlogo/bitcoin.svg';
-const IconOKX = 'rabby-internal://assets/icons/bundle/okx.png';
-const LogoBitkeep = 'rabby-internal://assets/icons/walletlogo/bitkeep.svg';
-const LogoRainbow = 'rabby-internal://assets/icons/walletlogo/rainbow.svg';
-const LogoUniswap = 'rabby-internal://assets/icons/walletlogo/uniswap.svg';
-const LogoZerion = 'rabby-internal://assets/icons/walletlogo/zerion.svg';
+  'lux-internal://assets/icons/walletlogo/walletconnect28.svg';
+const IconBinance = 'lux-internal://assets/icons/walletlogo/binance.png';
+const IconBitcoin = 'lux-internal://assets/icons/walletlogo/bitcoin.svg';
+const IconOKX = 'lux-internal://assets/icons/bundle/okx.png';
+const LogoBitkeep = 'lux-internal://assets/icons/walletlogo/bitkeep.svg';
+const LogoRainbow = 'lux-internal://assets/icons/walletlogo/rainbow.svg';
+const LogoUniswap = 'lux-internal://assets/icons/walletlogo/uniswap.svg';
+const LogoZerion = 'lux-internal://assets/icons/walletlogo/zerion.svg';
 
 export { CHAINS, CHAINS_ENUM };
 

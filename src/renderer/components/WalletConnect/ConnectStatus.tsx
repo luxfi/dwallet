@@ -6,11 +6,11 @@ import { useDisplayBrandName } from './useDisplayBrandName';
 import { useBrandNameHasWallet } from './useBrandNameHasWallet';
 
 type Account = import('@/isomorphic/types/rabbyx').Account;
-const TipInfoSVG = 'rabby-internal://assets/icons/walletconnect/tip-info.svg';
+const TipInfoSVG = 'lux-internal://assets/icons/walletconnect/tip-info.svg';
 const TipWarningSVG =
-  'rabby-internal://assets/icons/walletconnect/tip-warning.svg';
+  'lux-internal://assets/icons/walletconnect/tip-warning.svg';
 const TipSuccessSVG =
-  'rabby-internal://assets/icons/walletconnect/tip-success.svg';
+  'lux-internal://assets/icons/walletconnect/tip-success.svg';
 
 interface Props {
   brandName?: WALLET_BRAND_TYPES;

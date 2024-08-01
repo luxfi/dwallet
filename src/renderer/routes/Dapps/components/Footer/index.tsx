@@ -11,7 +11,7 @@ export const Footer = ({ appVersion = '' }) => {
       <div className="container">
         <img
           className="logo"
-          src="rabby-internal://assets/icons/internal-homepage/logo.svg"
+          src="lux-internal://assets/icons/internal-homepage/logo.svg"
           alt="logo"
         />
         <Dropdown

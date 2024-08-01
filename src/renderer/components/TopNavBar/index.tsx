@@ -194,7 +194,7 @@ export const TopNavBar = () => {
         {activeTab?.status === 'loading' && (
           <img
             className={styles.loadingIcon}
-            src="rabby-internal://assets/icons/top-bar/icon-dapp-nav-loading.svg"
+            src="lux-internal://assets/icons/top-bar/icon-dapp-nav-loading.svg"
           />
         )}
         <div
@@ -333,7 +333,7 @@ export const TopNavBar = () => {
           />
         </div>
         <div className={styles.close} onClick={handleCloseTab}>
-          <img src="rabby-internal://assets/icons/top-bar/close.svg" />
+          <img src="lux-internal://assets/icons/top-bar/close.svg" />
         </div>
       </div>
     </div>

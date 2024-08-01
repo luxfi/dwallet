@@ -6,9 +6,9 @@ import { isSameAddress } from '@/renderer/utils/address';
 import { splitNumberByStep } from '@/renderer/utils/number';
 import { ExplainTxResponse } from '@rabby-wallet/rabby-api/dist/types';
 
-const IconUnknown = 'rabby-internal://assets/icons/transaction/tx-unknown.svg';
+const IconUnknown = 'lux-internal://assets/icons/transaction/tx-unknown.svg';
 
-const IconUser = 'rabby-internal://assets/icons/transaction/tx-send.svg';
+const IconUser = 'lux-internal://assets/icons/transaction/tx-send.svg';
 
 export const TransactionExplain = ({
   isFailed,

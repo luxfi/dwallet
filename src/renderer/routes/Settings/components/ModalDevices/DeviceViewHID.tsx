@@ -84,7 +84,7 @@ export default function DeviceViewHID() {
                   avatar={
                     <Avatar
                       className={styles.deviceAvatar}
-                      src="rabby-internal://assets/icons/developer-kits/hid.svg"
+                      src="lux-internal://assets/icons/developer-kits/hid.svg"
                     />
                   }
                   title={

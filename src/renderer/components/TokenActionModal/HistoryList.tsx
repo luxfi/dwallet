@@ -76,7 +76,7 @@ export const HistoryList: React.FC<Props> = ({ refContainer, token }) => {
           : !loading && (
               <div className="text-13 text-center mt-[80px]">
                 <img
-                  src="rabby-internal://assets/icons/home/low-value-empty.svg"
+                  src="lux-internal://assets/icons/home/low-value-empty.svg"
                   className="w-[52px] h-[52px] m-auto"
                 />
                 <div className="mt-[16px] text-[#BABEC5]">No Transactions</div>

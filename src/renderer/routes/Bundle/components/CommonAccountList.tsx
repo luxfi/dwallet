@@ -75,7 +75,7 @@ export const CommonAccountList: React.FC<Props> = ({
             <img
               onClick={onClickAdd}
               className="opacity-60 hover:opacity-100 cursor-pointer"
-              src="rabby-internal://assets/icons/bundle/plus.svg"
+              src="lux-internal://assets/icons/bundle/plus.svg"
             />
           </TipsWrapper>
         )}

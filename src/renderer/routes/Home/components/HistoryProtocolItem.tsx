@@ -307,7 +307,7 @@ const ProtocolItem = ({
             <span className="protocol-name">{protocol.name}</span>
             {!hasBinded && (
               <img
-                src="rabby-internal://assets/icons/home/dapp-relate.svg"
+                src="lux-internal://assets/icons/home/dapp-relate.svg"
                 className="icon-relate"
               />
             )}
@@ -333,7 +333,7 @@ const ProtocolItem = ({
                 >
                   <img
                     className="icon-unbind"
-                    src="rabby-internal://assets/icons/home/bind-edit.svg"
+                    src="lux-internal://assets/icons/home/bind-edit.svg"
                   />
                   Edit bound Dapp
                 </RemoveBinding>

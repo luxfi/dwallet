@@ -18,7 +18,7 @@ const ImportHome = () => {
         <Col className={styles.LeftView} span={14}>
           <div className={styles.container}>
             <img
-              src="rabby-internal://assets/icons/internal-homepage/logo.svg"
+              src="lux-internal://assets/icons/internal-homepage/logo.svg"
               alt="logo"
               className={styles.logo}
             />
@@ -33,7 +33,7 @@ const ImportHome = () => {
         <Col className={styles.RightView} span={10}>
           <div className={styles.container}>
             <img
-              src="rabby-internal://assets/icons/import/quote.svg"
+              src="lux-internal://assets/icons/import/quote.svg"
               alt="quote"
               className={styles.quote}
             />
@@ -43,7 +43,7 @@ const ImportHome = () => {
             </p>
             <img
               className={styles.picture}
-              src="rabby-internal://assets/icons/import/password-box.svg"
+              src="lux-internal://assets/icons/import/password-box.svg"
               alt="password-box"
             />
           </div>

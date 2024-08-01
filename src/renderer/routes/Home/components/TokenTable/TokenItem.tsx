@@ -7,7 +7,7 @@ import { TokenItem as TokenItemProp } from '@rabby-wallet/rabby-api/dist/types';
 import { splitNumberByStep } from '@/renderer/utils/number';
 import { TCell, TRow } from './Table';
 
-const IconUnknown = 'rabby-internal://assets/icons/common/token-default.svg';
+const IconUnknown = 'lux-internal://assets/icons/common/token-default.svg';
 
 export interface Props {
   item: TokenItemProp;

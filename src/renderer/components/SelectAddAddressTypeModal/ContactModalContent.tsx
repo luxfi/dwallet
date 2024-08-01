@@ -113,7 +113,7 @@ export const ContactModalContent: React.FC<Props> = ({ onSuccess }) => {
           suffix={
             ens ? (
               <img
-                src="rabby-internal://assets/icons/add-address/right.svg"
+                src="lux-internal://assets/icons/add-address/right.svg"
                 className="icon icon-checked"
               />
             ) : null
@@ -137,7 +137,7 @@ export const ContactModalContent: React.FC<Props> = ({ onSuccess }) => {
             <span className={styles.text}>{ens.addr}</span>
             <img
               className={styles.icon}
-              src="rabby-internal://assets/icons/add-address/enter.svg"
+              src="lux-internal://assets/icons/add-address/enter.svg"
             />
           </div>
         )}

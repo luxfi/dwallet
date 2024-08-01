@@ -51,13 +51,13 @@ export const NFTModal: React.FC<Props> = ({ onClose, ...props }) => {
       closeIcon={
         <img
           className="icon close w-[16px]"
-          src="rabby-internal://assets/icons/mint/icon-close.svg"
+          src="lux-internal://assets/icons/mint/icon-close.svg"
         />
       }
     >
       <div className="flex flex-col text-white overflow-hidden rounded-[8px]">
         <img
-          src="rabby-internal://assets/icons/mint/nft.png"
+          src="lux-internal://assets/icons/mint/nft.png"
           className="object-cover h-[368px]"
         />
 

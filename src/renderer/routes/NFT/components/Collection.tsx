@@ -28,8 +28,8 @@ export const Collection = (props: CollectionProps) => {
           className="w-16 h-16"
           src={
             start
-              ? 'rabby-internal://assets/icons/nft/starred.svg'
-              : 'rabby-internal://assets/icons/nft/star.svg'
+              ? 'lux-internal://assets/icons/nft/starred.svg'
+              : 'lux-internal://assets/icons/nft/star.svg'
           }
         />
       </div>

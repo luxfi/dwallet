@@ -6,9 +6,9 @@ import classNames from 'classnames';
 import React from 'react';
 import NameAndAddress from '../NameAndAddress';
 
-const IconChecked = 'rabby-internal://assets/icons/queue/checked.svg';
-const IconUnCheck = 'rabby-internal://assets/icons/queue/uncheck.svg';
-const IconTagYou = 'rabby-internal://assets/icons/queue/tag-you.svg';
+const IconChecked = 'lux-internal://assets/icons/queue/checked.svg';
+const IconUnCheck = 'lux-internal://assets/icons/queue/uncheck.svg';
+const IconTagYou = 'lux-internal://assets/icons/queue/tag-you.svg';
 
 export interface Props {
   confirmations: SafeTransactionItem['confirmations'];

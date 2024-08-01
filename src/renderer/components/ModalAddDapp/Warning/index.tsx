@@ -10,7 +10,7 @@ export const Warning = ({ children }: Props) => {
       <div>
         <img
           className={styles.icon}
-          src="rabby-internal://assets/icons/add-dapp/icon-warning.svg"
+          src="lux-internal://assets/icons/add-dapp/icon-warning.svg"
           alt=""
         />
         <div className={styles.text}>{children}</div>

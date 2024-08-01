@@ -150,7 +150,7 @@ const ManageAddress = ({
           {!!showBack && (
             <img
               onClick={onCancel}
-              src="rabby-internal://assets/icons/address-management/back.svg"
+              src="lux-internal://assets/icons/address-management/back.svg"
               className="w-20 absolute top-20 left-20 cursor-pointer"
             />
           )}
@@ -188,7 +188,7 @@ const ManageAddress = ({
                 </div>
                 <div className="flex items-center gap-16">
                   <img
-                    src="rabby-internal://assets/icons/address-management/trash.svg"
+                    src="lux-internal://assets/icons/address-management/trash.svg"
                     className="cursor-pointer text-gray-content hover:text-red-forbidden"
                     onClick={() => {
                       handleOpenDeleteModal(

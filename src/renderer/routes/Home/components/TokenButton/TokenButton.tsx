@@ -60,7 +60,7 @@ export const TokenButton: React.FC<Props> = ({
         <span>{len}</span>
         <span>{label}</span>
         <img
-          src="rabby-internal://assets/icons/home/expand-arrow.svg"
+          src="lux-internal://assets/icons/home/expand-arrow.svg"
           className="w-[14px] h-[5px] transform rotate-90"
         />
       </button>
@@ -83,7 +83,7 @@ export const TokenButton: React.FC<Props> = ({
           EmptyComponent={
             <div className="space-y-24 text-13 text-center mt-[100px]">
               <img
-                src="rabby-internal://assets/icons/home/low-value-empty.svg"
+                src="lux-internal://assets/icons/home/low-value-empty.svg"
                 className="w-[52px] h-[52px] m-auto"
               />
               <div className="text-[#BABEC5]">{description}</div>

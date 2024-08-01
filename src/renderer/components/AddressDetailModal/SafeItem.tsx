@@ -15,7 +15,7 @@ import { useAsync } from 'react-use';
 import NameAndAddress from '../NameAndAddress';
 import { AccountDetailItem } from './AccountDetailItem';
 
-const IconTagYou = 'rabby-internal://assets/icons/queue/tag-you.svg';
+const IconTagYou = 'lux-internal://assets/icons/queue/tag-you.svg';
 
 const LoadingIcon = (
   <LoadingOutlined style={{ fontSize: 20, color: '#8697ff' }} spin />
@@ -117,9 +117,9 @@ export const SafeItem: React.FC<{ account: RabbyAccount }> = ({ account }) => {
                 return (
                   <li
                     className={classNames(
-                      `flex text-white 
-                      border-solid border-0 border-b 
-                      border-[rgba(255,255,255,0.1)] 
+                      `flex text-white
+                      border-solid border-0 border-b
+                      border-[rgba(255,255,255,0.1)]
                       last:border-b-0 py-[12px]
                       mt-0`
                     )}

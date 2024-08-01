@@ -139,7 +139,7 @@ const openNotification = (
       icon: null,
       closeIcon: (
         <img
-          src="rabby-internal://assets/icons/modal/close.svg"
+          src="lux-internal://assets/icons/modal/close.svg"
           className="w-14"
         />
       ),

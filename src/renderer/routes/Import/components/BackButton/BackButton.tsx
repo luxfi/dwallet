@@ -18,7 +18,7 @@ const BackButton: React.FC<React.HtmlHTMLAttributes<HTMLDivElement>> = ({
       }}
       className={classNames(styles.BackButton, className)}
     >
-      <img src="rabby-internal://assets/icons/import/back.svg" alt="back" />
+      <img src="lux-internal://assets/icons/import/back.svg" alt="back" />
     </div>
   );
 };

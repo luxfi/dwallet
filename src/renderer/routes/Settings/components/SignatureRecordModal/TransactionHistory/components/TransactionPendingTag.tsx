@@ -10,8 +10,8 @@ import { Popover, Tooltip } from 'antd';
 import { MempoolList } from './MempoolList';
 
 const IconDropdown =
-  'rabby-internal://assets/icons/signature-record/dropdown.svg';
-const IconInfo = 'rabby-internal://assets/icons/signature-record/info.svg';
+  'lux-internal://assets/icons/signature-record/dropdown.svg';
+const IconInfo = 'lux-internal://assets/icons/signature-record/info.svg';
 
 export const TransactionPendingTag = ({
   item,
@@ -34,7 +34,7 @@ export const TransactionPendingTag = ({
     return (
       <div className="pending flex items-center gap-[6px]">
         <img
-          src="rabby-internal://assets/icons/home/tx-pending.svg"
+          src="lux-internal://assets/icons/home/tx-pending.svg"
           className="animate-spin"
         />
         Pending
@@ -57,7 +57,7 @@ export const TransactionPendingTag = ({
       >
         <div className="pending flex items-center gap-[6px]">
           <img
-            src="rabby-internal://assets/icons/home/tx-pending.svg"
+            src="lux-internal://assets/icons/home/tx-pending.svg"
             className="animate-spin"
           />
           Pending: Broadcasted
@@ -76,7 +76,7 @@ export const TransactionPendingTag = ({
     return (
       <div className="pending flex items-center gap-[6px]">
         <img
-          src="rabby-internal://assets/icons/home/tx-pending.svg"
+          src="lux-internal://assets/icons/home/tx-pending.svg"
           className="animate-spin"
         />
         Pending: Broadcast failed{' '}
@@ -106,7 +106,7 @@ export const TransactionPendingTag = ({
   return (
     <div className="pending flex items-center gap-[6px]">
       <img
-        src="rabby-internal://assets/icons/home/tx-pending.svg"
+        src="lux-internal://assets/icons/home/tx-pending.svg"
         className="animate-spin"
       />
       Pending: to be broadcasted{' '}

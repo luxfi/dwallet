@@ -122,7 +122,7 @@ export const AccountItem = ({
                 title="Whitelisted address"
               >
                 <img
-                  src="rabby-internal://assets/icons/send-token/whitelist.svg"
+                  src="lux-internal://assets/icons/send-token/whitelist.svg"
                   className="w-16 h-16"
                 />
               </Tooltip>
@@ -135,7 +135,7 @@ export const AccountItem = ({
             <div className="cursor-pointer" onClick={handleClickCopy}>
               <img
                 className="icon-copy"
-                src="rabby-internal://assets/icons/send-token/copy.svg"
+                src="lux-internal://assets/icons/send-token/copy.svg"
               />
             </div>
           </TipsWrapper>

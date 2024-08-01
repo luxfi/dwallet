@@ -4,9 +4,9 @@ import { useMemo } from 'react';
 export const NFTEmpty = ({ id }: { id: string }) => {
   const image = useMemo(() => {
     if (id === 'all') {
-      return 'rabby-internal://assets/icons/nft/empty-all.svg';
+      return 'lux-internal://assets/icons/nft/empty-all.svg';
     }
-    return 'rabby-internal://assets/icons/nft/empty-starred.svg';
+    return 'lux-internal://assets/icons/nft/empty-starred.svg';
   }, [id]);
 
   const desc = useMemo(() => {

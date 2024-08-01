@@ -109,7 +109,7 @@ export const TxList: React.FC<Props> = ({
         <div className="text-[#FFFFFF66] items-center justify-center opacity-60 flex flex-col mt-[150px]">
           <img
             className="w-[95px] h-[95px]"
-            src="rabby-internal://assets/icons/queue/empty.svg"
+            src="lux-internal://assets/icons/queue/empty.svg"
           />
           <div>No pending transactions</div>
         </div>

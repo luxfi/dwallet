@@ -8,7 +8,7 @@ export function HaveSetupPassword() {
     <section className="manage-password-content has-password pt-[70px] pl-40 pr-40">
       <div className="text-center">
         <img
-          src="rabby-internal://assets/icons/password/has-password.svg"
+          src="lux-internal://assets/icons/password/has-password.svg"
           className="mb-20"
         />
         <h2 className="text-r-neutral-title-2 text-15">
@@ -44,7 +44,7 @@ export function HaventSetupPassWord() {
     <section className="manage-password-content pt-[70px] pb-[40px] h-[100%] flex flex-col justify-between items-center">
       <div className="text-center">
         <img
-          src="rabby-internal://assets/icons/password/no-password.svg"
+          src="lux-internal://assets/icons/password/no-password.svg"
           className="mb-20"
         />
         <h2 className="text-r-neutral-title-2 text-15 mb-8">

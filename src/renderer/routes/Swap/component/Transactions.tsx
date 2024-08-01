@@ -53,7 +53,7 @@ const Empty = () => {
   return (
     <EmptyWrapper>
       <img
-        src="rabby-internal://assets/icons/home/tx-empty.png"
+        src="lux-internal://assets/icons/home/tx-empty.png"
         className="empty-img"
       />
       <div className="desc">No Transactions records</div>

@@ -10,7 +10,7 @@ export const APP_BRANDNAME = 'Rabby Desktop';
 // drive electron-store, dont use strange characters here becaus it will be used as part of file name
 export const PERSIS_STORE_PREFIX = 'rabby-store-';
 
-export const RABBY_INTERNAL_PROTOCOL = 'rabby-internal:';
+export const RABBY_INTERNAL_PROTOCOL = 'lux-internal:';
 export const PROTOCOL_IPFS = 'rabby-ipfs:';
 export const PROTOCOL_ENS = 'rabby-ens:';
 export const PROTOCOL_LOCALFS = 'rabby-fs:';

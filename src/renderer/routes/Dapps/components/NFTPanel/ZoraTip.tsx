@@ -8,7 +8,7 @@ export const ZoraTip = () => {
         overlayClassName="max-w-[none]"
         title={`A ${ZORE_MINT_FEE}ETH fee goes to Zora for each mint.`}
       >
-        <img src="rabby-internal://assets/icons/mint/icon-help.svg" />
+        <img src="lux-internal://assets/icons/mint/icon-help.svg" />
       </Tooltip>
     </span>
   );

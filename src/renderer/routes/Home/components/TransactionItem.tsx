@@ -435,7 +435,7 @@ const PendingTooltip = ({ timeAt }: { timeAt: number }) => {
       overlayStyle={{ maxWidth: 306 }}
     >
       <img
-        src="rabby-internal://assets/icons/home/question-outline.svg"
+        src="lux-internal://assets/icons/home/question-outline.svg"
         className="pending-tooltip"
         style={isAlwaysShow ? { display: 'block' } : undefined}
       />
@@ -559,9 +559,9 @@ const TransactionItem = ({
   }, [item]);
 
   const iconUrl = useMemo(() => {
-    if (isCancel) return 'rabby-internal://assets/icons/home/tx-cancel.svg';
-    if (isSend) return 'rabby-internal://assets/icons/home/tx-send.svg';
-    if (isReceive) return 'rabby-internal://assets/icons/home/tx-receive.svg';
+    if (isCancel) return 'lux-internal://assets/icons/home/tx-cancel.svg';
+    if (isSend) return 'lux-internal://assets/icons/home/tx-send.svg';
+    if (isReceive) return 'lux-internal://assets/icons/home/tx-receive.svg';
     if (item.protocol?.logoUrl) return item.protocol.logoUrl;
     return null;
   }, [item, isCancel, isSend, isReceive]);
@@ -866,7 +866,7 @@ const TransactionItem = ({
         <Tooltip title="Transaction failed">
           <FailedTag className="failed-tag">
             <img
-              src="rabby-internal://assets/icons/home/tx-failed.svg"
+              src="lux-internal://assets/icons/home/tx-failed.svg"
               className="icon-failed"
             />
           </FailedTag>
@@ -884,7 +884,7 @@ const TransactionItem = ({
             ) : (
               <PendingTag>
                 <img
-                  src="rabby-internal://assets/icons/home/tx-pending.svg"
+                  src="lux-internal://assets/icons/home/tx-pending.svg"
                   className="icon-pending"
                 />
                 Pending
@@ -910,7 +910,7 @@ const TransactionItem = ({
             >
               <Tooltip title={canCancel ? 'Speed up' : null}>
                 <img
-                  src="rabby-internal://assets/icons/home/action-speedup.svg"
+                  src="lux-internal://assets/icons/home/action-speedup.svg"
                   className="icon-speedup"
                   onClick={handleClickSpeedUp}
                 />
@@ -918,7 +918,7 @@ const TransactionItem = ({
               <div className="divider" />
               <Tooltip title={canCancel ? 'Cancel' : null}>
                 <img
-                  src="rabby-internal://assets/icons/home/action-cancel.svg"
+                  src="lux-internal://assets/icons/home/action-cancel.svg"
                   className="icon-cancel"
                   onClick={handleClickCancel}
                 />
@@ -934,7 +934,7 @@ const TransactionItem = ({
         >
           <CompletedTag>
             <img
-              src="rabby-internal://assets/icons/home/tx-completed.svg"
+              src="lux-internal://assets/icons/home/tx-completed.svg"
               className="icon-completed"
             />
             Completed
@@ -953,9 +953,7 @@ const TransactionItem = ({
         })}
       >
         <IconWithChain
-          iconUrl={
-            iconUrl || 'rabby-internal://assets/icons/home/tx-unknown.svg'
-          }
+          iconUrl={iconUrl || 'lux-internal://assets/icons/home/tx-unknown.svg'}
           chainServerId={item.chain}
           width="26px"
           height="26px"
@@ -985,7 +983,7 @@ const TransactionItem = ({
               >
                 <img
                   className="icon icon-question-mark"
-                  src="rabby-internal://assets/icons/home/question.svg"
+                  src="lux-internal://assets/icons/home/question.svg"
                 />
               </Tooltip>
             </div>
@@ -1012,7 +1010,7 @@ const TransactionItem = ({
                   </div>
                   <img
                     className="icon icon-spin"
-                    src="rabby-internal://assets/icons/home/tx-pending-1.svg"
+                    src="lux-internal://assets/icons/home/tx-pending-1.svg"
                   />
                 </div>
               ))}

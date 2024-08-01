@@ -27,7 +27,7 @@ export const ChangeLog = () => {
         }}
       >
         <img
-          src="rabby-internal://assets/icons/change-log/icon-change-log.svg"
+          src="lux-internal://assets/icons/change-log/icon-change-log.svg"
           alt=""
         />
         View Release Note

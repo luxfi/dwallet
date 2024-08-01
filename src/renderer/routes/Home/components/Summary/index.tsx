@@ -24,7 +24,7 @@ export const Summary = () => {
           <TipsWrapper hoverTips="Asset value divided by total net worth">
             <img
               className="w-12 h-12 opacity-50"
-              src="rabby-internal://assets/icons/home/info.svg"
+              src="lux-internal://assets/icons/home/info.svg"
             />
           </TipsWrapper>
         </div>
@@ -53,9 +53,9 @@ export const Summary = () => {
                 <img
                   src={
                     isSmallAssets
-                      ? 'rabby-internal://assets/icons/home/hide-assets.svg'
+                      ? 'lux-internal://assets/icons/home/hide-assets.svg'
                       : e.logo_url ||
-                        'rabby-internal://assets/icons/common/token-default.svg'
+                        'lux-internal://assets/icons/common/token-default.svg'
                   }
                   className="w-24 h-24 rounded-full mr-18"
                 />

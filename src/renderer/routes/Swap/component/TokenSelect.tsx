@@ -568,7 +568,7 @@ const TokenSelectModal = ({
               >
                 <img
                   className="filter-item__chain-close w-[12px] h-[12px] ml-[6px]"
-                  src="rabby-internal://assets/icons/chain-select/chain-filter-close.svg"
+                  src="lux-internal://assets/icons/chain-select/chain-filter-close.svg"
                 />
               </div>
             </div>
@@ -584,7 +584,7 @@ const TokenSelectModal = ({
         <div className="listBox">
           {!isLoading && isEmpty && (
             <Empty
-              image="rabby-internal://assets/icons/swap/no-result.svg"
+              image="lux-internal://assets/icons/swap/no-result.svg"
               imageStyle={{
                 width: 60,
                 height: 52,

@@ -33,7 +33,7 @@ function DeveloperKitsParts() {
         <div className={styles.itemList}>
           <ItemAction
             name="Devices"
-            icon="rabby-internal://assets/icons/developer-kits/usb.svg"
+            icon="lux-internal://assets/icons/developer-kits/usb.svg"
             onClick={() => {
               setIsViewingDevices(true);
             }}
@@ -51,7 +51,7 @@ function DeveloperKitsParts() {
           </ItemAction>
           <ItemAction
             name="Camera"
-            icon="rabby-internal://assets/icons/developer-kits/camera.svg"
+            icon="lux-internal://assets/icons/developer-kits/camera.svg"
           >
             <Button
               type="primary"
@@ -98,7 +98,7 @@ function DeveloperKitsParts() {
           </ItemAction>
           <ItemSwitch
             checked={isGhostWindowDebugHighlighted}
-            icon="rabby-internal://assets/icons/developer-kits/ghost.svg"
+            icon="lux-internal://assets/icons/developer-kits/ghost.svg"
             name={
               <>
                 <div>
@@ -124,7 +124,7 @@ function DeveloperKitsParts() {
                       Toggle Ghost Window Highlight
                       <img
                         className="ml-[4px] w-[18px] h-[18px] inline-block"
-                        src="rabby-internal://assets/icons/mainwin-settings/info.svg"
+                        src="lux-internal://assets/icons/mainwin-settings/info.svg"
                         alt=""
                       />
                     </span>
@@ -143,14 +143,14 @@ function DeveloperKitsParts() {
           />
           <ItemAction
             name={<span className={styles.dangerText}>Reset App</span>}
-            icon="rabby-internal://assets/icons/mainwin-settings/reset.svg"
+            icon="lux-internal://assets/icons/mainwin-settings/reset.svg"
             onClick={() => {
               requestResetApp();
             }}
           />
           <ItemAction
             name={<span className={styles.dangerText}>Reset Signs</span>}
-            icon="rabby-internal://assets/icons/mainwin-settings/reset.svg"
+            icon="lux-internal://assets/icons/mainwin-settings/reset.svg"
             onClick={() => {
               window.rabbyDesktop.ipcRenderer.sendMessage(
                 '__internal_rpc:app:reset-rabbyx-approvals'
@@ -160,7 +160,7 @@ function DeveloperKitsParts() {
 
           <ItemText
             name="Dapp Zoom Ratio"
-            icon="rabby-internal://assets/icons/mainwin-settings/icon-dapp-zoom.svg"
+            icon="lux-internal://assets/icons/mainwin-settings/icon-dapp-zoom.svg"
           >
             <Slider
               className="w-[300px]"

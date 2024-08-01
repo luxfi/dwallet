@@ -120,7 +120,7 @@ export const DAppBlock = ({
                   icon: (
                     <img
                       className="dapp-dropdown-item-icon"
-                      src="rabby-internal://assets/icons/sidebar-context-menu/icon-unpin.svg"
+                      src="lux-internal://assets/icons/sidebar-context-menu/icon-unpin.svg"
                     />
                   ),
                 }
@@ -131,7 +131,7 @@ export const DAppBlock = ({
                   icon: (
                     <img
                       className="dapp-dropdown-item-icon"
-                      src="rabby-internal://assets/icons/sidebar-context-menu/icon-pin.svg"
+                      src="lux-internal://assets/icons/sidebar-context-menu/icon-pin.svg"
                     />
                   ),
                 },
@@ -142,7 +142,7 @@ export const DAppBlock = ({
               icon: (
                 <img
                   className="dapp-dropdown-item-icon"
-                  src="rabby-internal://assets/icons/sidebar-context-menu/icon-edit.svg"
+                  src="lux-internal://assets/icons/sidebar-context-menu/icon-edit.svg"
                 />
               ),
             },
@@ -153,7 +153,7 @@ export const DAppBlock = ({
               icon: (
                 <img
                   className="dapp-dropdown-item-icon"
-                  src="rabby-internal://assets/icons/sidebar-context-menu/icon-home.svg"
+                  src="lux-internal://assets/icons/sidebar-context-menu/icon-home.svg"
                 />
               ),
             },
@@ -164,7 +164,7 @@ export const DAppBlock = ({
               icon: (
                 <img
                   className="dapp-dropdown-item-icon"
-                  src="rabby-internal://assets/icons/sidebar-context-menu/icon-trash.svg"
+                  src="lux-internal://assets/icons/sidebar-context-menu/icon-trash.svg"
                 />
               ),
             },
@@ -212,7 +212,7 @@ export const DAppBlock = ({
             className={clsx('menu-entry', dapp.isPinned && 'is-pinned')}
             style={{
               // todo
-              backgroundImage: `url(rabby-internal://assets/icons/internal-homepage/${
+              backgroundImage: `url(lux-internal://assets/icons/internal-homepage/${
                 dapp.isPinned ? 'icon-pin-fill.svg' : 'icon-pin.svg'
               })`,
             }}

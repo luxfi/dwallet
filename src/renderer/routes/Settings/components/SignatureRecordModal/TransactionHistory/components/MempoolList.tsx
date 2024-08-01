@@ -6,8 +6,7 @@ import { Spin } from 'antd';
 import BigNumber from 'bignumber.js';
 import styled from 'styled-components';
 
-const IconChecked =
-  'rabby-internal://assets/icons/signature-record/checked.svg';
+const IconChecked = 'lux-internal://assets/icons/signature-record/checked.svg';
 
 const Wrapper = styled.div`
   min-width: 168px;

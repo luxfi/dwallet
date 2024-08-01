@@ -304,7 +304,7 @@ export const NFTTable = ({
               <TipsWrapper hoverTips="NFT value not included in the net worth of this protocol">
                 <img
                   className="w-14 h-14 ml-4"
-                  src="rabby-internal://assets/icons/home/info.svg"
+                  src="lux-internal://assets/icons/home/info.svg"
                 />
               </TipsWrapper>
             </Col>

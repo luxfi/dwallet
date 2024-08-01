@@ -86,7 +86,7 @@ export const useBTC = () => {
     wrapped_token_id: 'btc',
     name: 'Bitcoin',
     native_token_id: 'btc',
-    logo_url: 'rabby-internal://assets/icons/bundle/btc-chain.svg',
+    logo_url: 'lux-internal://assets/icons/bundle/btc-chain.svg',
   } as DisplayChainWithWhiteLogo & {
     usd_value: number;
   };

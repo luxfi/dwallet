@@ -103,7 +103,7 @@ export const SafeModalContent: React.FC<Props> = ({ onSuccess }) => {
     >
       <img
         className="w-[80px] h-[80px] mb-[40px] block mx-auto"
-        src="rabby-internal://assets/icons/walletlogo/gnosis.svg"
+        src="lux-internal://assets/icons/walletlogo/gnosis.svg"
         alt=""
       />
       <Form.Item

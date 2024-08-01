@@ -87,7 +87,7 @@ export const AccountItem: React.FC<Props> = ({
             'opacity-0 group-hover:opacity-80 cursor-pointer'
           )}
         >
-          <img src="rabby-internal://assets/icons/bundle/trash.svg" />
+          <img src="lux-internal://assets/icons/bundle/trash.svg" />
         </div>
       )}
 
@@ -105,7 +105,7 @@ export const AccountItem: React.FC<Props> = ({
         <div className="mr-[15px]">
           {checked ? (
             <TipsWrapper hoverTips="Remove from bundle">
-              <img src="rabby-internal://assets/icons/bundle/checked.svg" />
+              <img src="lux-internal://assets/icons/bundle/checked.svg" />
             </TipsWrapper>
           ) : (
             <TipsWrapper
@@ -143,7 +143,7 @@ export const AccountItem: React.FC<Props> = ({
               >
                 <img
                   className="w-[14px]"
-                  src="rabby-internal://assets/icons/address-management/copy-white.svg"
+                  src="lux-internal://assets/icons/address-management/copy-white.svg"
                 />
               </div>
             </TipsWrapper>

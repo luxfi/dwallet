@@ -49,7 +49,7 @@ const Container = ({ token, handleReceiveClick, onCancel }: tokenContainer) => {
   const [, setVisibleTokenList] = useAtom(visibleTokenListAtom);
   const chainItem = getChain(token?.chain);
   const chainLogo =
-    chainItem?.logo || 'rabby-internal://assets/icons/common/token-default.svg';
+    chainItem?.logo || 'lux-internal://assets/icons/common/token-default.svg';
   const isNativeToken = chainItem?.nativeTokenAddress === token?.id;
   const tokenAddrDisplay = isNativeToken
     ? token?.symbol
@@ -155,7 +155,7 @@ const Container = ({ token, handleReceiveClick, onCancel }: tokenContainer) => {
         <img
           src={
             token.logo_url ||
-            'rabby-internal://assets/icons/common/token-default.svg'
+            'lux-internal://assets/icons/common/token-default.svg'
           }
           className="w-[24px] rounded-full"
         />

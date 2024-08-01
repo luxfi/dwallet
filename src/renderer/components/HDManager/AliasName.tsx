@@ -89,7 +89,7 @@ export const AliasName: React.FC<Props> = ({
           />
           <img
             className="icon"
-            src="rabby-internal://assets/icons/hd-manager/check-green.svg"
+            src="lux-internal://assets/icons/hd-manager/check-green.svg"
           />
         </div>
       ) : (
@@ -97,7 +97,7 @@ export const AliasName: React.FC<Props> = ({
           <span className="text">{value}</span>
           <img
             className="icon"
-            src="rabby-internal://assets/icons/hd-manager/pen.svg"
+            src="lux-internal://assets/icons/hd-manager/pen.svg"
           />
         </div>
       )}

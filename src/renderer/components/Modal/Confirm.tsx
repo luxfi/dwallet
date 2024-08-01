@@ -16,7 +16,7 @@ export const ModalConfirm = ({
     closeIcon: (
       <img
         className="icon close"
-        src="rabby-internal://assets/icons/modal/close.svg"
+        src="lux-internal://assets/icons/modal/close.svg"
       />
     ),
     className: clsx(styles.confirm, className),
@@ -48,7 +48,7 @@ export function ModalConfirmInSettings({
     closeIcon: (
       <img
         className="icon close"
-        src="rabby-internal://assets/icons/modal/close.svg"
+        src="lux-internal://assets/icons/modal/close.svg"
       />
     ),
     closable: true,

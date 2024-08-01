@@ -111,13 +111,13 @@ export function MainWindowSettings() {
                   requestLockWallet();
                 }
               }}
-              icon="rabby-internal://assets/icons/mainwin-settings/icon-lock-wallet.svg"
+              icon="lux-internal://assets/icons/mainwin-settings/icon-lock-wallet.svg"
             >
               <img src={IconChevronRight} />
             </ItemAction>
             <ItemAction
               name="Signature Record"
-              icon="rabby-internal://assets/icons/mainwin-settings/icon-signature-record.svg"
+              icon="lux-internal://assets/icons/mainwin-settings/icon-signature-record.svg"
               onClick={() => {
                 setIsShowSignatureRecordModal(true);
               }}
@@ -129,7 +129,7 @@ export function MainWindowSettings() {
               onClick={() => {
                 setIsManageAddressModal(true);
               }}
-              icon="rabby-internal://assets/icons/mainwin-settings/icon-manage-address.svg"
+              icon="lux-internal://assets/icons/mainwin-settings/icon-manage-address.svg"
             >
               <img src={IconChevronRight} />
             </ItemAction>
@@ -162,7 +162,7 @@ export function MainWindowSettings() {
                     </Tooltip>
                   </>
                 }
-                icon="rabby-internal://assets/icons/mainwin-settings/content-protection.svg"
+                icon="lux-internal://assets/icons/mainwin-settings/content-protection.svg"
                 onChange={(nextEnabled: boolean) => {
                   Modal.confirm({
                     title: 'Restart Confirmation',
@@ -197,7 +197,7 @@ export function MainWindowSettings() {
                   </div>
                 </>
               }
-              icon="rabby-internal://assets/icons/send-token/whitelist.svg"
+              icon="lux-internal://assets/icons/send-token/whitelist.svg"
               onChange={(nextEnabled: boolean) => {
                 ModalConfirmInSettings({
                   height: 230,
@@ -227,7 +227,7 @@ export function MainWindowSettings() {
                   </div>
                 </>
               }
-              icon="rabby-internal://assets/icons/mainwin-settings/icon-testnet.svg"
+              icon="lux-internal://assets/icons/mainwin-settings/icon-testnet.svg"
               onChange={(nextEnabled: boolean) => {
                 setIsShowTestnet(nextEnabled);
               }}
@@ -237,7 +237,7 @@ export function MainWindowSettings() {
               onClick={() => {
                 setIsShowCustomRPCModal(true);
               }}
-              icon="rabby-internal://assets/icons/mainwin-settings/icon-custom-rpc.svg"
+              icon="lux-internal://assets/icons/mainwin-settings/icon-custom-rpc.svg"
             >
               <img src={IconChevronRight} />
             </ItemAction>
@@ -246,7 +246,7 @@ export function MainWindowSettings() {
               onClick={() => {
                 setIsShowManagePassword(true);
               }}
-              icon="rabby-internal://assets/icons/mainwin-settings/icon-manage-password.svg"
+              icon="lux-internal://assets/icons/mainwin-settings/icon-manage-password.svg"
             >
               <img src={IconChevronRight} />
             </ItemAction>
@@ -265,7 +265,7 @@ export function MainWindowSettings() {
               onClick={() => {
                 setIsSettingProxy(true);
               }}
-              icon="rabby-internal://assets/icons/mainwin-settings/proxy.svg"
+              icon="lux-internal://assets/icons/mainwin-settings/proxy.svg"
             >
               <img src={IconChevronRight} />
             </ItemAction>
@@ -285,7 +285,7 @@ export function MainWindowSettings() {
                   </div>
                 </>
               }
-              icon="rabby-internal://assets/icons/mainwin-settings/icon-dapp.svg"
+              icon="lux-internal://assets/icons/mainwin-settings/icon-dapp.svg"
               onChange={(nextEnabled: boolean) => {
                 const keyAction = `${nextEnabled ? 'enable' : 'disable'}`;
 
@@ -310,7 +310,7 @@ export function MainWindowSettings() {
               onClick={() => {
                 setIsShowingClearPendingModal(true);
               }}
-              icon="rabby-internal://assets/icons/mainwin-settings/icon-clear.svg"
+              icon="lux-internal://assets/icons/mainwin-settings/icon-clear.svg"
             >
               <img src={IconChevronRight} />
             </ItemAction>
@@ -330,7 +330,7 @@ export function MainWindowSettings() {
                   </div>
                 </>
               }
-              icon="rabby-internal://assets/icons/mainwin-settings/icon-dapp-zoom.svg"
+              icon="lux-internal://assets/icons/mainwin-settings/icon-dapp-zoom.svg"
               onChange={(nextEnabled: boolean) => {
                 if (nextEnabled) {
                   adjustDappViewZoomPercent(
@@ -353,7 +353,7 @@ export function MainWindowSettings() {
                 onClick={() => {
                   nav('/mainwin/settings/developer');
                 }}
-                icon="rabby-internal://assets/icons/developer-kits/entry.svg"
+                icon="lux-internal://assets/icons/developer-kits/entry.svg"
               >
                 <img src={IconChevronRight} />
               </ItemAction>
@@ -364,7 +364,7 @@ export function MainWindowSettings() {
                 onClick={() => {
                   nav('/mainwin/settings/debug');
                 }}
-                icon="rabby-internal://assets/icons/developer-kits/entry.svg"
+                icon="lux-internal://assets/icons/developer-kits/entry.svg"
               >
                 <img src={IconChevronRight} />
               </ItemAction>
@@ -372,14 +372,14 @@ export function MainWindowSettings() {
             <ItemLink
               name="Privacy Policy"
               link="https://rabby.io/docs/privacy"
-              icon="rabby-internal://assets/icons/mainwin-settings/privacy-policy.svg"
+              icon="lux-internal://assets/icons/mainwin-settings/privacy-policy.svg"
             />
             <ItemAction
               name="Supported Chains"
               onClick={() => {
                 setShowSupportedChains(true);
               }}
-              icon="rabby-internal://assets/icons/mainwin-settings/supported-chains.svg"
+              icon="lux-internal://assets/icons/mainwin-settings/supported-chains.svg"
             >
               <span className="mr-12 text-14 font-medium">
                 {CHAINS_TOTAL_COUNT}
@@ -388,14 +388,14 @@ export function MainWindowSettings() {
             </ItemAction>
             <ItemText
               name="Follow Us"
-              icon="rabby-internal://assets/icons/mainwin-settings/followus.svg"
+              icon="lux-internal://assets/icons/mainwin-settings/followus.svg"
             >
               <ImageAsLink
                 altName="Twitter"
                 className="cursor-pointer w-[16px] h-[16px] ml-0"
                 link="https://twitter.com/Rabby_io"
-                iconURL="rabby-internal://assets/icons/mainwin-settings/followus-x.svg"
-                hoverIconURL="rabby-internal://assets/icons/mainwin-settings/followus-x-hover.svg"
+                iconURL="lux-internal://assets/icons/mainwin-settings/followus-x.svg"
+                hoverIconURL="lux-internal://assets/icons/mainwin-settings/followus-x-hover.svg"
                 tooltipProps={{ placement: 'top' }}
               />
 
@@ -403,8 +403,8 @@ export function MainWindowSettings() {
                 altName="Discord"
                 className="cursor-pointer w-[16px] h-[16px] ml-[16px]"
                 link="https://discord.gg/seFBCWmUre"
-                iconURL="rabby-internal://assets/icons/mainwin-settings/followus-discord.svg"
-                hoverIconURL="rabby-internal://assets/icons/mainwin-settings/followus-discord-hover.svg"
+                iconURL="lux-internal://assets/icons/mainwin-settings/followus-discord.svg"
+                hoverIconURL="lux-internal://assets/icons/mainwin-settings/followus-discord-hover.svg"
                 tooltipProps={{ placement: 'left' }}
               />
             </ItemText>
@@ -418,7 +418,7 @@ export function MainWindowSettings() {
           className="cursor-pointer opacity-60 hover:opacity-100"
           link="https://rabby.io/"
           disableTooltip
-          iconURL="rabby-internal://assets/icons/mainwin-settings/footer-logo.svg"
+          iconURL="lux-internal://assets/icons/mainwin-settings/footer-logo.svg"
         />
       </div>
 

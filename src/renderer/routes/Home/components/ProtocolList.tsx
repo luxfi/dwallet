@@ -113,7 +113,7 @@ const ProtocolList = ({
               className={classNames('icon-triangle', {
                 flip: protocolHidden.isExpand,
               })}
-              src="rabby-internal://assets/icons/home/triange.svg"
+              src="lux-internal://assets/icons/home/triange.svg"
             />
           </div>
         </Expand>

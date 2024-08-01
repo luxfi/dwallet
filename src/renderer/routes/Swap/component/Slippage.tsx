@@ -178,7 +178,7 @@ export const Slippage = memo((props: SlippageProps) => {
             {slippageDisplay}%
           </span>
           <img
-            src="rabby-internal://assets/icons/swap/arrow-top.svg"
+            src="lux-internal://assets/icons/swap/arrow-top.svg"
             className={clsx(
               'inline-block w-14 h-[15px]',
               !slippageOpen && 'transform rotate-180'

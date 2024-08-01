@@ -23,7 +23,7 @@ export const SuccessContent: React.FC<Props> = ({
       <div className={styles.container}>
         <div className={styles.iconWrap}>
           <img
-            src="rabby-internal://assets/icons/import/firework.svg"
+            src="lux-internal://assets/icons/import/firework.svg"
             alt="successful"
             className={styles.icon}
           />

@@ -18,8 +18,8 @@ export interface Props {
   networkId: string;
 }
 
-const IconChecked = 'rabby-internal://assets/icons/queue/address-checked.svg';
-const IconUnCheck = 'rabby-internal://assets/icons/queue/address-uncheck.svg';
+const IconChecked = 'lux-internal://assets/icons/queue/address-checked.svg';
+const IconUnCheck = 'lux-internal://assets/icons/queue/address-uncheck.svg';
 
 export const AddressItem: React.FC<Props> = ({
   data,

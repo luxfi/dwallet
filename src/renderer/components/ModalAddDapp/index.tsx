@@ -70,13 +70,13 @@ export function AddDapp({
                 {isActive ? (
                   <>
                     <img
-                      src="rabby-internal://assets/icons/add-dapp/icon-tab-border.svg"
+                      src="lux-internal://assets/icons/add-dapp/icon-tab-border.svg"
                       alt=""
                       className={styles.before}
                     />
                     {tab.title}
                     <img
-                      src="rabby-internal://assets/icons/add-dapp/icon-tab-border.svg"
+                      src="lux-internal://assets/icons/add-dapp/icon-tab-border.svg"
                       alt=""
                       className={styles.after}
                     />

@@ -373,7 +373,7 @@ const Home = () => {
                             await copyText(currentAccount.address);
                           }}
                           className="icon"
-                          src="rabby-internal://assets/icons/home/copy.svg"
+                          src="lux-internal://assets/icons/home/copy.svg"
                         />
                       </TipsWrapper>
                     </span>
@@ -390,7 +390,7 @@ const Home = () => {
                       <TipsWrapper hoverTips="Address Detail">
                         <img
                           className="icon"
-                          src="rabby-internal://assets/icons/home/info.svg"
+                          src="lux-internal://assets/icons/home/info.svg"
                         />
                       </TipsWrapper>
                     </span>

@@ -15,7 +15,7 @@ import styles from '../index.module.less';
 import { useTokenAction } from '../../TokenActionModal/TokenActionModal';
 import ModalPreviewNFTItem from '../../ModalPreviewNFTItem';
 
-const IconUnknown = 'rabby-internal://assets/icons/common/token-default.svg';
+const IconUnknown = 'lux-internal://assets/icons/common/token-default.svg';
 
 type TxChangeProps = {
   data: TxDisplayItem | TxHistoryItem;

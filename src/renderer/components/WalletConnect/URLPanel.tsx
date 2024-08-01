@@ -26,14 +26,14 @@ export const URLPanel: React.FC<Props> = ({ uri, onReload }) => {
             onClick={onReload}
             type="link"
             icon={
-              <img src="rabby-internal://assets/icons/walletconnect/refresh.svg" />
+              <img src="lux-internal://assets/icons/walletconnect/refresh.svg" />
             }
           />
           <Button
             onClick={onCopy}
             type="link"
             icon={
-              <img src="rabby-internal://assets/icons/walletconnect/copy.svg" />
+              <img src="lux-internal://assets/icons/walletconnect/copy.svg" />
             }
           />
         </div>

@@ -183,7 +183,7 @@ const PortfolioView = ({
       <PortfolioWrapper className="empty">
         <img
           className="icon-empty"
-          src="rabby-internal://assets/icons/home/asset-empty.svg"
+          src="lux-internal://assets/icons/home/asset-empty.svg"
         />
         <p className="text-empty">No assets</p>
       </PortfolioWrapper>

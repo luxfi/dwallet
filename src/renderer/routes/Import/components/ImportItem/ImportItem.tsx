@@ -19,14 +19,14 @@ const ImportItem: React.FC<Props> = ({ title, path }) => {
       }}
     >
       <img
-        src="rabby-internal://assets/icons/import/key.svg"
+        src="lux-internal://assets/icons/import/key.svg"
         alt="key"
         className={styles.icon}
       />
       <div className={styles.title}>{title}</div>
 
       <img
-        src="rabby-internal://assets/icons/import/arrow-right.svg"
+        src="lux-internal://assets/icons/import/arrow-right.svg"
         alt="arrow-right"
         className={styles.icon}
       />

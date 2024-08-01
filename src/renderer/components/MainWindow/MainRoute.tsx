@@ -87,7 +87,7 @@ export default function MainWindowRoute({
           >
             {matchedData?.backable ? (
               <img
-                src="rabby-internal://assets/icons/common/back.svg"
+                src="lux-internal://assets/icons/common/back.svg"
                 className={classNames(styles.pageBack, 'icon-back')}
                 alt=""
                 onClick={() => {

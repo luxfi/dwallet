@@ -32,7 +32,7 @@ export const AutoUpdate = ({ isFold, className }: AutoUpdateProps) => {
       >
         <div className="auto-update is-downloading">
           <img
-            src="rabby-internal://assets/icons/update/downloading.svg"
+            src="lux-internal://assets/icons/update/downloading.svg"
             className="auto-update-icon is-animate"
             alt=""
           />
@@ -67,7 +67,7 @@ export const AutoUpdate = ({ isFold, className }: AutoUpdateProps) => {
           }}
         >
           <img
-            src="rabby-internal://assets/icons/update/install.svg"
+            src="lux-internal://assets/icons/update/install.svg"
             className="auto-update-icon"
             alt=""
           />
@@ -92,7 +92,7 @@ export const AutoUpdate = ({ isFold, className }: AutoUpdateProps) => {
         }}
       >
         <img
-          src="rabby-internal://assets/icons/update/download.svg"
+          src="lux-internal://assets/icons/update/download.svg"
           className="auto-update-icon"
           alt=""
         />

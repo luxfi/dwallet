@@ -97,7 +97,7 @@ export const AccountDetail: React.FC<Props> = ({
           <img
             className={styles.copy}
             onClick={onCopy}
-            src="rabby-internal://assets/icons/address-management/copy-white.svg"
+            src="lux-internal://assets/icons/address-management/copy-white.svg"
           />
         </TipsWrapper>
       </div>
@@ -123,7 +123,7 @@ export const AccountDetail: React.FC<Props> = ({
               <span className={styles.addressNote}>{aliasInput}</span>
               <img
                 className={styles.icon}
-                src="rabby-internal://assets/icons/address-management/pen.svg"
+                src="lux-internal://assets/icons/address-management/pen.svg"
               />
             </div>
           )}
@@ -213,7 +213,7 @@ export const AccountDetail: React.FC<Props> = ({
           className={styles.deleteAddress}
           headline="Delete Address"
         >
-          <img src="rabby-internal://assets/icons/address-management/next.svg" />
+          <img src="lux-internal://assets/icons/address-management/next.svg" />
         </AccountDetailItem>
       </DeleteWrapper>
     </div>

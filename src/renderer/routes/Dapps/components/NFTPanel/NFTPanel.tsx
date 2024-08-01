@@ -88,11 +88,11 @@ export const NFTPanel = () => {
             'bg-[#2D313E] bg-no-repeat bg-cover bg-right'
           )}
           style={{
-            backgroundImage: `url(rabby-internal://assets/icons/mint/bg-arrow-right.svg)`,
+            backgroundImage: `url(lux-internal://assets/icons/mint/bg-arrow-right.svg)`,
           }}
         >
           <img
-            src="rabby-internal://assets/icons/mint/nft.png"
+            src="lux-internal://assets/icons/mint/nft.png"
             className={classNames(
               'rounded-[4px]',
               'object-cover',
@@ -165,7 +165,7 @@ export const NFTPanel = () => {
           }}
         >
           <img
-            src="rabby-internal://assets/icons/mint/mint-close.svg"
+            src="lux-internal://assets/icons/mint/mint-close.svg"
             className="w-24 h-24"
           />
         </div>
@@ -184,8 +184,8 @@ export const NFTPanel = () => {
           }}
           src={
             mintedData
-              ? 'rabby-internal://assets/icons/mint/mint-badge.png'
-              : 'rabby-internal://assets/icons/mint/unmint-badge.png'
+              ? 'lux-internal://assets/icons/mint/mint-badge.png'
+              : 'lux-internal://assets/icons/mint/unmint-badge.png'
           }
           className={classNames(
             styles.shadow,

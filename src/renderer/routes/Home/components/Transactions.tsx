@@ -161,7 +161,7 @@ const getTxInfoFromExplain = (explain: TransactionGroup['explain']) => {
 const Empty = ({ text }: { text: string }) => (
   <EmptyView>
     <img
-      src="rabby-internal://assets/icons/home/tx-empty.png"
+      src="lux-internal://assets/icons/home/tx-empty.png"
       className="icon-empty"
     />
     <p>{text}</p>

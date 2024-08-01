@@ -161,7 +161,7 @@ function SelectDeviceModal() {
                       <div className={classNames(styles.deviceInfo, 'flex')}>
                         <img
                           className={styles.icon}
-                          src="rabby-internal://assets/icons/select-devices/device.svg"
+                          src="lux-internal://assets/icons/select-devices/device.svg"
                         />
                         <span>{d.name}</span>
                       </div>
@@ -177,7 +177,7 @@ function SelectDeviceModal() {
               <div className={styles.error}>
                 <img
                   className={styles.icon}
-                  src="rabby-internal://assets/icons/select-devices/warning.svg"
+                  src="lux-internal://assets/icons/select-devices/warning.svg"
                 />
                 <span className={styles.text}>
                   Hardware wallet not detected

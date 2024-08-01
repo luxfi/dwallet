@@ -14,15 +14,15 @@ export const SwitchAddress: React.FC = () => {
   const url = React.useMemo(() => {
     switch (account?.brandName) {
       case WALLET_BRAND_TYPES.METAMASK:
-        return 'rabby-internal:/assets/imgs/wallet/switch-address-metamask.png';
+        return 'lux-internal:/assets/imgs/wallet/switch-address-metamask.png';
       case WALLET_BRAND_TYPES.TP:
-        return 'rabby-internal:/assets/imgs/wallet/switch-address-tp.png';
+        return 'lux-internal:/assets/imgs/wallet/switch-address-tp.png';
       case WALLET_BRAND_TYPES.IMTOKEN:
-        return 'rabby-internal:/assets/imgs/wallet/switch-address-imtoken.png';
+        return 'lux-internal:/assets/imgs/wallet/switch-address-imtoken.png';
       case WALLET_BRAND_TYPES.TRUSTWALLET:
-        return 'rabby-internal:/assets/imgs/wallet/switch-address-trustwallet.png';
+        return 'lux-internal:/assets/imgs/wallet/switch-address-trustwallet.png';
       default:
-        return 'rabby-internal:/assets/imgs/wallet/switch-address-common.png';
+        return 'lux-internal:/assets/imgs/wallet/switch-address-common.png';
     }
   }, [account?.brandName]);
 

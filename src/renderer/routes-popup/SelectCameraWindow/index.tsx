@@ -165,7 +165,7 @@ function TipGoToGrantOnDarwin() {
             <div className={classNames(styles.step, styles.step1)}>
               <img
                 className="w-[380px]"
-                src="rabby-internal://assets/imgs/tip-grant-camera/macos-tip-step1.png"
+                src="lux-internal://assets/imgs/tip-grant-camera/macos-tip-step1.png"
               />
               <p className={styles.desc}>
                 {`1. Go to System Settings > Privacy & Security > Camera`}
@@ -173,12 +173,12 @@ function TipGoToGrantOnDarwin() {
             </div>
             <img
               className={styles.stepArrow}
-              src="rabby-internal://assets/imgs/tip-grant-camera/step-arrow.svg"
+              src="lux-internal://assets/imgs/tip-grant-camera/step-arrow.svg"
             />
             <div className={classNames(styles.step, styles.step2)}>
               <img
                 className="w-[440px]"
-                src="rabby-internal://assets/imgs/tip-grant-camera/macos-tip-step2.png"
+                src="lux-internal://assets/imgs/tip-grant-camera/macos-tip-step2.png"
               />
               <p className={styles.desc}>
                 2. Allow {APP_BRANDNAME} to access camera, restart the app
@@ -192,7 +192,7 @@ function TipGoToGrantOnDarwin() {
             <div className={classNames(styles.step, styles.step1)}>
               <img
                 className="w-[380px]"
-                src="rabby-internal://assets/imgs/tip-grant-camera/windows-tip-step1.png"
+                src="lux-internal://assets/imgs/tip-grant-camera/windows-tip-step1.png"
               />
               <p className={styles.desc}>
                 {`1. Go to System Settings > Privacy & Security > Camera`}
@@ -200,12 +200,12 @@ function TipGoToGrantOnDarwin() {
             </div>
             <img
               className={styles.stepArrow}
-              src="rabby-internal://assets/imgs/tip-grant-camera/step-arrow.svg"
+              src="lux-internal://assets/imgs/tip-grant-camera/step-arrow.svg"
             />
             <div className={classNames(styles.step, styles.step2)}>
               <img
                 className="w-[440px]"
-                src="rabby-internal://assets/imgs/tip-grant-camera/windows-tip-step2.png"
+                src="lux-internal://assets/imgs/tip-grant-camera/windows-tip-step2.png"
               />
               <p className={styles.desc}>
                 {`2. Turn on "Camera access", "Let apps access your camera", "Let desktop apps access your camera"`}
@@ -301,7 +301,7 @@ function SelectCameraModal() {
                           >
                             <img
                               className={classNames(styles.icon, 'mr-[8px]')}
-                              src="rabby-internal://assets/icons/select-camera/camera.svg"
+                              src="lux-internal://assets/icons/select-camera/camera.svg"
                             />
                             <span>{d.label}</span>
                           </div>
@@ -317,7 +317,7 @@ function SelectCameraModal() {
                   <div className={styles.error}>
                     <img
                       className={classNames(styles.icon, 'block')}
-                      src="rabby-internal://assets/icons/select-camera/no-camera.svg"
+                      src="lux-internal://assets/icons/select-camera/no-camera.svg"
                     />
                     <p className={styles.text}>Camera not found</p>
                   </div>

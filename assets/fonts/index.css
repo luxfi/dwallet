@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'SF Pro';
-  src: url('rabby-internal://assets/fonts/SF-Pro.ttf');
+  src: url('lux-internal://assets/fonts/SF-Pro.ttf');
   font-weight:normal;
 }
 @font-face {
   font-family: 'SF Pro';
-  src: url('rabby-internal://assets/fonts/SF-Pro-Text-Bold.otf');
+  src: url('lux-internal://assets/fonts/SF-Pro-Text-Bold.otf');
   font-weight: 700;
 }
 :root {

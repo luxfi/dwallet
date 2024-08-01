@@ -252,7 +252,7 @@ export const TransactionItem = ({
                       className={clsx('icon icon-action', {
                         'cursor-not-allowed': !canCancel,
                       })}
-                      src="rabby-internal://assets/icons/signature-record/speed-up.svg"
+                      src="lux-internal://assets/icons/signature-record/speed-up.svg"
                       onClick={handleClickSpeedUp}
                     />
                   </Tooltip>
@@ -262,7 +262,7 @@ export const TransactionItem = ({
                       className={clsx('icon icon-action', {
                         'cursor-not-allowed': !canCancel,
                       })}
-                      src="rabby-internal://assets/icons/signature-record/close.svg"
+                      src="lux-internal://assets/icons/signature-record/close.svg"
                       onClick={handleClickCancel}
                     />
                   </Tooltip>
@@ -338,7 +338,7 @@ export const TransactionItem = ({
               >
                 <img
                   className="icon icon-question-mark"
-                  src="rabby-internal://assets/icons/home/question.svg"
+                  src="lux-internal://assets/icons/home/question.svg"
                 />
               </Tooltip>
             </div>
@@ -365,7 +365,7 @@ export const TransactionItem = ({
                     )}
                   </div>
                   <img
-                    src="rabby-internal://assets/icons/home/tx-pending-1.svg"
+                    src="lux-internal://assets/icons/home/tx-pending-1.svg"
                     className="animate-spin"
                   />
                 </div>

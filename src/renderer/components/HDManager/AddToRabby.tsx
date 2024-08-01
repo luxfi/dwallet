@@ -46,12 +46,12 @@ export const AddToRabby: React.FC<Props> = ({ checked, onChange }) => {
             ) : checked ? (
               <img
                 className="icon"
-                src="rabby-internal://assets/icons/hd-manager/logo.svg"
+                src="lux-internal://assets/icons/hd-manager/logo.svg"
               />
             ) : (
               <img
                 className="icon"
-                src="rabby-internal://assets/icons/hd-manager/logo-white.svg"
+                src="lux-internal://assets/icons/hd-manager/logo-white.svg"
               />
             )}
           </div>

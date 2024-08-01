@@ -36,9 +36,7 @@ export const Empty = ({ className, title, desc, image, style }: EmptyProps) => {
     <EmptyWrapper className={className} style={style}>
       <img
         className="empty-image"
-        src={
-          image || 'rabby-internal://assets/icons/signature-record/empty.svg'
-        }
+        src={image || 'lux-internal://assets/icons/signature-record/empty.svg'}
         alt=""
       />
       <div className="empty-title">{title}</div>

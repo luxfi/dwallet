@@ -69,8 +69,8 @@ const CLOSABLE = INIT_QS.__webuiClosable === 'true';
 function filterFavIcon(url?: string, isActiveTab = false) {
   // homepage
   return isActiveTab
-    ? 'rabby-internal://assets/icons/internal-homepage/icon-home.svg'
-    : 'rabby-internal://assets/icons/internal-homepage/icon-home-blur.svg';
+    ? 'lux-internal://assets/icons/internal-homepage/icon-home.svg'
+    : 'lux-internal://assets/icons/internal-homepage/icon-home-blur.svg';
 }
 
 function filterClosable(url?: string, isClosable = CLOSABLE) {

@@ -22,12 +22,12 @@ export const RefreshButton: React.FC<Props> = ({ loading, onClick }) => {
         {loading ? (
           <div className="w-[20px] h-[20px] flex items-center justify-center">
             <img
-              src="rabby-internal://assets/icons/address-management/loading.svg"
+              src="lux-internal://assets/icons/address-management/loading.svg"
               className="w-[16px]"
             />
           </div>
         ) : (
-          <img src="rabby-internal://assets/icons/address-management/refresh.svg" />
+          <img src="lux-internal://assets/icons/address-management/refresh.svg" />
         )}
       </div>
     </Tooltip>

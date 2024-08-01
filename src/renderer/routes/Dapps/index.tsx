@@ -162,7 +162,7 @@ export default function DApps() {
     <div className={style.page}>
       <img
         className={style.addDapp}
-        src="rabby-internal://assets/icons/internal-homepage/icon-dapps-add.svg"
+        src="lux-internal://assets/icons/internal-homepage/icon-dapps-add.svg"
         alt=""
         onClick={() => {
           showMainwinPopupview({ type: 'dapps-management' });
@@ -173,7 +173,7 @@ export default function DApps() {
           <div className={style.desc}>
             <img
               className={style.icon}
-              src="rabby-internal://assets/icons/security-check/icon-shield-gray.svg"
+              src="lux-internal://assets/icons/security-check/icon-shield-gray.svg"
             />
             Dapp Security Engine, provided by Rabby Desktop, offers better
             security for your Dapp use.
@@ -190,7 +190,7 @@ export default function DApps() {
               suffix={
                 <img
                   className="cursor-pointer w-[18px] h-[18px]"
-                  src="rabby-internal://assets/icons/add-dapp/icon-search.svg"
+                  src="lux-internal://assets/icons/add-dapp/icon-search.svg"
                 />
               }
             />
@@ -219,7 +219,7 @@ export default function DApps() {
                       icon: (
                         <img
                           className="dapp-dropdown-item-icon"
-                          src="rabby-internal://assets/icons/sidebar-context-menu/icon-disconnect-all.svg"
+                          src="lux-internal://assets/icons/sidebar-context-menu/icon-disconnect-all.svg"
                         />
                       ),
                     },
@@ -230,7 +230,7 @@ export default function DApps() {
                       icon: (
                         <img
                           className="dapp-dropdown-item-icon"
-                          src="rabby-internal://assets/icons/sidebar-context-menu/icon-close-all.svg"
+                          src="lux-internal://assets/icons/sidebar-context-menu/icon-close-all.svg"
                         />
                       ),
                     },
@@ -239,7 +239,7 @@ export default function DApps() {
               }
             >
               <img
-                src="rabby-internal://assets/icons/dapps/icon-more.svg"
+                src="lux-internal://assets/icons/dapps/icon-more.svg"
                 className={style.extraMore}
               />
             </Dropdown>

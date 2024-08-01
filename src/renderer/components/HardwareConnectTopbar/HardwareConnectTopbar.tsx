@@ -19,7 +19,7 @@ export const HardwareConnectTopbar: React.FC = () => {
         <div className={styles.Button} onClick={winButtonActions.onCloseButton}>
           <img
             alt="close"
-            src="rabby-internal://assets/icons/top-bar/close.svg"
+            src="lux-internal://assets/icons/top-bar/close.svg"
           />
         </div>
       </section>

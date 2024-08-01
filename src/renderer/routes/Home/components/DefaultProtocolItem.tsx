@@ -326,7 +326,7 @@ const DefaultProtocolItem = ({
               <span className="protocol-name">{protocol.name}</span>
               {!hasBinded && (
                 <img
-                  src="rabby-internal://assets/icons/home/dapp-relate.svg"
+                  src="lux-internal://assets/icons/home/dapp-relate.svg"
                   className="icon-relate"
                 />
               )}
@@ -353,7 +353,7 @@ const DefaultProtocolItem = ({
                 >
                   <img
                     className="icon-unbind"
-                    src="rabby-internal://assets/icons/home/bind-edit.svg"
+                    src="lux-internal://assets/icons/home/bind-edit.svg"
                   />
                   Edit bound Dapp
                 </RemoveBinding>
@@ -385,7 +385,7 @@ const DefaultProtocolItem = ({
             >
               <img
                 className="cursor-pointer"
-                src="rabby-internal://assets/icons/bundle/help.svg"
+                src="lux-internal://assets/icons/bundle/help.svg"
               />
             </Tooltip>
           )}

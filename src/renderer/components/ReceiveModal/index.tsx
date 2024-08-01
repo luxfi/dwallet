@@ -81,14 +81,14 @@ const ReceiveContent = ({ onCancel, chain, token }: ReceiveContentProps) => {
       closeIcon: (
         <img
           className="icon close"
-          src="rabby-internal://assets/icons/modal/close.svg"
+          src="lux-internal://assets/icons/modal/close.svg"
         />
       ),
       content: (
         <div className={styles.confirmModalContent}>
           <img
             className={styles.confirmModalIcon}
-            src="rabby-internal://assets/icons/modal/warning.svg"
+            src="lux-internal://assets/icons/modal/warning.svg"
           />
           <div>
             This is a watch-only address.
@@ -159,7 +159,7 @@ const ReceiveContent = ({ onCancel, chain, token }: ReceiveContentProps) => {
               copy(currentAccount?.address);
             }}
           >
-            <img src="rabby-internal://assets/icons/receive/copy.svg" alt="" />
+            <img src="lux-internal://assets/icons/receive/copy.svg" alt="" />
             Copy address
           </Button>
         </TipsWrapper>

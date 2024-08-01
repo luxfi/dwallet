@@ -57,13 +57,13 @@ export const MintedSuccessful: React.FC<Partial<MintedData>> = ({
       >
         <LabelButton
           to={openSeaUrl}
-          icon="rabby-internal://assets/icons/mint/opensea.svg"
+          icon="lux-internal://assets/icons/mint/opensea.svg"
           label="OpenSea"
         />
 
         <LabelButton
           to="https://discord.com/invite/aDpDE7DNQe"
-          icon="rabby-internal://assets/icons/mint/discord.svg"
+          icon="lux-internal://assets/icons/mint/discord.svg"
           label="Discord"
         />
       </section>

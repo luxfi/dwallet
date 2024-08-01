@@ -873,7 +873,7 @@ export function getBuiltinViewType(urlInfo: URL | Location) {
     RABBY_INTERNAL_PROTOCOL === urlInfo.protocol ||
     urlInfo.href.startsWith(RABBY_LOCAL_URLBASE)
   ) {
-    return 'rabby-internal';
+    return 'lux-internal';
   }
 
   return false;

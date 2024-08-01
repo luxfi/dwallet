@@ -41,7 +41,7 @@ export default React.memo((props: { data: PortfolioItem[] }) => {
                 Health Rate
                 <Tooltip title="Your assests will be liquidated if the health factor is less than or equal to 1">
                   <img
-                    src="rabby-internal://assets/icons/home/info.svg"
+                    src="lux-internal://assets/icons/home/info.svg"
                     alt=""
                     className="icon-info"
                   />

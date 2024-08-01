@@ -73,7 +73,7 @@ export const SidebarContextMenu = () => {
             icon: (
               <img
                 className={styles['dapp-dropdown-item-icon']}
-                src="rabby-internal://assets/icons/sidebar-context-menu/icon-unpin.svg"
+                src="lux-internal://assets/icons/sidebar-context-menu/icon-unpin.svg"
               />
             ),
           }
@@ -84,7 +84,7 @@ export const SidebarContextMenu = () => {
             icon: (
               <img
                 className={styles['dapp-dropdown-item-icon']}
-                src="rabby-internal://assets/icons/sidebar-context-menu/icon-pin.svg"
+                src="lux-internal://assets/icons/sidebar-context-menu/icon-pin.svg"
               />
             ),
           },
@@ -95,7 +95,7 @@ export const SidebarContextMenu = () => {
         icon: (
           <img
             className={styles['dapp-dropdown-item-icon']}
-            src="rabby-internal://assets/icons/sidebar-context-menu/icon-edit.svg"
+            src="lux-internal://assets/icons/sidebar-context-menu/icon-edit.svg"
           />
         ),
       },
@@ -106,7 +106,7 @@ export const SidebarContextMenu = () => {
         icon: (
           <img
             className={styles['dapp-dropdown-item-icon']}
-            src="rabby-internal://assets/icons/sidebar-context-menu/icon-home.svg"
+            src="lux-internal://assets/icons/sidebar-context-menu/icon-home.svg"
           />
         ),
       },
@@ -117,7 +117,7 @@ export const SidebarContextMenu = () => {
         icon: (
           <img
             className={styles['dapp-dropdown-item-icon']}
-            src="rabby-internal://assets/icons/sidebar-context-menu/icon-disconnect.svg"
+            src="lux-internal://assets/icons/sidebar-context-menu/icon-disconnect.svg"
           />
         ),
       },
@@ -132,7 +132,7 @@ export const SidebarContextMenu = () => {
             icon: (
               <img
                 className={styles['dapp-dropdown-item-icon']}
-                src="rabby-internal://assets/icons/sidebar-context-menu/icon-trash.svg"
+                src="lux-internal://assets/icons/sidebar-context-menu/icon-trash.svg"
               />
             ),
           }
@@ -143,7 +143,7 @@ export const SidebarContextMenu = () => {
             icon: (
               <img
                 className={styles['dapp-dropdown-item-icon']}
-                src="rabby-internal://assets/icons/sidebar-context-menu/icon-close.svg"
+                src="lux-internal://assets/icons/sidebar-context-menu/icon-close.svg"
               />
             ),
           },
@@ -158,7 +158,7 @@ export const SidebarContextMenu = () => {
         icon: (
           <img
             className={styles['dapp-dropdown-item-icon']}
-            src="rabby-internal://assets/icons/sidebar-context-menu/icon-disconnect-all.svg"
+            src="lux-internal://assets/icons/sidebar-context-menu/icon-disconnect-all.svg"
           />
         ),
       },
@@ -169,7 +169,7 @@ export const SidebarContextMenu = () => {
         icon: (
           <img
             className={styles['dapp-dropdown-item-icon']}
-            src="rabby-internal://assets/icons/sidebar-context-menu/icon-close-all.svg"
+            src="lux-internal://assets/icons/sidebar-context-menu/icon-close-all.svg"
           />
         ),
       },

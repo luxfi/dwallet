@@ -49,7 +49,7 @@ function UpdateAndVerifyButton({
         )}
       >
         {/* <img
-          src="rabby-internal://assets/icons/update/downloading.svg"
+          src="lux-internal://assets/icons/update/downloading.svg"
           className={classNames(styles.btnIcon, styles['is-animate'])}
           alt=""
         /> */}
@@ -86,7 +86,7 @@ function UpdateAndVerifyButton({
           }}
         >
           {/* <img
-            src="rabby-internal://assets/icons/update/processing.svg"
+            src="lux-internal://assets/icons/update/processing.svg"
             className={classNames(
               styles.btnIcon,
               stepVerification === 'process' && styles['is-animate']
@@ -115,7 +115,7 @@ function UpdateAndVerifyButton({
         }}
       >
         {/* <img
-          src="rabby-internal://assets/icons/update/install.svg"
+          src="lux-internal://assets/icons/update/install.svg"
           className={classNames(styles.btnIcon)}
           alt=""
         /> */}
@@ -138,7 +138,7 @@ function UpdateAndVerifyButton({
       }}
     >
       {/* <img
-        src="rabby-internal://assets/icons/update/download.svg"
+        src="lux-internal://assets/icons/update/download.svg"
         className={classNames(styles.btnIcon)}
         alt=""
       /> */}

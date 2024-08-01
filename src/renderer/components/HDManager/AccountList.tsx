@@ -210,7 +210,7 @@ export const AccountList: React.FC<Props> = ({
             <td>
               <img
                 className="icon"
-                src="rabby-internal://assets/icons/hd-manager/arrow.svg"
+                src="lux-internal://assets/icons/hd-manager/arrow.svg"
               />
               <span>Click to get the information on-chain</span>
             </td>
@@ -259,7 +259,7 @@ export const AccountList: React.FC<Props> = ({
                   <img
                     onClick={() => copy(value.toLowerCase())}
                     className="copy-icon"
-                    src="rabby-internal://assets/icons/hd-manager/copy.svg"
+                    src="lux-internal://assets/icons/hd-manager/copy.svg"
                   />
                 </TipsWrapper>
               </div>

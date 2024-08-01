@@ -19,12 +19,12 @@ export default function GettingStarted() {
     <div className={styles['page-welcome']}>
       <div className={styles.container}>
         <img
-          src="rabby-internal://assets/icons/welcome/main-logo.png"
+          src="lux-internal://assets/icons/welcome/main-logo.png"
           alt=""
           className={styles.logo}
         />
         <img
-          src="rabby-internal://assets/icons/welcome/slogan.svg"
+          src="lux-internal://assets/icons/welcome/slogan.svg"
           alt=""
           className={styles.slogan}
         />

@@ -12,15 +12,15 @@ export const TxAvatar = memo(({ src, cateId, className }: TxAvatarProps) => {
       return src;
     }
     if (cateId === 'send') {
-      return 'rabby-internal://assets/icons/transaction/tx-send.svg';
+      return 'lux-internal://assets/icons/transaction/tx-send.svg';
     }
     if (cateId === 'receive') {
-      return 'rabby-internal://assets/icons/transaction/tx-receive.svg';
+      return 'lux-internal://assets/icons/transaction/tx-receive.svg';
     }
     if (cateId === 'cancel') {
-      return 'rabby-internal://assets/icons/transaction/tx-cancel.svg';
+      return 'lux-internal://assets/icons/transaction/tx-cancel.svg';
     }
-    return 'rabby-internal://assets/icons/transaction/tx-unknown.svg';
+    return 'lux-internal://assets/icons/transaction/tx-unknown.svg';
   }, [src, cateId]);
 
   return <img src={imgURL} alt="" className={className} />;

@@ -166,8 +166,7 @@ export function wrapUrlInImg(
       alt={alt || ''}
       onError={(ev) => {
         // @ts-ignore
-        ev.target.src =
-          'rabby-internal://assets/icons/common/token-default.svg';
+        ev.target.src = 'lux-internal://assets/icons/common/token-default.svg';
       }}
     />
   );
@@ -182,7 +181,7 @@ export const wrapUrlInImgOrDefault = (
     wrapUrlInImg(url, undefined, size, style)
   ) : (
     <img
-      src="rabby-internal://assets/icons/common/token-default.svg"
+      src="lux-internal://assets/icons/common/token-default.svg"
       style={{ ...style, width: size || 20, height: size || 20 }}
     />
   );

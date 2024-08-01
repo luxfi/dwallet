@@ -129,7 +129,7 @@ export const useBinance = () => {
     wrapped_token_id: Binance.cexName,
     name: Binance.cexName,
     native_token_id: Binance.cexName,
-    logo_url: 'rabby-internal://assets/icons/bundle/binance-chain.png',
+    logo_url: 'lux-internal://assets/icons/bundle/binance-chain.png',
   } as DisplayChainWithWhiteLogo & {
     usd_value: number;
   };
@@ -186,7 +186,7 @@ export const useBinance = () => {
       chain: Binance.cexName,
       name: Binance.cexName,
       site_url: '',
-      logo_url: 'rabby-internal://assets/icons/bundle/binance-chain.png',
+      logo_url: 'lux-internal://assets/icons/bundle/binance-chain.png',
       has_supported_portfolio: false,
       tvl: 0,
       portfolio_item_list: [...otherPortfolioList],

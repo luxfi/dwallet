@@ -207,7 +207,7 @@ firstValueFrom(fromMainSubject('userAppReady')).then(async () => {
         name: 'checkingViewSession',
       },
     ],
-    appInterpretors['rabby-internal:']
+    appInterpretors['lux-internal:']
   );
   registerSessionProtocol(
     [

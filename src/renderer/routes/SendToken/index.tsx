@@ -149,7 +149,7 @@ const SendTokenWrapper = styled.div`
     padding: 25px 16px 16px;
     position: relative;
     z-index: 1;
-    background: url('rabby-internal://assets/icons/send-token/contract-bg.svg');
+    background: url('lux-internal://assets/icons/send-token/contract-bg.svg');
     background-size: cover;
     .section-field {
       display: flex;
@@ -1000,7 +1000,7 @@ const SendTokenInner = () => {
                   {contactInfo && (
                     <>
                       <img
-                        src="rabby-internal://assets/icons/send-token/icon-edit.svg"
+                        src="lux-internal://assets/icons/send-token/icon-edit.svg"
                         className="icon icon-edit"
                       />
                       <span
@@ -1017,8 +1017,8 @@ const SendTokenInner = () => {
                 className="icon icon-contact"
                 src={
                   whitelistEnabled
-                    ? 'rabby-internal://assets/icons/send-token/whitelist.svg'
-                    : 'rabby-internal://assets/icons/send-token/contact.svg'
+                    ? 'lux-internal://assets/icons/send-token/whitelist.svg'
+                    : 'lux-internal://assets/icons/send-token/contact.svg'
                 }
                 onClick={handleListContact}
               />
@@ -1097,7 +1097,7 @@ const SendTokenInner = () => {
               )}
               {currentToken.amount > 0 && (
                 <MaxButton
-                  src="rabby-internal://assets/icons/send-token/max-button.svg"
+                  src="lux-internal://assets/icons/send-token/max-button.svg"
                   onClick={handleClickTokenBalance}
                 />
               )}
@@ -1138,7 +1138,7 @@ const SendTokenInner = () => {
                   <AddressViewer address={currentToken.id} />
                   <TipsWrapper hoverTips="Copy" clickTips="Copied">
                     <img
-                      src="rabby-internal://assets/icons/home/copy.svg"
+                      src="lux-internal://assets/icons/home/copy.svg"
                       className="icon icon-copy"
                       onClick={() => handleCopyContractAddress(currentToken.id)}
                     />
@@ -1182,10 +1182,10 @@ const SendTokenInner = () => {
                   <img
                     src={
                       whitelistAlertContent.success
-                        ? 'rabby-internal://assets/icons/send-token/icon-check.svg'
+                        ? 'lux-internal://assets/icons/send-token/icon-check.svg'
                         : temporaryGrant
-                        ? 'rabby-internal://assets/icons/send-token/temporary-grant-checkbox.svg'
-                        : 'rabby-internal://assets/icons/send-token/icon-uncheck.svg'
+                        ? 'lux-internal://assets/icons/send-token/temporary-grant-checkbox.svg'
+                        : 'lux-internal://assets/icons/send-token/icon-uncheck.svg'
                     }
                     className="icon icon-check inline-block relative -top-1"
                   />

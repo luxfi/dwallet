@@ -78,7 +78,7 @@ export const ModalConfirmAddToContacts = ({
       closeIcon={
         <img
           className="icon close"
-          src="rabby-internal://assets/icons/modal/close.svg"
+          src="lux-internal://assets/icons/modal/close.svg"
         />
       }
       closable={false}

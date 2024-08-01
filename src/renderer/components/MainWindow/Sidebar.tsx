@@ -41,18 +41,18 @@ const DividerSizes = {
 
 const Sidebar = styled.div`
   .${styles.menuFold} {
-    background: url('rabby-internal://assets/icons/mainwin-sidebar/arrow-left.svg')
+    background: url('lux-internal://assets/icons/mainwin-sidebar/arrow-left.svg')
       center / 20px no-repeat;
     &:hover {
-      background-image: url('rabby-internal://assets/icons/mainwin-sidebar/arrow-left-active.svg');
+      background-image: url('lux-internal://assets/icons/mainwin-sidebar/arrow-left-active.svg');
     }
   }
 
   &.${styles.isFold} {
     .${styles.menuFold} {
-      background-image: url('rabby-internal://assets/icons/mainwin-sidebar/arrow-right.svg');
+      background-image: url('lux-internal://assets/icons/mainwin-sidebar/arrow-right.svg');
       &:hover {
-        background-image: url('rabby-internal://assets/icons/mainwin-sidebar/arrow-right-active.svg');
+        background-image: url('lux-internal://assets/icons/mainwin-sidebar/arrow-right-active.svg');
       }
     }
   }
@@ -80,7 +80,7 @@ const StaticEntries: (
   {
     path: '/mainwin/home',
     title: 'Home',
-    logoSrc: 'rabby-internal://assets/icons/mainwin-sidebar/home.svg',
+    logoSrc: 'lux-internal://assets/icons/mainwin-sidebar/home.svg',
     getBadgeNode: (ctx) => {
       if (ctx.isCollapsed) {
         return (
@@ -112,22 +112,22 @@ const StaticEntries: (
   {
     path: '/mainwin/home/nft',
     title: 'NFT',
-    logoSrc: 'rabby-internal://assets/icons/mainwin-sidebar/nft.svg',
+    logoSrc: 'lux-internal://assets/icons/mainwin-sidebar/nft.svg',
   },
   {
     path: '/mainwin/home/send-token',
     title: 'Send',
-    logoSrc: 'rabby-internal://assets/icons/mainwin-sidebar/send.svg',
+    logoSrc: 'lux-internal://assets/icons/mainwin-sidebar/send.svg',
   },
   {
     path: '/mainwin/swap',
     title: 'Swap',
-    logoSrc: 'rabby-internal://assets/icons/mainwin-sidebar/swap.svg',
+    logoSrc: 'lux-internal://assets/icons/mainwin-sidebar/swap.svg',
   },
   {
     path: '/mainwin/approvals',
     title: 'Approvals',
-    logoSrc: 'rabby-internal://assets/icons/mainwin-sidebar/approvals.svg',
+    logoSrc: 'lux-internal://assets/icons/mainwin-sidebar/approvals.svg',
     getBadgeNode: (ctx) => {
       if (ctx.isCollapsed) {
         return (
@@ -162,7 +162,7 @@ const StaticEntries: (
   {
     path: '/mainwin/my-dapps',
     title: 'My Dapps',
-    logoSrc: 'rabby-internal://assets/icons/mainwin-sidebar/dapps.svg',
+    logoSrc: 'lux-internal://assets/icons/mainwin-sidebar/dapps.svg',
   },
 ];
 
@@ -188,13 +188,13 @@ const DappIndicator = ({ tab }: { tab?: chrome.tabs.Tab }) => {
       {tab?.status === 'loading' ? (
         <img
           className={styles.loadingIcon}
-          src="rabby-internal://assets/icons/mainwin-sidebar/sidebar-dapp-loading.svg"
+          src="lux-internal://assets/icons/mainwin-sidebar/sidebar-dapp-loading.svg"
         />
       ) : (
         <div className={classNames(styles.indicator)} />
       )}
       <img
-        src="rabby-internal://assets/icons/mainwin-sidebar/icon-close.svg"
+        src="lux-internal://assets/icons/mainwin-sidebar/icon-close.svg"
         alt=""
         onClick={handleClose}
         className={styles.closeIcon}
@@ -440,7 +440,7 @@ export default function MainWindowSidebar() {
             <div className={styles.logoWrapper}>
               <img
                 className={styles.logo}
-                src="rabby-internal://assets/icons/mainwin-sidebar/sidebar-logo.png"
+                src="lux-internal://assets/icons/mainwin-sidebar/sidebar-logo.png"
               />
             </div>
             <div
@@ -552,7 +552,7 @@ export default function MainWindowSidebar() {
                 <div className={styles.addDapp}>
                   <img
                     className={styles.addDappIcon}
-                    src="rabby-internal://assets/icons/mainwin-sidebar/add-square.svg"
+                    src="lux-internal://assets/icons/mainwin-sidebar/add-square.svg"
                   />
                   <Hide visible={!secondAnim} className={styles.addDappContent}>
                     New Dapp
@@ -578,8 +578,8 @@ export default function MainWindowSidebar() {
                       )}
                       src={
                         hasNewRelease && secondAnim
-                          ? 'rabby-internal://assets/icons/mainwin-sidebar/more-with-newrelease.svg'
-                          : 'rabby-internal://assets/icons/mainwin-sidebar/more.svg'
+                          ? 'lux-internal://assets/icons/mainwin-sidebar/more-with-newrelease.svg'
+                          : 'lux-internal://assets/icons/mainwin-sidebar/more.svg'
                       }
                     />
                     <Hide
@@ -594,7 +594,7 @@ export default function MainWindowSidebar() {
                         {hasNewRelease ? (
                           <img
                             className="ml-[9px]"
-                            src="rabby-internal://assets/icons/mainwin-sidebar/icon-detected-update.svg"
+                            src="lux-internal://assets/icons/mainwin-sidebar/icon-detected-update.svg"
                           />
                         ) : null}
                       </span>

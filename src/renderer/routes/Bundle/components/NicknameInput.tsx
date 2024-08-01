@@ -80,7 +80,7 @@ export const NicknameInput: React.FC<Props> = ({
           {canEdit && (
             <img
               className={clsx('w-[16px]', 'group-hover:block hidden')}
-              src="rabby-internal://assets/icons/bundle/edit.svg"
+              src="lux-internal://assets/icons/bundle/edit.svg"
             />
           )}
         </>

@@ -9,7 +9,7 @@ const EXTENDS_CHAINS = {
   ...CHAINS,
   btc: {
     serverId: 'btc',
-    logo: 'rabby-internal://assets/icons/bundle/btc-chain.svg',
+    logo: 'lux-internal://assets/icons/bundle/btc-chain.svg',
   },
 };
 
@@ -60,7 +60,7 @@ const TokenWithChain = ({
         className={classNames('token-logo', noRound && 'no-round')}
         src={
           token.logo_url ||
-          'rabby-internal://assets/icons/common/token-default.svg'
+          'lux-internal://assets/icons/common/token-default.svg'
         }
         alt={getTokenSymbol(token)}
         style={{ width, height, minWidth: width }}
@@ -70,7 +70,7 @@ const TokenWithChain = ({
           className="chain-logo"
           src={
             chain?.logo ||
-            'rabby-internal://assets/icons/common/token-default.svg'
+            'lux-internal://assets/icons/common/token-default.svg'
           }
         />
       )}
@@ -113,7 +113,7 @@ export const IconWithChain = ({
           className="chain-logo"
           src={
             chain?.logo ||
-            'rabby-internal://assets/icons/common/token-default.svg'
+            'lux-internal://assets/icons/common/token-default.svg'
           }
         />
       )}

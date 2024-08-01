@@ -10,8 +10,7 @@ import { useRequest } from 'ahooks';
 import { flatten, maxBy } from 'lodash';
 import styled from 'styled-components';
 
-const IconWarning =
-  'rabby-internal://assets/icons/signature-record/warning.svg';
+const IconWarning = 'lux-internal://assets/icons/signature-record/warning.svg';
 
 const Wraper = styled.div`
   margin-bottom: 16px;

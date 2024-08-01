@@ -108,7 +108,7 @@ export const CustomRPCModal = ({ open, onClose }: CustomRPCModalProps) => {
             <div className={styles.modalBody}>
               <div className={styles.empty}>
                 <img
-                  src="rabby-internal://assets/icons/mainwin-settings/icon-empty.svg"
+                  src="lux-internal://assets/icons/mainwin-settings/icon-empty.svg"
                   alt=""
                 />
                 <div className={styles.emptyDesc}>No results</div>

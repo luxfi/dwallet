@@ -72,7 +72,7 @@ export const Unlock: React.FC = () => {
       >
         <div className={styles.logoArea}>
           <img
-            src="rabby-internal://assets/icons/unlock/logo.svg"
+            src="lux-internal://assets/icons/unlock/logo.svg"
             alt="logo"
             className={styles.logo}
           />

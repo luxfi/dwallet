@@ -267,7 +267,7 @@ export function AddLocalDapp({
                 ) : (
                   <img
                     onClick={handleOpenDirecotry}
-                    src="rabby-internal://assets/icons/add-dapp/icon-open-folder.svg"
+                    src="lux-internal://assets/icons/add-dapp/icon-open-folder.svg"
                   />
                 )}
               </span>
@@ -278,7 +278,7 @@ export function AddLocalDapp({
       {isShowExample && (
         <div className={styles.intro}>
           <img
-            src="rabby-internal://assets/icons/add-dapp/icon-folder.svg"
+            src="lux-internal://assets/icons/add-dapp/icon-folder.svg"
             alt=""
             className={styles.introImg}
             onClick={handleOpenDirecotry}

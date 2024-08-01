@@ -43,7 +43,7 @@ const SignedTextHistoryItem = ({ item }: { item: SignTextHistoryItem }) => {
       <div className="text-history__item--content">
         {formatedContent}
         <img
-          src="rabby-internal://assets/icons/mainwin-settings/icon-copy-text.svg"
+          src="lux-internal://assets/icons/mainwin-settings/icon-copy-text.svg"
           className="icon icon-copy"
           onClick={handleCopyText}
         />

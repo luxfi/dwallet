@@ -135,7 +135,7 @@ export const PreviewDapp = ({
             <div>
               <img
                 className="mb-[12px] w-[32px] h-[32px]"
-                src="rabby-internal://assets/icons/add-dapp/icon-pageloading.svg"
+                src="lux-internal://assets/icons/add-dapp/icon-pageloading.svg"
                 style={{ animation: 'rotate 1s linear infinite' }}
                 alt=""
               />
@@ -147,7 +147,7 @@ export const PreviewDapp = ({
           <div className={styles.previewEmpty}>
             <div>
               <img
-                src="rabby-internal://assets/icons/add-dapp/icon-failed.svg"
+                src="lux-internal://assets/icons/add-dapp/icon-failed.svg"
                 alt=""
                 className="mb-[16px]"
               />

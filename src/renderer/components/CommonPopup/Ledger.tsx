@@ -27,7 +27,7 @@ export const Ledger: React.FC = () => {
         <li>Open Ethereum App</li>
       </ul>
       <img
-        src="rabby-internal://assets/imgs/ledger/ledger-plug.svg"
+        src="lux-internal://assets/imgs/ledger/ledger-plug.svg"
         className="w-[295px] mt-[32px] mx-auto block"
       />
     </div>

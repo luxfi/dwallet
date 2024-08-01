@@ -174,14 +174,14 @@ export const GridPlusManager: React.FC = () => {
         <div className="toolbar-item" onClick={openSwitchHD}>
           <img
             className="icon"
-            src="rabby-internal://assets/icons/hd-manager/device.svg"
+            src="lux-internal://assets/icons/hd-manager/device.svg"
           />
           <span className="title">Switch to another GridPlus</span>
         </div>
         <div className="toolbar-item" onClick={openAdvanced}>
           <img
             className="icon"
-            src="rabby-internal://assets/icons/hd-manager/setting.svg"
+            src="lux-internal://assets/icons/hd-manager/setting.svg"
           />
           <span className="title">Advanced Settings</span>
         </div>

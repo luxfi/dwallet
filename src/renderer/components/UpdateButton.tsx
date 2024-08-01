@@ -46,7 +46,7 @@ export const UpdateButton: React.FC<Props> = ({
         </>
       )}
       <img
-        src="rabby-internal://assets/icons/home/asset-update.svg"
+        src="lux-internal://assets/icons/home/asset-update.svg"
         className={clsx('w-[12px] h-[12px] ml-[9px]', {
           'animate-spin': loading,
         })}

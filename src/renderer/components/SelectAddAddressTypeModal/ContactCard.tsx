@@ -29,7 +29,7 @@ export const ContactTypeCard: React.FC<Props> = ({
         ) : null}
       </div>
       <div className={styles.action}>
-        <img src="rabby-internal://assets/icons/add-address/arrow-right.svg" />
+        <img src="lux-internal://assets/icons/add-address/arrow-right.svg" />
       </div>
     </div>
   );

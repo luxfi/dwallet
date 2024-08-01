@@ -105,7 +105,7 @@ export const AccountItem: React.FC<Props> = ({
         onClick={() => setClose(true)}
         className={clsx(styles.trash, close && 'opacity-0')}
       >
-        <img src="rabby-internal://assets/icons/address-management/trash.svg" />
+        <img src="lux-internal://assets/icons/address-management/trash.svg" />
       </div>
       <div
         className={clsx(styles.container, !onClickAction && styles.noAction)}
@@ -130,7 +130,7 @@ export const AccountItem: React.FC<Props> = ({
                   <div className={styles.whitelist}>
                     <img
                       width={16}
-                      src="rabby-internal://assets/icons/address-management/whitelist-white.svg"
+                      src="lux-internal://assets/icons/address-management/whitelist-white.svg"
                     />
                   </div>
                 </Tooltip>
@@ -145,9 +145,9 @@ export const AccountItem: React.FC<Props> = ({
                   )}
                 >
                   {pinned ? (
-                    <img src="rabby-internal://assets/icons/address-management/pin.svg" />
+                    <img src="lux-internal://assets/icons/address-management/pin.svg" />
                   ) : (
-                    <img src="rabby-internal://assets/icons/address-management/unpin.svg" />
+                    <img src="lux-internal://assets/icons/address-management/unpin.svg" />
                   )}
                 </div>
               </TipsWrapper>
@@ -161,7 +161,7 @@ export const AccountItem: React.FC<Props> = ({
                   onClick={onCopy}
                   className={clsx(styles.copy, styles.icon)}
                 >
-                  <img src="rabby-internal://assets/icons/address-management/copy-white.svg" />
+                  <img src="lux-internal://assets/icons/address-management/copy-white.svg" />
                 </div>
               </TipsWrapper>
               <div className={styles.balance}>
@@ -183,22 +183,22 @@ export const AccountItem: React.FC<Props> = ({
           <div className={styles.checkIcon}>
             <img
               className={styles.check}
-              src="rabby-internal://assets/icons/address-management/check.svg"
+              src="lux-internal://assets/icons/address-management/check.svg"
             />
             <img
               className={styles.uncheck}
-              src="rabby-internal://assets/icons/address-management/uncheck.svg"
+              src="lux-internal://assets/icons/address-management/uncheck.svg"
             />
           </div>
         </div>
         <div onClick={onClickAction || onClick} className={styles.action}>
           <img
             className={styles.arrowHover}
-            src="rabby-internal://assets/icons/address-management/arrow-right.svg"
+            src="lux-internal://assets/icons/address-management/arrow-right.svg"
           />
           <img
             className={styles.arrow}
-            src="rabby-internal://assets/icons/address-management/arrow-right-gray.svg"
+            src="lux-internal://assets/icons/address-management/arrow-right-gray.svg"
           />
         </div>
       </div>

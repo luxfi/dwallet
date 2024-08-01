@@ -158,7 +158,7 @@ const DappItem = ({
       <div className="flex items-center">
         <div className={clsx('binded-tip', isBinded ? 'block' : 'hidden')}>
           <img
-            src="rabby-internal://assets/icons/home/success.svg"
+            src="lux-internal://assets/icons/home/success.svg"
             className="icon-success"
           />
           Bound to {protocol.name}
@@ -273,7 +273,7 @@ const BindDapp = ({
           suffix={
             <img
               className="cursor-pointer"
-              src="rabby-internal://assets/icons/add-dapp/icon-search.svg"
+              src="lux-internal://assets/icons/add-dapp/icon-search.svg"
             />
           }
         />
@@ -294,7 +294,7 @@ const BindDapp = ({
               ) : (
                 <EmptyView>
                   <img
-                    src="rabby-internal://assets/icons/home/no-search-result.svg"
+                    src="lux-internal://assets/icons/home/no-search-result.svg"
                     alt=""
                   />
                   <p>No Match</p>
@@ -316,7 +316,7 @@ const BindDapp = ({
                   </div>
                   <img
                     className="icon-enter"
-                    src="rabby-internal://assets/icons/home/arrow-right.svg"
+                    src="lux-internal://assets/icons/home/arrow-right.svg"
                   />
                 </div>
               ) : (

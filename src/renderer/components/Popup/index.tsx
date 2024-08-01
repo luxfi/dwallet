@@ -4,7 +4,7 @@ import { ReactNode } from 'react';
 import ReactDOM from 'react-dom';
 import './index.less';
 
-const SvgIconCross = 'rabby-internal://assets/icons/modal/close.svg';
+const SvgIconCross = 'lux-internal://assets/icons/modal/close.svg';
 const closeIcon = (
   <img src={SvgIconCross} className="w-[24px] fill-current text-gray-content" />
 );

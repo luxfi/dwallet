@@ -135,7 +135,7 @@ export const LedgerManager: React.FC = () => {
       <div className="setting" onClick={openAdvanced}>
         <img
           className="icon"
-          src="rabby-internal://assets/icons/hd-manager/setting.svg"
+          src="lux-internal://assets/icons/hd-manager/setting.svg"
         />
         <span className="title">Advanced Settings</span>
       </div>

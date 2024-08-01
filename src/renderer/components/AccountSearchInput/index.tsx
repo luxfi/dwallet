@@ -117,7 +117,7 @@ function NoSearchedAddressUI() {
     <div className="no-matched-address h-[156px]">
       <img
         className="w-[40px] h-[40px]"
-        src="rabby-internal://assets/icons/account-search-input/not-match.svg"
+        src="lux-internal://assets/icons/account-search-input/not-match.svg"
         alt="no address"
       />
       <p className="text-13 mt-[10px] text-[#BABEC5]">No match address</p>

@@ -50,7 +50,7 @@ export const HistoryItem: React.FC<Props> = ({
         {isFailed && (
           <div className={clsx(styles.tag, styles.tagFailed)}>
             <img
-              src="rabby-internal://assets/icons/transaction/info.svg"
+              src="lux-internal://assets/icons/transaction/info.svg"
               alt=""
             />
             Failed

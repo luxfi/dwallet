@@ -52,14 +52,14 @@ export const CustomtRPCItem = (props: CustomtRPCItemProps) => {
         </div>
         <div className={styles.action}>
           <img
-            src="rabby-internal://assets/icons/mainwin-settings/icon-edit.svg"
+            src="lux-internal://assets/icons/mainwin-settings/icon-edit.svg"
             alt=""
             onClick={() => {
               onEdit?.(data);
             }}
           />
           <img
-            src="rabby-internal://assets/icons/mainwin-settings/icon-delete.svg"
+            src="lux-internal://assets/icons/mainwin-settings/icon-delete.svg"
             alt=""
             onClick={() => {
               setIsShowCheck(true);

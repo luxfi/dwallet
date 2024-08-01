@@ -40,7 +40,7 @@ export const TxItemGroup: React.FC<Props> = ({
         >
           <img
             className="mr-[6px]"
-            src="rabby-internal://assets/icons/queue/info.svg"
+            src="lux-internal://assets/icons/queue/info.svg"
           />
           <span>
             These transactions conflict as they use the same nonce. Executing

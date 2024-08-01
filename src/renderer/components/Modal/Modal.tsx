@@ -33,7 +33,7 @@ export const Modal: React.FC<Props> = ({
         closeIcon ?? (
           <img
             className="icon close"
-            src="rabby-internal://assets/icons/modal/close.svg"
+            src="lux-internal://assets/icons/modal/close.svg"
           />
         )
       }
@@ -44,7 +44,7 @@ export const Modal: React.FC<Props> = ({
               <span onClick={onBack} className="ant-modal-close-x back">
                 <img
                   className="icon"
-                  src="rabby-internal://assets/icons/modal/back.svg"
+                  src="lux-internal://assets/icons/modal/back.svg"
                 />
               </span>
             )}

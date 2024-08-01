@@ -66,7 +66,7 @@ export const CurrentAccount = ({ className }: { className?: string }) => {
         <span className={styles.addr}>{displayAddr}</span>
       </div>
       <img
-        src="rabby-internal://assets/icons/top-bar/select-top.svg"
+        src="lux-internal://assets/icons/top-bar/select-top.svg"
         className={clsx(
           'transition-transform',
           !addressManagementVisible && 'transform rotate-180'
@@ -89,7 +89,7 @@ export const AddNewAccount = ({ className }: { className?: string }) => {
         hideZSubview('address-management');
       }}
     >
-      <img src="rabby-internal://assets/icons/top-bar/add-address.svg" />
+      <img src="lux-internal://assets/icons/top-bar/add-address.svg" />
     </div>
   );
 };

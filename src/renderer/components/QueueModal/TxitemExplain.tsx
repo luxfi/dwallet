@@ -2,8 +2,8 @@ import { splitNumberByStep } from '@/renderer/utils/number';
 import { ExplainTxResponse } from '@rabby-wallet/rabby-api/dist/types';
 import React from 'react';
 
-const IconUnknown = 'rabby-internal://assets/icons/queue/unknown.svg';
-const IconUser = 'rabby-internal://assets/icons/queue/user.svg';
+const IconUnknown = 'lux-internal://assets/icons/queue/unknown.svg';
+const IconUser = 'lux-internal://assets/icons/queue/user.svg';
 export interface Props {
   explain: ExplainTxResponse;
 }

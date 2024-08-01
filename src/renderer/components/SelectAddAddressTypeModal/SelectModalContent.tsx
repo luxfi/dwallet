@@ -12,40 +12,40 @@ import { ContactTypeCardList } from './ContactCardList';
 
 const HARDWARE_MAP = [
   {
-    logo: 'rabby-internal://assets/icons/device/ledger.svg',
+    logo: 'lux-internal://assets/icons/device/ledger.svg',
     name: 'Ledger',
     id: KEYRING_CLASS.HARDWARE.LEDGER,
   },
   {
-    logo: 'rabby-internal://assets/icons/device/trezor.svg',
+    logo: 'lux-internal://assets/icons/device/trezor.svg',
     name: 'Trezor',
     id: KEYRING_CLASS.HARDWARE.TREZOR,
   },
   {
-    logo: 'rabby-internal://assets/icons/device/onekey.svg',
+    logo: 'lux-internal://assets/icons/device/onekey.svg',
     name: 'OneKey',
     id: KEYRING_CLASS.HARDWARE.ONEKEY,
   },
   {
-    logo: 'rabby-internal://assets/icons/device/keystone.svg',
+    logo: 'lux-internal://assets/icons/device/keystone.svg',
     name: 'Keystone',
     id: KEYRING_CLASS.HARDWARE.KEYSTONE,
     brand: WALLET_BRAND_CONTENT.Keystone.brand,
   },
   {
-    logo: 'rabby-internal://assets/icons/device/airgap.svg',
+    logo: 'lux-internal://assets/icons/device/airgap.svg',
     name: 'AirGap Vault',
     id: KEYRING_CLASS.HARDWARE.KEYSTONE,
     brand: WALLET_BRAND_CONTENT.AirGap.brand,
   },
   {
-    logo: 'rabby-internal://assets/icons/device/coolwallet.svg',
+    logo: 'lux-internal://assets/icons/device/coolwallet.svg',
     name: 'CoolWallet',
     id: KEYRING_CLASS.HARDWARE.KEYSTONE,
     brand: WALLET_BRAND_CONTENT.CoolWallet.brand,
   },
   {
-    logo: 'rabby-internal://assets/icons/device/gridplus.svg',
+    logo: 'lux-internal://assets/icons/device/gridplus.svg',
     name: 'GridPlus',
     id: KEYRING_CLASS.HARDWARE.GRIDPLUS,
   },
@@ -117,7 +117,7 @@ export const SelectModalContent: React.FC<Props> = ({ onSelectType }) => {
   return (
     <div className={styles.SelectModalContent}>
       <ContactTypeCardList
-        logo="rabby-internal://assets/icons/add-address/device.svg"
+        logo="lux-internal://assets/icons/add-address/device.svg"
         title="Connect Hardware Wallets"
         list={hardwareMap}
         onAction={(type, brand) => {
@@ -140,7 +140,7 @@ export const SelectModalContent: React.FC<Props> = ({ onSelectType }) => {
       />
 
       <ContactTypeCardList
-        logo="rabby-internal://assets/icons/add-address/walletconnect.svg"
+        logo="lux-internal://assets/icons/add-address/walletconnect.svg"
         title="Connect Mobile Wallet Apps"
         list={WALLETCONNECT_MAP}
         onAction={(brand) =>
@@ -149,13 +149,13 @@ export const SelectModalContent: React.FC<Props> = ({ onSelectType }) => {
       />
 
       <ContactTypeCard
-        logo="rabby-internal://assets/icons/walletlogo/gnosis.svg"
+        logo="lux-internal://assets/icons/walletlogo/gnosis.svg"
         title="Safe"
         onAction={() => onSelectType(KEYRING_CLASS.GNOSIS)}
       />
 
       <ContactTypeCard
-        logo="rabby-internal://assets/icons/add-address/cup.svg"
+        logo="lux-internal://assets/icons/add-address/cup.svg"
         title="Add Contacts"
         subtitle="You can also use it as a watch-only address"
         onAction={() => onSelectType(KEYRING_CLASS.WATCH)}
@@ -163,7 +163,7 @@ export const SelectModalContent: React.FC<Props> = ({ onSelectType }) => {
 
       {!IS_RUNTIME_PRODUCTION && (
         <ContactTypeCard
-          logo="rabby-internal://assets/icons/add-address/privatekey.svg"
+          logo="lux-internal://assets/icons/add-address/privatekey.svg"
           title="Import Private Key"
           onAction={() => onSelectType(KEYRING_CLASS.PRIVATE_KEY)}
         />

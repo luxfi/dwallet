@@ -19,7 +19,7 @@ function DebugKitsParts() {
         <div className={styles.itemList}>
           <ItemAction
             name={<span className={styles.dangerText}>Reset App</span>}
-            icon="rabby-internal://assets/icons/mainwin-settings/reset.svg"
+            icon="lux-internal://assets/icons/mainwin-settings/reset.svg"
             onClick={() => {
               requestResetApp();
             }}
@@ -32,7 +32,7 @@ function DebugKitsParts() {
         <div className={styles.itemList}>
           <ItemAction
             name={<span>Clear Downloads</span>}
-            icon="rabby-internal://assets/icons/mainwin-settings/reset.svg"
+            icon="lux-internal://assets/icons/mainwin-settings/reset.svg"
             onClick={() => {
               window.rabbyDesktop.ipcRenderer
                 .invoke('__internal_invoke:app:debug-kits-actions', {
@@ -55,7 +55,7 @@ function DebugKitsParts() {
                 </span>
               </span>
             }
-            icon="rabby-internal://assets/icons/mainwin-settings/debugkits/error.svg"
+            icon="lux-internal://assets/icons/mainwin-settings/debugkits/error.svg"
           >
             <div className="flex items-center justify-end">
               <div className="flex items-center justify-center">
@@ -94,7 +94,7 @@ function DebugKitsParts() {
             name="Metamask Test Dapp"
             link="https://metamask.github.io/test-dapp"
             openAsDapp
-            icon="rabby-internal://assets/icons/developer-kits/entry.svg"
+            icon="lux-internal://assets/icons/developer-kits/entry.svg"
           />
         </div>
       </div>

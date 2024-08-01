@@ -25,7 +25,7 @@ function supportHmrOnDev(): HoF {
 
     if (
       ctx.details.url.startsWith('ws://') &&
-      retReqHeaders.Origin === 'rabby-internal://local'
+      retReqHeaders.Origin === 'lux-internal://local'
     ) {
       const urlInfo = new URL(ctx.details.url);
       // leave here for debug

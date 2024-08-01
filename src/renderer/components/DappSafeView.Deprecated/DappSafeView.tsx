@@ -69,7 +69,7 @@ export default function DappSafeView() {
       closeIcon={
         <img
           className="close-icon"
-          src="rabby-internal://assets/icons/alert-insecurity/icon-close.svg"
+          src="lux-internal://assets/icons/alert-insecurity/icon-close.svg"
         />
       }
       footer={null}
@@ -84,7 +84,7 @@ export default function DappSafeView() {
               <img
                 className="icon"
                 style={{ marginLeft: 2 }}
-                src="rabby-internal://assets/icons/alert-insecurity/icon-external-url.svg"
+                src="lux-internal://assets/icons/alert-insecurity/icon-external-url.svg"
               />
             </span>
           </div>
@@ -93,7 +93,7 @@ export default function DappSafeView() {
             <img
               className="icon"
               style={{ marginRight: 2 }}
-              src="rabby-internal://assets/icons/alert-insecurity/icon-readonly.svg"
+              src="lux-internal://assets/icons/alert-insecurity/icon-readonly.svg"
             />
             This page doesn't belong to the current Dapp, so it can only be
             viewed.
@@ -104,11 +104,11 @@ export default function DappSafeView() {
         <div className="icon-wrapper">
           <img
             className="icon-shield"
-            src="rabby-internal://assets/icons/alert-insecurity/icon-shield.svg"
+            src="lux-internal://assets/icons/alert-insecurity/icon-shield.svg"
           />
           <img
             className="icon-loading"
-            src="rabby-internal://assets/icons/alert-insecurity/icon-loading.svg"
+            src="lux-internal://assets/icons/alert-insecurity/icon-loading.svg"
           />
         </div>
       </div>

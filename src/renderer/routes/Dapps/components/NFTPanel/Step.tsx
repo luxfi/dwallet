@@ -56,7 +56,7 @@ export const Step: React.FC<Props> = ({
           isDone && (
             <img
               className="mr-[5px] opacity-50"
-              src="rabby-internal://assets/icons/mint/check.svg"
+              src="lux-internal://assets/icons/mint/check.svg"
             />
           )
         }

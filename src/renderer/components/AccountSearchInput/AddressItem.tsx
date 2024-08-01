@@ -109,7 +109,7 @@ const AddressItem = memo(
                   title="Whitelisted address"
                 >
                   <img
-                    src="rabby-internal://assets/icons/send-token/whitelist.svg"
+                    src="lux-internal://assets/icons/send-token/whitelist.svg"
                     className={clsx('w-14 h-14 ml-[4px]')}
                   />
                 </Tooltip>
@@ -123,7 +123,7 @@ const AddressItem = memo(
             />
             <TipsWrapper hoverTips="Copy" clickTips="Copied">
               <img
-                src="rabby-internal://assets/icons/address-management/copy-white.svg"
+                src="lux-internal://assets/icons/address-management/copy-white.svg"
                 className="w-[14px] h-[14px] ml-4 cursor-pointer opacity-75"
                 onClick={(e) => {
                   e.stopPropagation();

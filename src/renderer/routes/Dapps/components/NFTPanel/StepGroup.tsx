@@ -132,7 +132,7 @@ export const StepGroup: React.FC<Props> = ({ onMinted }) => {
       />
       <img
         className="ml-[11px] mr-[23px]"
-        src="rabby-internal://assets/icons/mint/step-next.svg"
+        src="lux-internal://assets/icons/mint/step-next.svg"
       />
       <Step
         no={2}
@@ -143,7 +143,7 @@ export const StepGroup: React.FC<Props> = ({ onMinted }) => {
       />
       <img
         className="mx-[17px]"
-        src="rabby-internal://assets/icons/mint/step-next.svg"
+        src="lux-internal://assets/icons/mint/step-next.svg"
       />
 
       <Step

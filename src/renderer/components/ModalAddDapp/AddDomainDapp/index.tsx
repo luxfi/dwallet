@@ -415,7 +415,7 @@ export function AddDomainDapp({
                     onClick={() => {
                       handleCheck();
                     }}
-                    src="rabby-internal://assets/icons/add-dapp/icon-search.svg"
+                    src="lux-internal://assets/icons/add-dapp/icon-search.svg"
                   />
                 )}
               </span>

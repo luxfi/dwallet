@@ -93,7 +93,7 @@ export const CurrentAccount: React.FC<Props> = ({
                 <div className={styles.whitelist}>
                   <img
                     width={16}
-                    src="rabby-internal://assets/icons/address-management/whitelist-white.svg"
+                    src="lux-internal://assets/icons/address-management/whitelist-white.svg"
                   />
                 </div>
               </Tooltip>
@@ -105,7 +105,7 @@ export const CurrentAccount: React.FC<Props> = ({
             </div>
             <TipsWrapper hoverTips="Copy" clickTips="Copied">
               <div onClick={onCopy} className={clsx(styles.copy, styles.icon)}>
-                <img src="rabby-internal://assets/icons/address-management/copy-white.svg" />
+                <img src="lux-internal://assets/icons/address-management/copy-white.svg" />
               </div>
             </TipsWrapper>
           </div>
@@ -127,7 +127,7 @@ export const CurrentAccount: React.FC<Props> = ({
         <div className={styles.action}>
           <img
             className={styles.arrow}
-            src="rabby-internal://assets/icons/address-management/arrow-right-white.svg"
+            src="lux-internal://assets/icons/address-management/arrow-right-white.svg"
           />
         </div>
       </div>

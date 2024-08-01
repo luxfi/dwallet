@@ -157,13 +157,13 @@ const TokenList = ({
             <ExpandItem onClick={handleClickExpandToken}>
               <img
                 className="icon-hide-assets"
-                src="rabby-internal://assets/icons/home/hide-assets.svg"
+                src="lux-internal://assets/icons/home/hide-assets.svg"
               />
               {tokenHidden.isExpand
                 ? 'Hide small value assets'
                 : `${tokenHidden.hiddenCount} low value assets`}
               <img
-                src="rabby-internal://assets/icons/home/expand-arrow.svg"
+                src="lux-internal://assets/icons/home/expand-arrow.svg"
                 className={classNames('icon-expand-arrow')}
               />
               <div className="hide-assets-usd-value">

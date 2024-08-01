@@ -56,7 +56,7 @@ export const TokenSearchInput = React.forwardRef<any, Props>(
         )}
         prefix={
           <img
-            src="rabby-internal://assets/icons/common/search.svg"
+            src="lux-internal://assets/icons/common/search.svg"
             className="w-[14px] h-[14px]"
           />
         }
