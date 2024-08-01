@@ -36,7 +36,7 @@ v0.35.1-prod / 2023-09-29
   * feat: update currentVersion.
   * feat: remove useless popup to improve perf & memory usage. (#567)
   * feat: downgrade electron to v22 to avoid window manager issues on higher version. (#566)
-  * feat: upgrade rabbyx and support more testnets. (#564)
+  * feat: upgrade luxx and support more testnets. (#564)
   * fix: upgrade node-abi aversion for electron
   * fix: avoid occasional failure on disconnecting localfs type dapp. (#563)
   * feat: drop uniswap for now (#562)
@@ -54,9 +54,9 @@ v0.35.0-prod / 2023-09-27
   * chore: update currentVersion.
   * style: add new color css var neutral-card-3. (#556)
   * fix: allowed protocols. (#553)
-  * fix: alert cannot-use-trezor-like-if-ipfs-enabled on sign from rabbyx. (#554)
+  * fix: alert cannot-use-trezor-like-if-ipfs-enabled on sign from luxx. (#554)
   * feat: support swap on chain base. (#552)
-  * feat: upgrade rabbyx. (#551)
+  * feat: upgrade luxx. (#551)
   * feat: robust change about security (#549)
   * feat: + audit report (#550)
   * build: fix patch package file.
@@ -76,7 +76,7 @@ v0.34.0-prod / 2023-09-12
   * feat: move developer kits to standalone route. (#538)
   * feat: adapt to new version onekey sdk. (#537)
   * fix: refresh current account when changing the alianname in the hd manager (#536)
-  * fix: rabbyx version.
+  * fix: luxx version.
   * feat: support manage password and lock app. (#535)
   * feat: add signature record (#534)
 
@@ -111,7 +111,7 @@ v0.32.0-prod / 2023-08-18
   * feat: assets (#510)
   * chore: update currentVersion.
   * chore: update patch.
-  * feat: upgrade rabbyx.
+  * feat: upgrade luxx.
   * feat: update chains (#511)
   * ci: use legacy for prerelease.
   * feat: use standalone entry of `@debank/common`. (#507)
@@ -191,10 +191,10 @@ v0.26.0-prod / 2023-06-14
 =========================
 
   * Release v0.26.0-prod
-  * fix: missing oasys on rabbyx.
-  * feat: upgrade rabbyx for style.
+  * fix: missing oasys on luxx.
+  * feat: upgrade luxx for style.
   * fix: judgement about system version. (#480)
-  * feat: upgrade rabbyx, update currentVersion.md
+  * feat: upgrade luxx, update currentVersion.md
   * feat: upgrade sign security page.
   * style: tuning.
   * feat: support tip unsupported system on bootstrap. (#477)
@@ -213,7 +213,7 @@ v0.25.0-prod / 2023-06-07
   * feat: support new chain ROSE, tuning sign security.
   * chore: tuning, update currentVersion
   * fix: slippage disable (#473)
-  * feat: upgrade rabbyx to enhance security on sign. (#472)
+  * feat: upgrade luxx to enhance security on sign. (#472)
   * fix: Refactor token info fetching logic and use custom hook (#470)
   * feat: support double click to maxmize/restore window on darwin. (#471)
   * feat: check if http target url could redirect its https version. (#469)
@@ -232,7 +232,7 @@ v0.24.0-prod / 2023-06-01
   * fix: avoid new version tooltip flicker. (#463)
   * fix: address modal ui (#462)
   * feat: only show dapp's new version if it differs with the version LAST opened. (#461)
-  * fix: update rabbyx to fix wallectconnect on rabbyx's ui.
+  * fix: update luxx to fix wallectconnect on luxx's ui.
   * fix: select type ui (#460)
   * feat: disable zoom ratio setting item. (#459)
   * fix: use onMessage to listen message from background (#458)
@@ -246,10 +246,10 @@ v0.24.0-prod / 2023-06-01
   * Add support for OpenOcean DEX (#450)
   * feat: support pulse chain, update currentVersion.md
   * feat: support detect dapp version. (#448)
-  * fix: correct rabbyx version for Connect sign.
+  * fix: correct luxx version for Connect sign.
   * feat: walletconnect and new signature process (#443)
   * Refactor token amount formatting (#449)
-  * feat: use new rabby sign Connect window. (#445)
+  * feat: use new lux sign Connect window. (#445)
   * feat: let active tab auto scroll into view. (#446)
   * feat: always show .dmg download file for macOS. (#447)
   * feat: zoom dapp view to 0.9 by default. (#444)
@@ -260,7 +260,7 @@ v0.23.0-prod / 2023-05-23
 =========================
 
   * Release v0.23.0-prod
-  * feat: upgrade rabbyx to 0.86.1 (#440)
+  * feat: upgrade luxx to 0.86.1 (#440)
   * feat: update currentVersion.md
   * feat: NFT P2P Lender 、Borrower (#433)
   * feat: disable loadingView. (#436)
@@ -290,11 +290,11 @@ v0.21.0-reg / 2023-05-12
   * Release v0.21.0-prod
   * chore: sync data.
   * feat: support meter chain and etc chain (#422)
-  * feat: upgrade rabbyx to 0.85.0
+  * feat: upgrade luxx to 0.85.0
   * fix: paraswap quote (#421)
   * feat: allow send 0 token (#423)
   * fix: dapps sort splash (#424)
-  * fix: make sure create mainWindow AFTER rabby background ready. (#420)
+  * fix: make sure create mainWindow AFTER lux background ready. (#420)
   * feat: avoid repeative app instances. (#419)
 
 v0.20.1-prod / 2023-05-09
@@ -344,7 +344,7 @@ v0.18.0-prod / 2023-04-28
   * feat: report mainWindow's event listeners count. (#395)
   * feat: support simulate browser by UA for some specific dapps. (#393)
   * chore: cleanup deps.
-  * feat: upgrade rabbyx to 0.81.0 (#391)
+  * feat: upgrade luxx to 0.81.0 (#391)
   * feat: support flare chain (#390)
   * fix: home page assets refresh (#389)
 
@@ -376,7 +376,7 @@ v0.17.0-prod / 2023-04-22
   * chore: update data.
   * feat: copy tips (#370)
   * feat: support core chain (#378)
-  * feat: upgrade rabbyx to 0.80.0 (#380)
+  * feat: upgrade luxx to 0.80.0 (#380)
   * feat: adjust UI/literals about dapp support. (#379)
   * feat: ens (#374)
   * feat: Protocol support token modal (#377)
@@ -388,7 +388,7 @@ v0.16.0-prod / 2023-04-18
 
   * Release v0.16.0-prod
   * Revert "feat: support eos evm (#371)" (#372)
-  * chore: upgrade rabbyx core to v0.79.1
+  * chore: upgrade luxx core to v0.79.1
   * feat: add TokenActionModal (#369)
   * feat: support eos evm (#371)
   * fix: improve memory & perf. (#367)
@@ -443,7 +443,7 @@ v0.13.0-prod / 2023-04-08
   * fix: kw search (#345)
   * fix: hide sidebar-dapp context-menu scroller. (#344)
   * feat: new sidebar (#342)
-  * feat: use rabbyx 0.78.x (#343)
+  * feat: use luxx 0.78.x (#343)
   * feat: ipfs (#322)
   * feat: swap base (#339)
 
@@ -474,7 +474,7 @@ v0.11.0 / 2023-03-31
 
   * Release v0.11.0
   * feat: revert support for coexist of main-domain dapp and its sub-domain dapp. (#328)
-  * chore: upgrade rabbyx core to 0.76.0
+  * chore: upgrade luxx core to 0.76.0
 
 v0.11.1-reg / 2023-04-01
 ========================
@@ -483,7 +483,7 @@ v0.11.1-reg / 2023-04-01
   * ci: auto determine  which channel to be released when tagged ref triggered.
   * Release v0.11.0
   * feat: revert support for coexist of main-domain dapp and its sub-domain dapp. (#328)
-  * chore: upgrade rabbyx core to 0.76.0
+  * chore: upgrade luxx core to 0.76.0
   * feat: integrate swap to reg version. (#329)
   * Revert "feat: new swap (#325)" (#326)
   * feat: new swap (#325)
@@ -497,7 +497,7 @@ v0.10.2 / 2023-03-29
 ====================
 
   * Release v0.10.2
-  * feat: upgrade rabbyx for security on send message to desktop.
+  * feat: upgrade luxx for security on send message to desktop.
   * fix: userData path on dev. (#321)
   * feat: remove relaction modal (#316)
   * reimpl in-dapp-find with BrowserView (#320)
@@ -549,7 +549,7 @@ v0.8.0 / 2023-03-21
   * feat: disable repair favicons on bootstrap.
   * fix: tweet (#297)
   * feat: mark mainWindow's tab with dapp id. (#294)
-  * feat: mint rabby (#282)
+  * feat: mint lux (#282)
   * feat: add tabs to add dapp modal (#296)
   * fix: include shortcut icon into favicons (#293)
 
@@ -562,7 +562,7 @@ v0.7.0 / 2023-03-17
   * fix: some bad behaviors on open/select dapp (#291)
   * chore: change release note button text (#290)
   * feat: release note (#288)
-  * feat: upgrade rabbyx's core to 0.72.0
+  * feat: upgrade luxx's core to 0.72.0
   * feat: change swap fee to 0.01% (#289)
   * feat: add event log (#284)
   * Feat/report tracing (#287)
@@ -599,7 +599,7 @@ v0.6.0 / 2023-03-14
   * feat: update currentSite after session created (#265)
   * feat: always open scanLink externally. (#261)
   * feat: support special subdomain & remove relaction dialog (#262)
-  * feat: update rabbyX (#264)
+  * feat: update luxX (#264)
   * fix: home view height (#260)
 
 v0.5.8 / 2023-03-11
@@ -655,7 +655,7 @@ v0.5.5 / 2023-03-07
   * feat: detailed info for https cert error. (#231)
   * fix: tooltip (#230)
   * fix: url ellipsis (#229)
-  * Merge branch 'dev' of github.com:RabbyHub/RabbyDesktop into dev
+  * Merge branch 'dev' of github.com:luxfi/dwallet into dev
   * chore: rm console
   * feat: basic support for windows code signing. (#226)
   * fix: portfolio wrapper pt
@@ -672,10 +672,10 @@ v0.5.5 / 2023-03-07
   * feat: dapp bind (#219)
   * feat: adjust dapp-add process. (#218)
   * fix: add dapp subdomain message (#216)
-  * fix: creation of rabbyx's sign window. (#217)
+  * fix: creation of luxx's sign window. (#217)
   * fix: react to protocol bindings changed. (#213)
   * feat: new add dapp (#214)
-  * feat: upgrade rabbyx. (#215)
+  * feat: upgrade luxx. (#215)
   * fix: safe open dapp. (#212)
   * fix: behavior of `tab.hide()` on win32.
 
@@ -689,7 +689,7 @@ v0.5.3 / 2023-03-03
   * feat: adjust link/redirect behaviors.
   * fix: open new tab when secondaryDomain tab existed.
   * feat: try to improve viewManager for tabs. (#208)
-  * fix: open url from rabbyx's approval page.
+  * fix: open url from luxx's approval page.
   * feat: remove maxmize restrain
   * fix: home height (#207)
   * feat: recover data storage under userData on macOS. (#206)
@@ -718,7 +718,7 @@ v0.5.2 / 2023-03-01
   * fix: dapp matching rules (#188)
   * feat: welcome page (#186)
   * chore: change some style (#183)
-  * feat: tuning style of rabbyx connect window. (#187)
+  * feat: tuning style of luxx connect window. (#187)
   * fix: time span (#184)
   * fix: address-management styles (#185)
   * fix: inviteCodeModal style (#182)
@@ -739,11 +739,11 @@ v0.5.1 / 2023-02-27
   * chore: fix some ui bugs (#173)
   * fix: close address management (#172)
   * feat: support `useZViewsVisibleChanged`.
-  * fix: rabbyx sign window style on darwin. (#170)
-  * chore: upgrade rabbyx.
+  * fix: luxx sign window style on darwin. (#170)
+  * chore: upgrade luxx.
   * fix: on darwin, quit app on click mainWindow's close button.
   * feat: back to getting-started on no accounts rest. (#169)
-  * Merge branch 'dev' of github.com:RabbyHub/RabbyDesktop into dev
+  * Merge branch 'dev' of github.com:luxfi/dwallet into dev
   * fix: portfolio page styles
   * fix: upgrade axios to avoid exports mistake on renderer.
   * feat: invite code modal (#165)
@@ -751,7 +751,7 @@ v0.5.1 / 2023-02-27
   * chore: fix some bugs (#166)
   * feat: tuning navbar style. (#164)
   * fix: close connect modal (#167)
-  * feat: adjust position of rabbyx's sign windows. (#168)
+  * feat: adjust position of luxx's sign windows. (#168)
   * Feat/refresh (#163)
   * fix: judgement of `isInputExistedDapp`.
   * fix: type.
@@ -768,7 +768,7 @@ v0.5.0 / 2023-02-23
   * fix/dapp manage (#155)
   * feat: adjust settings & upgrade (#159)
   * fix: variable ref.
-  * fix: rabby is not a dapp
+  * fix: lux is not a dapp
   * fix: find localTx from tx history (#158)
   * feat: support dynamic config pull. (#156)
   * Fix/slippage input (#152)
@@ -781,7 +781,7 @@ v0.4.8 / 2023-02-22
 
   * Release v0.4.8
   * fix: webview tag loading in mainWindow webContents.
-  * chore: upgrade rabbyx to update matomo idSite.
+  * chore: upgrade luxx to update matomo idSite.
   * fix: home width (#150)
   * fix: display of sign window on scaled win32. (#149)
   * fix: _TrezorConnect.close (#148)
@@ -856,7 +856,7 @@ v0.4.5 / 2023-02-15
   * feat: support z-popup. (#110)
   * chore: cleanup workflow of proxy.
   * feat: always apply user defined proxy settings.
-  * feat: upgrade rabbyx for new sign window style.
+  * feat: upgrade luxx for new sign window style.
   * fix: update account list (#109)
 
 v0.4.4 / 2023-02-10
@@ -888,7 +888,7 @@ v0.4.2 / 2023-02-03
   * build: add prerelease version update script.
   * feat: 'system' as default proxy type.
   * feat: update balance cache when portfolio balance changed (#102)
-  * feat: upgrade rabbyx core version.
+  * feat: upgrade luxx core version.
   * feat: gather sidebar's tabs by secondary domain. (#101)
   * feat: make select devices as modal window. (#100)
   * fix: history token not set when taskQueue is empty (#98)
@@ -925,10 +925,10 @@ v0.4.0 / 2023-01-19
   * chore: code clean.
   * fix: only display bind dapp info when hover (#84)
   * Feat/update dapps bindings (#85)
-  * fix: ensure patch `window.close` in rabbyx's notification win. (#82)
+  * fix: ensure patch `window.close` in luxx's notification win. (#82)
   * fix: zero balance account
   * Merge remote-tracking branch 'origin/dev' into dev
-  * fix: sync rabbyx's session message to popupView on mainWin.
+  * fix: sync luxx's session message to popupView on mainWin.
   * Merge pull request #83 from RabbyHub/fix/overflow-scroll
   * fix: overflow
   * fix: account detail (#77)
@@ -938,7 +938,7 @@ v0.4.0 / 2023-01-19
   * Feat/home page quick swap (#70)
   * fix: cannot fetch newly added dapp. (#81)
   * fix: allow ledger sign connectoin.
-  * chore: update rabbyx to use new rabby-api in background.
+  * chore: update luxx to use new lux-api in background.
   * fix: dapp favicon (#80)
   * fix: unbind protocol on dapp removed.
   * feat: adjust logic about protocolDappsBinding.
@@ -967,7 +967,7 @@ v0.3.0 / 2023-01-13
   * feat: support set proxy server for whole app. (#66)
   * chore: add build helper script.
   * fix: small assets hidden logic (#65)
-  * fix: upgrade rabbyx to avoid set headers null error on background from `@debank/rabby-api`.
+  * fix: upgrade luxx to avoid set headers null error on background from `@debank/lux-api`.
   * feat: fix dapp style (#64)
   * chore: style tuning.
   * fix: home page style
@@ -976,7 +976,7 @@ v0.3.0 / 2023-01-13
   * feat: import by private key (#63)
   * feat: support custom forwarding message from other views.
   * fix: add account (#62)
-  * feat: upgrade rabbyx version with new rabby-api support
+  * feat: upgrade luxx version with new lux-api support
   * build: support hmr on custom protocol (#61)
   * feat: change macos-controls style (#55)
   * feat: add contacts (#58)
@@ -992,7 +992,7 @@ v0.2.8 / 2023-01-10
   * feat: make sure importing at least one account. (#54)
   * feat: better animation on toggle sidebar collapsed. (#52)
   * fix: avoid flashing Unlock page on launch (#53)
-  * fix: pre check webpack build, and version of `@debank/common` depedent by rabby-api.
+  * fix: pre check webpack build, and version of `@debank/common` depedent by lux-api.
   * feat: add walletOpenapi.
   * feat: add openapi capability.
   * fix: `onMinimizeButton`.
@@ -1006,7 +1006,7 @@ v0.2.7 / 2023-01-06
   * feat: keep sign window dock on right of main window.
   * feat: disallow resize on wallet sign
   * chore: tuning style.
-  * fix: specify `rabby-internal` as standard schema to enable its storage access.
+  * fix: specify `lux-internal` as standard schema to enable its storage access.
 
 v0.2.6 / 2023-01-06
 ===================
@@ -1026,7 +1026,7 @@ v0.2.6 / 2023-01-06
   * fix: loadingView still open on stop one loading dapp.
   * fix: always get null icon on first add dapp after launch app.
   * feat: use built-in password.
-  * feat: support `chrome.notification.create` on rabby ext, toast on tx status changed. (#42)
+  * feat: support `chrome.notification.create` on lux ext, toast on tx status changed. (#42)
   * feat: adjust sidebar's width on mainWindow. (#39)
   * feat: only expand search input when scroll down (#40)
   * feat: only show loading view on open/reload tab, ignore in-page loading. (#41)
@@ -1042,14 +1042,14 @@ v0.2.5 / 2023-01-03
   * fix: default route on mainWindow.
   * feat: support reset-app.
   * security: enable content protection on production.
-  * fix: wait rabbyx initialized.
+  * fix: wait luxx initialized.
   * feat: control header of mainWindow's page in route's loader. (#36)
   * chore: fix mainwin-mainarea-topoffset (#35)
   * feat: adjust style of Settings Page.
   * fix: sidebar nav opacity (#34)
   * fix: TopNavBar close button position (#33)
   * feat: introduce ipc invoke mechanism, apply in Settings of MainWindow.
-  * feat: on win32, make rabbyx notification window locked to main window. (#32)
+  * feat: on win32, make luxx notification window locked to main window. (#32)
   * fix: style for RabbyNotificationWindow on darwin.
   * perf: optimize fps of mainWindow rendering on windows. (#31)
   * perf: hide Dapp's views on mainWindow moving.
@@ -1059,7 +1059,7 @@ v0.2.4 / 2022-12-31
 ===================
 
   * Release v0.2.4
-  * feat: styled rabbyx's notification window. (#30)
+  * feat: styled luxx's notification window. (#30)
   * fix: only check url on redirect in spa.
 
 v0.2.3 / 2022-12-31
@@ -1070,7 +1070,7 @@ v0.2.3 / 2022-12-31
   * feat: for macos, set larger draggble are on top.
   * fix: little fix.
   * fix: nav to corresponding route on clicking dapp to removed.
-  * fix: mismatch rabbyx version.
+  * fix: mismatch luxx version.
   * feat: allow copy dapp's url on navbar.
   * fix: nav to corresponding route on clicking duplicated dapp.
   * fix: main area top offset on dapps' page. (#29)
@@ -1080,7 +1080,7 @@ v0.2.3 / 2022-12-31
   * feat: better loading interaction for active tab.
   * chore: code robust.
   * chore: code cleanup.
-  * fix: disable rabby wallet injection for dappSafeView.
+  * fix: disable lux wallet injection for dappSafeView.
   * chore: tuning style, and add helper types.
   * fix: avoid left loadingView for pages loading too quick.
   * fix: add timeout mechanism on `parseWebsiteFavicon`.
@@ -1091,7 +1091,7 @@ v0.2.2 / 2022-12-27
 ===================
 
   * Release v0.2.2
-  * chore: tuning size of rabbyx's notification window.
+  * chore: tuning size of luxx's notification window.
   * fix: should switch to last tab on close one tab, or switch to /my-dapps on all tabs closed.
   * chore: tuning for next release.
   * fix: make sure dapp view opened on route matched.
@@ -1108,7 +1108,7 @@ v0.2.1 / 2022-12-26
 ===================
 
   * Release v0.2.1
-  * feat: tuning style on create rabbyx's notification window.
+  * feat: tuning style on create luxx's notification window.
   * fix: app crash on axios fetch failure
   * chore: change some styles (#21)
   * chore: lockfile version fix.
@@ -1121,13 +1121,13 @@ v0.2.0 / 2022-12-26
   * feat: add switch account popup.
   * fix: hide context popup after switched chain.
   * feat: switch chain context menu (#20)
-  * feat: add global mask view, used for rabbyx. (#19)
+  * feat: add global mask view, used for luxx. (#19)
   * chore: robust change.
   * fix: app crash on close some windows.
   * feat: tuning style of dapp view's navigation bar.
   * feat: hide switch-chain popup window on click outside its trigger-button.
   * style: tuning style of dapp view's navbar.
-  * fix: use REAL background runtime of rabbyx, add `useShellWallet` as backup capability.
+  * fix: use REAL background runtime of luxx, add `useShellWallet` as backup capability.
   * chore: inspection helpers change.
   * feat: add hooks about current connection.
   * feat: add quick entry to inspect SwitchChainWindow
@@ -1148,17 +1148,17 @@ v0.2.0 / 2022-12-26
   * chore: type clean.
   * feat: init import pages (#13)
   * wip: dapps (#12)
-  * chore: remove scripts/install_rabby.sh
+  * chore: remove scripts/install_lux.sh
   * feat: add titlebar for mainWindow. (#14)
-  * feat: add rabbyx methods about alias name.
-  * feat: add rabbyx background entry on context menu.
+  * feat: add luxx methods about alias name.
+  * feat: add luxx background entry on context menu.
   * feat: remove entry getting-started
   * feat: support dapp pin/unpin
-  * feat: use packed rabbyx rather than development
+  * feat: use packed luxx rather than development
   * feat: add method on walletController
   * feat: add necessary utils for context-menu on sidebar.
   * feat: support context menu popup.
-  * feat: communicate to with latest rabbyx.
+  * feat: communicate to with latest luxx.
   * feat: basic scaffold for next layout. (#11)
   * chore: update README
   * fix: build for renderer.dev.dll
@@ -1166,7 +1166,7 @@ v0.2.0 / 2022-12-26
   * feat: tuning locked window style.
   * feat: use static dappLoadingView.
   * feat: code normalization.
-  * feat: basic scaffold of desktop wallet with rabbyx (#10)
+  * feat: basic scaffold of desktop wallet with luxx (#10)
 
 v0.1.8 / 2022-11-07
 ===================
@@ -1202,11 +1202,11 @@ v0.1.5 / 2022-11-01
   * Release v0.1.5
   * feat: support debug menu for reg build.
   * fix: robust change about window.__rD.detectConnect
-  * feat: upgrade embeded rabby extension to 0.54.0
+  * feat: upgrade embeded lux extension to 0.54.0
   * feat: only popup security-addressbar-popup on security-check closed.
   * chore: add util
   * feat: tuning style of security addressbar popup.
-  * feat: upgrade embeded rabby extension to 0.53.0
+  * feat: upgrade embeded lux extension to 0.53.0
   * fix: behavior on click non-mainwindow's close button
 
 v0.1.4 / 2022-10-28
@@ -1256,9 +1256,9 @@ v0.1.1 / 2022-09-30
 
   * Release v0.1.1
   * feat: restrain exposed apis for different webviews. (#7)
-  * feat: add rabby connect ts (#6)
+  * feat: add lux connect ts (#6)
   * fix: use Template image for macos's menubar icon
-  * vendor: upgrade rabby wallet extension
+  * vendor: upgrade lux wallet extension
   * chore: typo
 
 v0.1.0 / 2022-09-27
@@ -1269,7 +1269,7 @@ v0.1.0 / 2022-09-27
   * feat: finish install downloaded release
   * feat: release note
   * fix: send did-finish-load event
-  * Merge branch 'dev' of github.com:RabbyHub/RabbyDesktop into dev
+  * Merge branch 'dev' of github.com:luxfi/dwallet into dev
   * feat: auto update
   * feat: vary tray icon by theme on macos
   * fix: use platform-specific auto updater.
@@ -1280,12 +1280,12 @@ v0.1.0 / 2022-09-27
   * chore: rename.
   * feat: basic support for updator capability (#3)
   * chore: fix style
-  * Merge branch 'dev' of github.com:RabbyHub/RabbyDesktop into dev
+  * Merge branch 'dev' of github.com:luxfi/dwallet into dev
   * feat: add loading view
   * chore: menu template.
   * feat: update production name.
   * feat: set tray icon on win32.
-  * feat: upgrade rabby ext version.
+  * feat: upgrade lux ext version.
   * fix: home tab couldn't close.
   * build: update release windows script
   * fix: browser window minimal size.
@@ -1301,7 +1301,7 @@ v0.1.0 / 2022-09-27
   * fix: join faviconUrl
   * feat: replace to internal version `@debank/parse-favicon`
   * chore: use rxjs on app initialization.
-  * Merge branch 'dev' of github.com:RabbyHub/RabbyDesktop into dev
+  * Merge branch 'dev' of github.com:luxfi/dwallet into dev
   * feat: detect dapp url
   * chore: normalize all calls to `ipcMain.on`
   * feat: dx improvement.
@@ -1317,12 +1317,12 @@ v0.1.0 / 2022-09-27
   * chore: change backgroud
   * feat: change dapp page style
   * chore: rename hooks about dapps manager
-  * Merge branch 'dev' of github.com:RabbyHub/RabbyDesktop into dev
+  * Merge branch 'dev' of github.com:luxfi/dwallet into dev
   * chore: entry rename
   * feat: typed `ipcMain.on`
   * feat: add get start page
   * feat: make dapp always keep in its own tab. (#2)
-  * Merge branch 'dev' of github.com:RabbyHub/RabbyDesktop into dev
+  * Merge branch 'dev' of github.com:luxfi/dwallet into dev
   * feat: basic layout for getting-started page.
   * feat: add splash screen on production
   * chore: change dapps style
@@ -1343,12 +1343,12 @@ v0.1.0 / 2022-09-27
   * feat: disable devtools and its entry on production
   * fix: fuck less.
   * fix: lack of @svgr/webpack for renderer prod build.
-  * feat: always use static path to rabby wallet to keep extension's data.
-  * fix: upgrade `@rabby-wallet/electron-chrome-extensions` to support open relative url from extension.
+  * feat: always use static path to lux wallet to keep extension's data.
+  * fix: upgrade `@lux-wallet/electron-chrome-extensions` to support open relative url from extension.
   * chore: do lint fix
   * feat: support rename/delete dapps.
   * fix: build config.
   * feat: basic capbility to add dapp.
-  * chore: use rabby 0.46.0, update README
+  * chore: use lux 0.46.0, update README
   * feat: basic scaffold for desktop. (#1)
   * Initial commit
