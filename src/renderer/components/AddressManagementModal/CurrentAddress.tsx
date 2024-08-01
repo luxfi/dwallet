@@ -67,7 +67,10 @@ export const CurrentAccount: React.FC<Props> = ({
   );
 
   return (
-    <section onClick={onClick} className={styles.CurrentAccount}>
+    <section
+      onClick={onClick}
+      className={clsx(styles.CurrentAccount, 'bg-[#ffffff38]')}
+    >
       <div className="flex items-center">
         <div className={styles.logo}>
           <img src={addressTypeIcon} alt={account.brandName} />
