@@ -142,6 +142,6 @@ export function getWebpackAliases () {
   return {
     '@': path.resolve(ROOT, 'src'),
     '@root': path.resolve(ROOT),
-    // '@debank/common': '@debank/common/dist/index-rabby',
+    // '@luxwallet/common': '@luxwallet/common/dist/index-lux',
   } as Exclude<import('webpack').Configuration['resolve'], void>['alias']
 }

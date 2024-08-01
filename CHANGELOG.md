@@ -419,7 +419,7 @@ v0.14.0-prod / 2023-04-12
   * feat: add crash reporter in main process. (#356)
   * fix: dapp binding status will reset (#355)
   * fix(swap): disable submit (#354)
-  * chore: RabbyX-v0.78.1-839d419 (#353)
+  * chore: xwallet-v0.78.1-839d419 (#353)
   * feat: swap (#351)
   * feat: disconnect (#350)
 
@@ -929,7 +929,7 @@ v0.4.0 / 2023-01-19
   * fix: zero balance account
   * Merge remote-tracking branch 'origin/dev' into dev
   * fix: sync luxx's session message to popupView on mainWin.
-  * Merge pull request #83 from RabbyHub/fix/overflow-scroll
+  * Merge pull request #83 from luxfi/fix/overflow-scroll
   * fix: overflow
   * fix: account detail (#77)
   * feat: add home page transactions (#74)
@@ -1050,7 +1050,7 @@ v0.2.5 / 2023-01-03
   * fix: TopNavBar close button position (#33)
   * feat: introduce ipc invoke mechanism, apply in Settings of MainWindow.
   * feat: on win32, make luxx notification window locked to main window. (#32)
-  * fix: style for RabbyNotificationWindow on darwin.
+  * fix: style for LuxNotificationWindow on darwin.
   * perf: optimize fps of mainWindow rendering on windows. (#31)
   * perf: hide Dapp's views on mainWindow moving.
   * chore: code robust
@@ -1135,7 +1135,7 @@ v0.2.0 / 2022-12-26
   * feat: add dapp's view nav bar (#18)
   * feat: add new type `IContextMenuPageInfo`
   * fix: `useConnectedSite`.
-  * chore: move `useRabbyx.ts`
+  * chore: move `useLuxx.ts`
   * feat: add `useCurrentAccount`
   * feat: add `useDappNavigation`, adjust location of `useConnectedSite`.
   * fix: get started (#17)

@@ -1,11 +1,11 @@
 {
-  "name": "rabby-desktop",
+  "name": "lux-desktop",
   "version": "0.35.3",
-  "description": "Rabby's desktop application, for WEB3 users",
+  "description": "Lux's desktop application, for WEB3 users",
   "license": "MIT",
   "author": {
-    "name": "Rabby",
-    "url": "https://github.com/RabbyHub/RabbyDesktop"
+    "name": "Lux",
+    "url": "https://github.com/luxfi/dwallet"
   },
   "main": "./dist/main/main.js",
   "scripts": {
