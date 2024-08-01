@@ -46,13 +46,13 @@ module.exports = {
     '@typescript-eslint/naming-convention': 'off',
     'prefer-destructuring': 'off',
     'no-unused-vars': 'off',
+    'endOfLine': 'off',
     '@typescript-eslint/no-unused-vars': [
       'error',
       { varsIgnorePattern: '^_', argsIgnorePattern: '^_' },
     ],
     parser: 'off',
     parserOptions: 'off',
-    'endOfLine': 'auto',
   },
   parserOptions: {
     ecmaVersion: 2020,

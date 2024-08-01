@@ -440,7 +440,7 @@ export default function MainWindowSidebar() {
             <div className={styles.logoWrapper}>
               <img
                 className={styles.logo}
-                src="rabby-internal://assets/icons/mainwin-sidebar/sidebar-logo.svg"
+                src="rabby-internal://assets/icons/mainwin-sidebar/sidebar-logo.png"
               />
             </div>
             <div
