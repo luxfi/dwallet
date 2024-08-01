@@ -262,11 +262,12 @@ const SendNFTWrapper = styled.div`
 
     &:hover {
       box-shadow: 0px 16px 40px rgba(29, 35, 74, 0.2);
+      font-weight: 500;
     }
 
     &[disabled] {
-      background: #8697ff;
-      color: white;
+      background: #fff;
+      color: #000;
       opacity: 0.6;
       box-shadow: none;
       border-color: transparent;

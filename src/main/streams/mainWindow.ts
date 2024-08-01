@@ -36,7 +36,7 @@ export async function alertAutoUnlockFailed() {
   const result = await dialog.showMessageBox(mainWin.window, {
     type: 'question',
     title: 'Reset Rabby',
-    message: `You have set one password previously. Do you want to reset Rabby App and relauch without password?`,
+    message: `You have set one password previously. Do you want to reset Lux App and relauch without password?`,
     defaultId: cancleId,
     cancelId: cancleId,
     noLink: true,
