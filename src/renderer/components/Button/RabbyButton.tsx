@@ -10,9 +10,9 @@ export const RabbyButton: React.FC<ButtonProps> = (props) => {
       prefixCls="rabby-button"
       type="primary"
       className={classNames(
-        'w-[172px] text-[13px] h-[34px] rounded-[4px]',
-        'bg-color-[#8697FF] outline-none border border-transparent cursor-pointer shadow',
-        'text-white',
+        'w-[172px] text-[13px] h-[34px] rounded-[5px]',
+        'bg-color-[#fff] outline-none border border-transparent cursor-pointer shadow',
+        'text-[#000]',
         'hover:bg-opacity-80',
         {
           'opacity-30 cursor-not-allowed hover:bg-opacity-100':
