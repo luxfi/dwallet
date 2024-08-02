@@ -1,7 +1,7 @@
 import { NativeAppSizes } from '@/isomorphic/const-size-next';
 import {
   SAFE_WEBPREFERENCES,
-  RABBY_BLANKPAGE_RELATIVE_URL,
+  LUX_BLANKPAGE_RELATIVE_URL,
 } from '@/isomorphic/constants';
 import { getRabbyXWindowPosition } from '@/isomorphic/rabbyx';
 import { roundRectValue } from '@/isomorphic/shape';
@@ -37,7 +37,7 @@ export function redirectToAboutBlank(webContents: Electron.WebContents) {
 }
 
 export function redirectToBlankPage(webContents: Electron.WebContents) {
-  webContents.loadURL(getAssetPath(RABBY_BLANKPAGE_RELATIVE_URL));
+  webContents.loadURL(getAssetPath(LUX_BLANKPAGE_RELATIVE_URL));
 }
 
 export function destroyBrowserWebview(view?: BrowserView | null) {

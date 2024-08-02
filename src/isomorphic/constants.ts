@@ -56,19 +56,19 @@ try {
   if (port && !Number.isNaN(port)) DEV_SERVER_PORT = port;
   // eslint-disable-next-line no-empty
 } catch (e) {}
-export const RABBY_LOCAL_URLBASE =
+export const LUX_LOCAL_URLBASE =
   IS_RUNTIME_PRODUCTION || !process.env.HTTP_INSTEAD_OF_CUSTOM
     ? `${LUX_INTERNAL_PROTOCOL}//local`
     : `http://localhost:${DEV_SERVER_PORT}`;
 
-export const RABBY_GETTING_STARTED_URL = `${RABBY_LOCAL_URLBASE}/getting-started.html`;
-export const RABBY_SPALSH_URL = `${RABBY_LOCAL_URLBASE}/splash.html`;
-export const RABBY_LOADING_URL = `${RABBY_LOCAL_URLBASE}/loading.html`;
+export const LUX_GETTING_STARTED_URL = `${LUX_LOCAL_URLBASE}/getting-started.html`;
+export const LUX_SPALSH_URL = `${LUX_LOCAL_URLBASE}/splash.html`;
+export const LUX_LOADING_URL = `${LUX_LOCAL_URLBASE}/loading.html`;
 
-export const RABBY_MAIN_POPUP_VIEW = `${RABBY_LOCAL_URLBASE}/main-popup-view.html`;
-export const RABBY_POPUP_GHOST_VIEW_URL = `${RABBY_LOCAL_URLBASE}/popup-view.html`;
+export const LUX_MAIN_POPUP_VIEW = `${LUX_LOCAL_URLBASE}/main-popup-view.html`;
+export const LUX_POPUP_GHOST_VIEW_URL = `${LUX_LOCAL_URLBASE}/popup-view.html`;
 
-export const RABBY_BLANKPAGE_RELATIVE_URL = `preloads/blank.html`;
+export const LUX_BLANKPAGE_RELATIVE_URL = `preloads/blank.html`;
 
 export const GAS_LEVEL_TEXT = {
   slow: 'Standard',

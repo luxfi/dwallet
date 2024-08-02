@@ -1,7 +1,7 @@
 import { app } from 'electron';
 import {
   IS_RUNTIME_PRODUCTION,
-  RABBY_POPUP_GHOST_VIEW_URL,
+  LUX_POPUP_GHOST_VIEW_URL,
 } from '@/isomorphic/constants';
 import { isRabbyXPage } from '@/isomorphic/url';
 import { randString } from '@/isomorphic/string';
@@ -82,7 +82,7 @@ const maskReady = getRabbyExtId().then(async () => {
   rabbyNotificationGasket.setBounds({ x: -100, y: -100, width: 1, height: 1 });
 
   await rabbyNotificationGasket.webContents.loadURL(
-    `${RABBY_POPUP_GHOST_VIEW_URL}#/rabby-notification-gasket`
+    `${LUX_POPUP_GHOST_VIEW_URL}#/rabby-notification-gasket`
   );
 
   return rabbyNotificationGasket;

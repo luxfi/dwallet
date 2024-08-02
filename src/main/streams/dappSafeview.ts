@@ -3,7 +3,7 @@ import { BrowserView, BrowserWindow } from 'electron';
 import { canoicalizeDappUrl } from '@/isomorphic/url';
 import {
   IS_DEVTOOLS_AVAILBLE,
-  RABBY_POPUP_GHOST_VIEW_URL,
+  LUX_POPUP_GHOST_VIEW_URL,
 } from '../../isomorphic/constants';
 
 import {
@@ -74,7 +74,7 @@ onMainWindowReady().then(async (mainWin) => {
   targetWin.on('restore', onTargetWinUpdate);
 
   baseView.webContents.loadURL(
-    `${RABBY_POPUP_GHOST_VIEW_URL}?view=dapp-safe-view#/`
+    `${LUX_POPUP_GHOST_VIEW_URL}?view=dapp-safe-view#/`
   );
 
   hideView(baseView, targetWin);

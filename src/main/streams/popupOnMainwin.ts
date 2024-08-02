@@ -2,7 +2,7 @@ import { BrowserWindow } from 'electron';
 
 import {
   IS_RUNTIME_PRODUCTION,
-  RABBY_POPUP_GHOST_VIEW_URL,
+  LUX_POPUP_GHOST_VIEW_URL,
 } from '../../isomorphic/constants';
 import {
   onIpcMainEvent,
@@ -175,7 +175,7 @@ const sidebarAppContextMenuReady = onMainWindowReady().then(
     });
 
     await sidebarAppContextMenuPopup.webContents.loadURL(
-      `${RABBY_POPUP_GHOST_VIEW_URL}#/popup__sidebar-dapp`
+      `${LUX_POPUP_GHOST_VIEW_URL}#/popup__sidebar-dapp`
     );
 
     // debug-only
@@ -243,7 +243,7 @@ const ghostFloatingWindowReady = onMainWindowReady().then(
     mainWin.on('restore', onTargetWinUpdate);
 
     await ghostFloatingWindow.webContents.loadURL(
-      `${RABBY_POPUP_GHOST_VIEW_URL}?view=top-ghost-window`
+      `${LUX_POPUP_GHOST_VIEW_URL}?view=top-ghost-window`
     );
 
     // debug-only

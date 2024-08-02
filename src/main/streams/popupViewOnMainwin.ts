@@ -9,7 +9,7 @@ import {
 import {
   IS_DEVTOOLS_AVAILBLE,
   IS_RUNTIME_PRODUCTION,
-  RABBY_POPUP_GHOST_VIEW_URL,
+  LUX_POPUP_GHOST_VIEW_URL,
   TOAST_TOP,
 } from '../../isomorphic/constants';
 import {
@@ -266,7 +266,7 @@ const dappsManagementReady = onMainWindowReady().then(async (mainWin) => {
   mainWindow.on('restore', onTargetWinUpdate);
 
   await dappsManagementPopup.webContents.loadURL(
-    `${RABBY_POPUP_GHOST_VIEW_URL}?view=dapps-management#/`
+    `${LUX_POPUP_GHOST_VIEW_URL}?view=dapps-management#/`
   );
 
   // debug-only
@@ -283,7 +283,7 @@ const selectDevicesReady = onMainWindowReady().then(async () => {
   const selectDevicesPopup = createPopupView({});
 
   await selectDevicesPopup.webContents.loadURL(
-    `${RABBY_POPUP_GHOST_VIEW_URL}?view=select-devices#/`
+    `${LUX_POPUP_GHOST_VIEW_URL}?view=select-devices#/`
   );
 
   // debug-only
@@ -337,7 +337,7 @@ const selectCamerasReady = onMainWindowReady().then(async (mainWin) => {
   mainWindow.on('restore', onTargetWinUpdate);
 
   await selectCameraPopup.webContents.loadURL(
-    // `${RABBY_POPUP_GHOST_VIEW_URL}?view=select-camera`
+    // `${LUX_POPUP_GHOST_VIEW_URL}?view=select-camera`
     `${await getWebuiURLBase()}/popup-view.html?view=select-camera#/`
   );
 
@@ -375,7 +375,7 @@ const inDappFindReady = onMainWindowReady().then(async (mainWin) => {
   mainWindow.on('restore', onTargetWinUpdate);
 
   await inDappFindPopup.webContents.loadURL(
-    `${RABBY_POPUP_GHOST_VIEW_URL}?view=in-dapp-find`
+    `${LUX_POPUP_GHOST_VIEW_URL}?view=in-dapp-find`
   );
 
   // debug-only
@@ -444,7 +444,7 @@ const globalToastPopupReady = onMainWindowReady().then(async (mainWin) => {
   mainWindow.on('restore', onTargetWinUpdate);
 
   await globalToastPopup.webContents.loadURL(
-    `${RABBY_POPUP_GHOST_VIEW_URL}?view=global-toast-popup#/`
+    `${LUX_POPUP_GHOST_VIEW_URL}?view=global-toast-popup#/`
   );
 
   // debug-only
@@ -480,7 +480,7 @@ const rightSidePopupViewReady = onMainWindowReady().then(async (mainWin) => {
   // mainWindow.on('restore', onTargetWinUpdate);
 
   await rightSidePopup.webContents.loadURL(
-    `${RABBY_POPUP_GHOST_VIEW_URL}?view=right-side-popup#/`
+    `${LUX_POPUP_GHOST_VIEW_URL}?view=right-side-popup#/`
   );
 
   // debug-only

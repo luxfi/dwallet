@@ -5,7 +5,7 @@ import {
   APP_BRANDNAME,
   APP_NAME,
   IS_RUNTIME_PRODUCTION,
-  RABBY_SPALSH_URL,
+  LUX_SPALSH_URL,
 } from '../../isomorphic/constants';
 import {
   isBuiltinView,
@@ -464,7 +464,7 @@ export default function bootstrap() {
         { zeroMinSize: true }
       )
     );
-    splashWin.webContents.loadURL(RABBY_SPALSH_URL);
+    splashWin.webContents.loadURL(LUX_SPALSH_URL);
 
     const { useBuiltInPwd } = await tryAutoUnlockRabbyX();
     appLog(`autoUnlock ${useBuiltInPwd ? 'success' : 'failed'}`);

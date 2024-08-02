@@ -7,7 +7,7 @@ import {
   PROTOCOL_ENS,
   PROTOCOL_IPFS,
   LUX_INTERNAL_PROTOCOL,
-  RABBY_LOCAL_URLBASE,
+  LUX_LOCAL_URLBASE,
   PROTOCOL_LOCALFS,
 } from './constants';
 import {
@@ -216,7 +216,7 @@ function _isBuiltinView(url: string, viewType: IBuiltinViewName | '*') {
     case 'global-toast-popup':
     case 'top-ghost-window':
       return (
-        url.startsWith(RABBY_LOCAL_URLBASE) &&
+        url.startsWith(LUX_LOCAL_URLBASE) &&
         urlInfo.pathname === '/popup-view.html' &&
         queryInfo.view === `${viewType}`
       );
@@ -871,7 +871,7 @@ export function getBuiltinViewType(urlInfo: URL | Location) {
   }
   if (
     LUX_INTERNAL_PROTOCOL === urlInfo.protocol ||
-    urlInfo.href.startsWith(RABBY_LOCAL_URLBASE)
+    urlInfo.href.startsWith(LUX_LOCAL_URLBASE)
   ) {
     return 'lux-internal';
   }

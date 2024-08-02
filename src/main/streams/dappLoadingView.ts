@@ -1,7 +1,7 @@
 import { NativeAppSizes } from '@/isomorphic/const-size-next';
 import {
   IS_RUNTIME_PRODUCTION,
-  RABBY_LOADING_URL,
+  LUX_LOADING_URL,
 } from '../../isomorphic/constants';
 import {
   createPopupView,
@@ -60,7 +60,7 @@ onMainWindowReady().then((tabbedWin) => {
 
   mainWindow.addBrowserView(dappLoadingView);
 
-  dappLoadingView.webContents.loadURL(RABBY_LOADING_URL);
+  dappLoadingView.webContents.loadURL(LUX_LOADING_URL);
 
   valueToMainSubject('dappLoadingView', dappLoadingView);
 
