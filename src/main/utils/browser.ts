@@ -291,7 +291,7 @@ export function browserWindowOn<T extends EventTypeOfBrowserOn>(
 const isWin32 = process.platform === 'win32';
 const rWinWidth = NativeAppSizes.rabbyxNotificationWindowWidth;
 
-export function parseRabbyxNotificationParams(
+export function parseLuxxNotificationParams(
   mainWindow: BrowserWindow,
   opts: {
     details: Pick<chrome.windows.CreateData, 'height' | 'width'>;

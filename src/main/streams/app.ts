@@ -45,7 +45,7 @@ import { valueToMainSubject } from './_init';
 import {
   getElectronChromeExtensions,
   onMainWindowReady,
-  getRabbyExtViews,
+  getLuxExtViews,
   getAllMainUIWindows,
 } from '../utils/stream-helpers';
 import { switchToBrowserTab } from '../utils/browser';
@@ -260,7 +260,7 @@ async function doResetApp(mainWin: MainTabbedBrowserWindow) {
     clearAllStoreData();
     clearAllUserData(mainWin.window.webContents.session);
 
-    const { backgroundWebContents } = await getRabbyExtViews();
+    const { backgroundWebContents } = await getLuxExtViews();
     await backgroundWebContents.executeJavaScript(
       `chrome.storage.local.clear();`
     );
@@ -397,7 +397,7 @@ export default function bootstrap() {
      * orders:
      * sessionReady
      * -> webuiExtensionReady
-     * -> rabbyExtensionLoaded
+     * -> luxExtensionLoaded
      * -> electronChromeExtensionsReady
      *
      * so we just need to wait electronChromeExtensionsReady ready
@@ -405,7 +405,7 @@ export default function bootstrap() {
     const shellExts = await getElectronChromeExtensions();
 
     const lastMainWinPos = getMainWinLastPosition();
-    await getRabbyExtViews();
+    await getLuxExtViews();
 
     // init window
     const mainWindow = (await createWindow({

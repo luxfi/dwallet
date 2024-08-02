@@ -8,7 +8,7 @@ import { onIpcMainEvent } from '../../utils/ipcMainEvents';
 import { fromMainSubject } from '../_init';
 
 async function getRabbyxBgWebContents() {
-  return firstValueFrom(fromMainSubject('rabbyExtViews')).then(
+  return firstValueFrom(fromMainSubject('luxExtViews')).then(
     (views) => views.backgroundWebContents
   );
 }
@@ -21,7 +21,7 @@ export async function rabbyxExecuteJs<T>(script: string): Promise<T> {
 
 export async function rabbyxExecuteJsOnBlank<T>(script: string): Promise<T> {
   const rabbyxBlankPage = await firstValueFrom(
-    fromMainSubject('rabbyExtViews')
+    fromMainSubject('luxExtViews')
   ).then((views) => views.rabbyxBlankPage);
 
   return rabbyxBlankPage.webContents.executeJavaScript(script);

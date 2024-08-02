@@ -9,7 +9,7 @@ export default function RabbyNotificationGasket() {
         className={styles.maskInGasket}
         onClick={() => {
           window.rabbyDesktop.ipcRenderer.sendMessage(
-            '__internal_rpc:rabbyx:close-signwin'
+            '__internal_rpc:luxx:close-signwin'
           );
         }}
       />

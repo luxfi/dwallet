@@ -12,7 +12,7 @@ describe.only('rabby extension capabilities', () => {
       return 'https://metamask.github.io/test-dapp/'
       // return `chrome-extension://${browser.extension.id}/popup.html`
     },
-    
+
     partitionName: 'extension-rabby',
     // extensionName: 'rpc'
     extensionName: path.resolve(__dirname, '../assets/chrome_exts/rabby'),
@@ -22,8 +22,8 @@ describe.only('rabby extension capabilities', () => {
 
   describe('rabby extension basic', () => {
     it('loaded', async () => {
-      const rabbyExt = browser.extension;
-      expect(typeof rabbyExt.id).to.equal('string');
+      const luxExt = browser.extension;
+      expect(typeof luxExt.id).to.equal('string');
     });
 
     it('gets details on the window', async function () {

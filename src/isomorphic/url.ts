@@ -247,7 +247,7 @@ export function isBuiltinView(url: string, viewType: IBuiltinViewName | '*') {
 export function isRabbyXNotificationWinShellWebUI(url: string) {
   return (
     url.startsWith('chrome-extension:') &&
-    url.includes('__webuiType=RabbyX-NotificationWindow')
+    url.includes('__webuiType=LuxX-NotificationWindow')
   );
 }
 

@@ -38,13 +38,13 @@ export async function forwardToMainWebContents<
 }
 
 export async function getRabbyExtId() {
-  const ext = await firstValueFrom(fromMainSubject('rabbyExtensionLoaded'));
+  const ext = await firstValueFrom(fromMainSubject('luxExtensionLoaded'));
 
   return ext.id;
 }
 
-export async function getRabbyExtViews() {
-  return firstValueFrom(fromMainSubject('rabbyExtViews'));
+export async function getLuxExtViews() {
+  return firstValueFrom(fromMainSubject('luxExtViews'));
 }
 
 export async function getSessionInsts() {
@@ -63,9 +63,9 @@ export async function getPopupWindowOnMain() {
   return firstValueFrom(fromMainSubject('popupWindowOnMain'));
 }
 
-export async function __internalToggleRabbyxGasketMask(nextShow: boolean) {
+export async function __internalToggleLuxxGasketMask(nextShow: boolean) {
   const { window: mainWin } = await onMainWindowReady();
-  const { rabbyNotificationGasket } = await getRabbyExtViews();
+  const { rabbyNotificationGasket } = await getLuxExtViews();
 
   if (!mainWin.isDestroyed()) {
     const [width, height] = mainWin.getSize();
@@ -93,9 +93,9 @@ export async function __internalToggleRabbyxGasketMask(nextShow: boolean) {
   }
 }
 
-export const RABBYX_WINDOWID_S = new Set<number>();
-export async function toggleMaskViaOpenedRabbyxNotificationWindow() {
-  __internalToggleRabbyxGasketMask(RABBYX_WINDOWID_S.size > 0);
+export const LUXX_WINDOWID_S = new Set<number>();
+export async function toggleMaskViaOpenedLuxxNotificationWindow() {
+  __internalToggleLuxxGasketMask(LUXX_WINDOWID_S.size > 0);
 }
 
 const INIT_ACTIVE_TAB_RECT: IMainWindowActiveTabRect = {

@@ -17,7 +17,7 @@ import {
 import {
   getRabbyExtId,
   onMainWindowReady,
-  __internalToggleRabbyxGasketMask,
+  __internalToggleLuxxGasketMask,
 } from '../utils/stream-helpers';
 import { rabbyxExecuteJs, rabbyxQuery } from './rabbyIpcQuery/_base';
 import { createPopupView } from '../utils/browser';
@@ -148,7 +148,7 @@ const bgWcReady = new Promise<Electron.WebContents>((resolve) => {
 
 Promise.all([maskReady, bgWcReady, blankPageReady, rabbyxInitialized]).then(
   ([rabbyNotificationGasket, backgroundWebContents, rabbyxBlankPage]) => {
-    valueToMainSubject('rabbyExtViews', {
+    valueToMainSubject('luxExtViews', {
       rabbyNotificationGasket: rabbyNotificationGasket!,
       backgroundWebContents,
       rabbyxBlankPage,
@@ -168,7 +168,7 @@ handleIpcMainInvoke(
 onIpcMainInternalEvent('__internal_main:dev', async (payload) => {
   switch (payload.type) {
     case 'rabbyx-sign-gasket:toggle-show': {
-      __internalToggleRabbyxGasketMask(payload.nextShow);
+      __internalToggleLuxxGasketMask(payload.nextShow);
       break;
     }
     default:

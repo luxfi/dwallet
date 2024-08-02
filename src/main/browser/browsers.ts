@@ -273,7 +273,7 @@ export default class TabbedBrowserWindow<TTab extends Tab = Tab> {
   }
 
   isRabbyXNotificationWindow() {
-    return this.$meta.webuiType === 'RabbyX-NotificationWindow';
+    return this.$meta.webuiType === 'LuxX-NotificationWindow';
   }
 
   getFocusedTab() {

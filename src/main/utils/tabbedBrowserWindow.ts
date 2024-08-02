@@ -9,7 +9,7 @@ import TabbedBrowserWindow, {
 } from '../browser/browsers';
 import { getBrowserWindowOpts } from './app';
 import {
-  RABBYX_WINDOWID_S,
+  LUXX_WINDOWID_S,
   getAllMainUIViews,
   getElectronChromeExtensions,
   getWebuiExtension,
@@ -53,7 +53,7 @@ export function findOpenedDappTab(
     : tabbedWin?.tabs.findByUrlbase(url);
 }
 
-export function findExistedRabbyxNotificationWin():
+export function findExistedLuxxNotificationWin():
   | TabbedBrowserWindow
   | undefined {
   return windows.find((w) => w.isRabbyXNotificationWindow());
@@ -201,10 +201,10 @@ export function getOrCreateDappBoundTab(
   return result;
 }
 
-function getAllRabbyXWindowWebContentsList() {
+function getAllLuxXWindowWebContentsList() {
   const webContentsList: Electron.WebContents[] = [];
 
-  RABBYX_WINDOWID_S.forEach((windowId) => {
+  LUXX_WINDOWID_S.forEach((windowId) => {
     if (!windowId) return;
 
     const win = BrowserWindow.fromId(windowId);
@@ -213,7 +213,7 @@ function getAllRabbyXWindowWebContentsList() {
       win?.webContents
     );
 
-    // find all rabbyx sign tabs
+    // find all luxx sign tabs
     tabbedBrowserWindow?.tabs.tabList.forEach((tab) => {
       if (tab.view?.webContents && !tab.view?.webContents.isDestroyed()) {
         webContentsList.push(tab.view?.webContents);
@@ -237,9 +237,9 @@ export async function pushEventToAllUIsCareAboutHidDevices(
   eventPayload: M2RChanneMessagePayload['__internal_push:webusb:events']
 ) {
   const { list } = await getAllMainUIViews();
-  const rabbyxSignWebContentsList = getAllRabbyXWindowWebContentsList();
+  const luxxSignWebContentsList = getAllLuxXWindowWebContentsList();
 
-  [...list, ...rabbyxSignWebContentsList].forEach((view) => {
+  [...list, ...luxxSignWebContentsList].forEach((view) => {
     sendToWebContents(view, '__internal_push:webusb:events', eventPayload);
   });
 }
@@ -248,9 +248,9 @@ export async function pushEventToAllUIsCareAboutCameras(
   eventPayload: M2RChanneMessagePayload['__internal_push:media:events']
 ) {
   const { list } = await getAllMainUIViews();
-  const rabbyxSignWebContentsList = getAllRabbyXWindowWebContentsList();
+  const luxxSignWebContentsList = getAllLuxXWindowWebContentsList();
 
-  [...list, ...rabbyxSignWebContentsList].forEach((view) => {
+  [...list, ...luxxSignWebContentsList].forEach((view) => {
     sendToWebContents(view, '__internal_push:media:events', eventPayload);
   });
 }

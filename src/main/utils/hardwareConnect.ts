@@ -200,7 +200,7 @@ export async function createHardwareConnectPageWindow(
   // });
 
   connWindow.on('closed', async () => {
-    // const { backgroundWebContents } = await getRabbyExtViews();
+    // const { backgroundWebContents } = await getLuxExtViews();
     // backgroundWebContents.executeJavaScript(`window._TrezorConnect.dispose();`);
     // // backgroundWebContents.executeJavaScript(`window._TrezorConnect.cancel();`);
     pushChangesToZPopupLayer({

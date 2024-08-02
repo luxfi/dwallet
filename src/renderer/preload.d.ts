@@ -239,7 +239,7 @@ type ChannelMessagePayload = {
     response: [];
   };
 
-  '__internal_rpc:rabbyx:close-signwin': {
+  '__internal_rpc:luxx:close-signwin': {
     send: [];
     response: [];
   };

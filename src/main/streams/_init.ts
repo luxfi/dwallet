@@ -27,11 +27,11 @@ const CONF = {
     subject: new ReplaySubject(1),
     once: true,
   } as IConf<ReplaySubject<Electron.Extension>>,
-  rabbyExtensionLoaded: {
+  luxExtensionLoaded: {
     subject: new ReplaySubject(1),
     once: true,
   } as IConf<ReplaySubject<Electron.Extension>>,
-  rabbyExtViews: {
+  luxExtViews: {
     subject: new ReplaySubject(1),
     once: true,
   } as IConf<

@@ -7,7 +7,7 @@ import './store';
 
 import './streams/tabbedBrowserWindow';
 import './streams/mainWindow';
-import './streams/rabbyExt';
+import './streams/luxExt';
 import './streams/updater';
 import './streams/session';
 import './streams/dappSafeview';

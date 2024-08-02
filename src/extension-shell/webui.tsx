@@ -59,7 +59,7 @@ switch (shellUIType) {
     root.render(<HardwareConnectTopbar />);
     break;
   }
-  case 'RabbyX-NotificationWindow': {
+  case 'LuxX-NotificationWindow': {
     break;
   }
   default: {

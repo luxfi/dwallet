@@ -22,7 +22,7 @@ import {
   getWindowFromBrowserWindow,
   getTabbedWindowFromWebContents,
   removeWindowRecord,
-  createRabbyxNotificationWindow,
+  createLuxxNotificationWindow,
 } from './tabbedBrowserWindow';
 import { firstEl } from '../../isomorphic/array';
 import {
@@ -96,7 +96,7 @@ async function loadExtensions(sess: Electron.Session, extensionsPath: string) {
   );
 
   const extensions: Electron.Extension[] = [];
-  let rabbyExt: Electron.Extension = undefined as any;
+  let luxExt: Electron.Extension = undefined as any;
 
   await Promise.allSettled(
     extensionDirectories.filter(Boolean).map(async (extPath) => {
@@ -108,8 +108,8 @@ async function loadExtensions(sess: Electron.Session, extensionsPath: string) {
         });
         extensions.push(ext);
         if (ext.name.toLowerCase().includes('rabby')) {
-          valueToMainSubject('rabbyExtensionLoaded', ext);
-          rabbyExt = ext;
+          valueToMainSubject('luxExtensionLoaded', ext);
+          luxExt = ext;
         }
       } catch (e) {
         console.error(e);
@@ -417,7 +417,7 @@ firstValueFrom(fromMainSubject('userAppReady')).then(async () => {
       const isNotification = isRabbyXPage(inputUrl, rabbyExtId, 'notification');
 
       if (isNotification) {
-        return createRabbyxNotificationWindow({
+        return createLuxxNotificationWindow({
           url: tabUrl,
           width: details.width,
           height: details.height,

@@ -29,7 +29,7 @@ import { getWindowFromWebContents, switchToBrowserTab } from '../utils/browser';
 import { appendMenu, appendMenuSeparator } from '../utils/context-menu';
 import { emitIpcMainEvent } from '../utils/ipcMainEvents';
 import {
-  getRabbyExtViews,
+  getLuxExtViews,
   getWebuiExtId,
   onMainWindowReady,
   getAllMainUIWindows,
@@ -113,7 +113,7 @@ function buildRabbyXDebugMenu(opts: ChromeContextMenuOptions) {
   appendMenu(menu, {
     label: 'Open RabbyX Background',
     click: async () => {
-      const { backgroundWebContents } = await getRabbyExtViews();
+      const { backgroundWebContents } = await getLuxExtViews();
 
       if (!backgroundWebContents.isDevToolsOpened()) {
         backgroundWebContents.openDevTools({ mode: 'detach' });
@@ -144,7 +144,7 @@ function buildRabbyXDebugMenu(opts: ChromeContextMenuOptions) {
   appendMenu(menu, {
     label: `Trigger notification: Tx completed`,
     click: async () => {
-      // const { backgroundWebContents } = await getRabbyExtViews();
+      // const { backgroundWebContents } = await getLuxExtViews();
 
       // backgroundWebContents.executeJavaScript(`
       //   chrome.notifications.create('https://polygonscan.com/tx/0x9c9d39c5e99074552c7caa33e2c3cedd25c9a21ed4190b7c9b48be3ea0111776_randomId_=1672918371781', {
@@ -184,7 +184,7 @@ function buildRabbyXDebugMenu(opts: ChromeContextMenuOptions) {
   appendMenu(menu, {
     label: `Trigger notification: Tx push-failed`,
     click: async () => {
-      // const { backgroundWebContents } = await getRabbyExtViews();
+      // const { backgroundWebContents } = await getLuxExtViews();
 
       // backgroundWebContents.executeJavaScript(`
       //   chrome.notifications.create({
@@ -204,7 +204,7 @@ function buildRabbyXDebugMenu(opts: ChromeContextMenuOptions) {
   appendMenu(menu, {
     label: `Trigger notification: Tx submitted`,
     click: async () => {
-      // const { backgroundWebContents } = await getRabbyExtViews();
+      // const { backgroundWebContents } = await getLuxExtViews();
 
       // backgroundWebContents.executeJavaScript(`
       //   chrome.notifications.create('https://polygonscan.com/tx/0x9c9d39c5e99074552c7caa33e2c3cedd25c9a21ed4190b7c9b48be3ea0111776_randomId_=1672918371781', {

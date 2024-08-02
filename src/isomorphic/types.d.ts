@@ -589,7 +589,7 @@ type IShellWebUIType =
   | 'MainWindow'
   | 'Prompt'
   | 'ForSpecialHardware'
-  | 'RabbyX-NotificationWindow';
+  | 'LuxX-NotificationWindow';
 
 type IOpenDappAction =
   | 'open-in-newtab'

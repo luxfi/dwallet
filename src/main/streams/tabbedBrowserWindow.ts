@@ -25,14 +25,14 @@ import {
 
 import {
   getIpfsService,
-  getRabbyExtViews,
+  getLuxExtViews,
   onMainWindowReady,
   pushChangesToZPopupLayer,
-  RABBYX_WINDOWID_S,
-  toggleMaskViaOpenedRabbyxNotificationWindow,
+  LUXX_WINDOWID_S,
+  toggleMaskViaOpenedLuxxNotificationWindow,
 } from '../utils/stream-helpers';
 import {
-  parseRabbyxNotificationParams,
+  parseLuxxNotificationParams,
   isPopupWindowHidden,
 } from '../utils/browser';
 import {
@@ -64,7 +64,7 @@ export {
   getWindowFromBrowserWindow,
   findByWindowId,
   findOpenedDappTab,
-  findExistedRabbyxNotificationWin,
+  findExistedLuxxNotificationWin,
   getTabbedWindowFromWebContents,
   isTabbedWebContents,
   createWindow,
@@ -73,10 +73,10 @@ export {
 
 const isWin32 = process.platform === 'win32';
 
-const rabbyxWinState = {
+const luxxWinState = {
   signApprovalType: null as string | null,
 };
-export async function createRabbyxNotificationWindow({
+export async function createLuxxNotificationWindow({
   url,
   width,
   height,
@@ -88,18 +88,18 @@ export async function createRabbyxNotificationWindow({
   const mainWin = await onMainWindowReady();
 
   const queryObj = parseQueryString(url.split('?')[1] || '');
-  rabbyxWinState.signApprovalType = queryObj.type;
+  luxxWinState.signApprovalType = queryObj.type;
 
   const { finalBounds: expectedBounds, shouldPosCenter } =
-    parseRabbyxNotificationParams(mainWin.window, {
-      signApprovalType: rabbyxWinState.signApprovalType,
+    parseLuxxNotificationParams(mainWin.window, {
+      signApprovalType: luxxWinState.signApprovalType,
       details: { width, height },
     });
 
   const win = await createWindow({
     defaultTabUrl: url,
     windowType: 'popup',
-    webuiType: 'RabbyX-NotificationWindow',
+    webuiType: 'LuxX-NotificationWindow',
     window: {
       frame: false,
       /**
@@ -144,21 +144,21 @@ export async function createRabbyxNotificationWindow({
 
   const windowId = win.window.id;
   win.window.on('closed', () => {
-    rabbyxWinState.signApprovalType = null;
-    RABBYX_WINDOWID_S.delete(windowId);
-    toggleMaskViaOpenedRabbyxNotificationWindow();
+    luxxWinState.signApprovalType = null;
+    LUXX_WINDOWID_S.delete(windowId);
+    toggleMaskViaOpenedLuxxNotificationWindow();
   });
 
   win.tabs.tabList[0]?._patchWindowBuiltInMethods();
 
-  RABBYX_WINDOWID_S.add(windowId);
-  toggleMaskViaOpenedRabbyxNotificationWindow();
+  LUXX_WINDOWID_S.add(windowId);
+  toggleMaskViaOpenedLuxxNotificationWindow();
 
   return win.window as BrowserWindow;
 }
 
-onIpcMainEvent('__internal_rpc:rabbyx:close-signwin', async () => {
-  RABBYX_WINDOWID_S.forEach((wid) => {
+onIpcMainEvent('__internal_rpc:luxx:close-signwin', async () => {
+  LUXX_WINDOWID_S.forEach((wid) => {
     const win = BrowserWindow.fromId(wid);
     if (win) win.close();
   });
@@ -410,20 +410,20 @@ onMainWindowReady().then((mainTabbedWin) => {
   const onTargetWinUpdate = () => {
     if (mainTabbedWin.window.isDestroyed()) return;
 
-    RABBYX_WINDOWID_S.forEach((winId) => {
+    LUXX_WINDOWID_S.forEach((winId) => {
       const win = findByWindowId(winId)?.window;
       if (!win || win?.isDestroyed()) return;
       if (isPopupWindowHidden(win)) return;
 
       const bounds = win.getBounds();
-      const { finalBounds } = parseRabbyxNotificationParams(
+      const { finalBounds } = parseLuxxNotificationParams(
         mainTabbedWin.window,
         {
           details: {
             width: bounds.width,
             height: bounds.height,
           },
-          signApprovalType: rabbyxWinState.signApprovalType,
+          signApprovalType: luxxWinState.signApprovalType,
         }
       );
       win.setBounds(finalBounds);
@@ -515,7 +515,7 @@ onIpcMainEvent('__internal_rpc:trezor-like-window:click-close', async (evt) => {
 
   tabbedWin.window.hide();
 
-  const { backgroundWebContents } = await getRabbyExtViews();
+  const { backgroundWebContents } = await getLuxExtViews();
 
   backgroundWebContents.executeJavaScript(`window._TrezorConnect.cancel();`);
 

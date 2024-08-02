@@ -20,7 +20,7 @@ import {
 import {
   getAllMainUIViews,
   getAppTray,
-  getRabbyExtViews,
+  getLuxExtViews,
   onMainWindowReady,
   updateMainWindowActiveTabRect,
 } from '../utils/stream-helpers';
@@ -150,7 +150,7 @@ function initMainWindowPosition(mainWindow: Electron.BrowserWindow) {
 onIpcMainInternalEvent(
   '__internal_main:mainwindow:show',
   async (isInitMainWindow) => {
-    await getRabbyExtViews();
+    await getLuxExtViews();
     const mainTabbedWin = await onMainWindowReady();
 
     if (isInitMainWindow) {
