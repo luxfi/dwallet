@@ -27,4 +27,4 @@ export const themeColors = {
   },
 } as const;
 
-export const rabbyCssPrefix = 'r-';
+export const luxCssPrefix = 'r-';

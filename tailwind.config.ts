@@ -1,9 +1,9 @@
 import { defineConfig } from 'windicss/helpers'
 import colors from 'windicss/colors';
 
-import { themeColors, rabbyCssPrefix } from './src/isomorphic/theme-colors';
-const rabbyColors = Object.entries(themeColors.dark).reduce((accu, [cssvarKey, cssvarValue]) => {
-  accu[cssvarKey] = `var(--${rabbyCssPrefix}${cssvarKey}, ${cssvarValue})`;
+import { themeColors, luxCssPrefix } from './src/isomorphic/theme-colors';
+const luxColors = Object.entries(themeColors.dark).reduce((accu, [cssvarKey, cssvarValue]) => {
+  accu[cssvarKey] = `var(--${luxCssPrefix}${cssvarKey}, ${cssvarValue})`;
   return accu;
 }, {} as Record<string, string>);
 
@@ -116,8 +116,8 @@ export default defineConfig({
     },
     extend: {
       colors: {
-        // [`${rabbyCssPrefix.replace(/\-$/, '')}`]: rabbyColors,
-        'r': rabbyColors,
+        // [`${luxCssPrefix.replace(/\-$/, '')}`]: luxColors,
+        'r': luxColors,
       }
     }
   },
