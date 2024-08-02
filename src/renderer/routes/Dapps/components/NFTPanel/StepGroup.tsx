@@ -91,6 +91,7 @@ export const StepGroup: React.FC<Props> = ({ onMinted }) => {
         content: `${ellipsis(hashRef.current)} Minted successfully`,
       });
     } else {
+      // eslint-disable-next-line no-console
       console.error(
         `Can't find tx with hash ${hashRef.current}, account: ${accountAddress}`
       );
