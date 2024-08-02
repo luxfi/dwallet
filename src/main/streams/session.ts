@@ -11,7 +11,7 @@ import {
   PROTOCOL_ENS,
   PROTOCOL_IPFS,
   PROTOCOL_LOCALFS,
-  RABBY_INTERNAL_PROTOCOL,
+  LUX_INTERNAL_PROTOCOL,
 } from '../../isomorphic/constants';
 import { getAssetPath, getShellPageUrl, preloadPath } from '../utils/app';
 import { getBindLog } from '../utils/log';
@@ -150,7 +150,7 @@ async function checkProxyValidOnBootstrap() {
 
 protocol.registerSchemesAsPrivileged([
   {
-    scheme: RABBY_INTERNAL_PROTOCOL.slice(0, -1),
+    scheme: LUX_INTERNAL_PROTOCOL.slice(0, -1),
     privileges: { standard: true, supportFetchAPI: true, stream: true },
   },
   {

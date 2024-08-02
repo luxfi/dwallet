@@ -4,7 +4,7 @@ import * as Sentry from '@sentry/electron/main';
 
 import {
   IS_RUNTIME_PRODUCTION,
-  RABBY_INTERNAL_PROTOCOL,
+  LUX_INTERNAL_PROTOCOL,
 } from '@/isomorphic/constants';
 import {
   canoicalizeDappUrl,
@@ -196,7 +196,7 @@ export async function checkUrlViaBrowserView(
 
 const proxyBypassRules = [
   '<local>',
-  `${RABBY_INTERNAL_PROTOCOL}//*`,
+  `${LUX_INTERNAL_PROTOCOL}//*`,
   'chrome-extension://*',
   'chrome://*',
   // bypass all websocket like connections to avoid wallet connect v1 issue, but not for v2

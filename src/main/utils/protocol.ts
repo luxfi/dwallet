@@ -9,7 +9,7 @@ import {
   PROTOCOL_ENS,
   PROTOCOL_IPFS,
   PROTOCOL_LOCALFS,
-  RABBY_INTERNAL_PROTOCOL,
+  LUX_INTERNAL_PROTOCOL,
 } from '@/isomorphic/constants';
 import {
   extractDappInfoFromURL,
@@ -117,12 +117,12 @@ function onCallbackFileSchemeInterpretor(
 
 // export const interpreteRabbyInternal: IRegisterProtocolHandler = (ctx) => {
 export const appInterpretors = {
-  [RABBY_INTERNAL_PROTOCOL]: <IRegisterProtocolHandler>((ctx) => {
+  [LUX_INTERNAL_PROTOCOL]: <IRegisterProtocolHandler>((ctx) => {
     const registerSuccess = ctx.session.protocol.registerFileProtocol(
-      RABBY_INTERNAL_PROTOCOL.slice(0, -1),
+      LUX_INTERNAL_PROTOCOL.slice(0, -1),
       (request, callback) => {
         const pathnameWithQuery = request.url.slice(
-          `${RABBY_INTERNAL_PROTOCOL}//`.length
+          `${LUX_INTERNAL_PROTOCOL}//`.length
         );
 
         const pathname = pathnameWithQuery.split('?')?.[0] || '';
@@ -146,7 +146,7 @@ export const appInterpretors = {
       }
     );
 
-    return { registerSuccess, protocol: RABBY_INTERNAL_PROTOCOL };
+    return { registerSuccess, protocol: LUX_INTERNAL_PROTOCOL };
   }),
   'http:': <IRegisterProtocolHandler>((ctx) => {
     const TARGET_PROTOCOL = 'http:';

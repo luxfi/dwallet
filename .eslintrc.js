@@ -47,9 +47,12 @@ module.exports = {
     'prefer-destructuring': 'off',
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
-    parser: 'off',
-    parserOptions: 'off',
-    endOfLine: 'off',
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto',
+      },
+    ],
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {

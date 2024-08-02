@@ -37,8 +37,8 @@ export function getAppUpdaterURL(): string {
 
 // keep the same cache dir in `dev-app-update.yml` on dev
 const CACHE_DIRNAME = !IS_RUNTIME_PRODUCTION
-  ? 'rabby-desktop-dev-updater'
-  : 'rabby-desktop-updater';
+  ? 'lux-desktop-dev-updater'
+  : 'lux-desktop-updater';
 
 export function getAppUpdaterCacheDir() {
   return path.resolve(getAppCacheDir(), CACHE_DIRNAME);
@@ -121,7 +121,7 @@ export class AppUpdaterDarwin extends MacUpdater {
   }
 
   /**
-   * @dev chmod -R 777 notify_rabby_installation.app if necessary
+   * @dev chmod -R 777 notify_lux_installation.app if necessary
    */
   _spawnNotifyInstall() {
     const notifyInstallApp = getAssetPath(

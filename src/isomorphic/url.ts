@@ -6,7 +6,7 @@ import {
   LOCALFS_BRAND,
   PROTOCOL_ENS,
   PROTOCOL_IPFS,
-  RABBY_INTERNAL_PROTOCOL,
+  LUX_INTERNAL_PROTOCOL,
   RABBY_LOCAL_URLBASE,
   PROTOCOL_LOCALFS,
 } from './constants';
@@ -274,7 +274,7 @@ export function getDomainFromHostname(hostname: string): IParseDomainInfo {
 
 export function isInternalProtocol(url: string) {
   return [
-    `${RABBY_INTERNAL_PROTOCOL}//`,
+    `${LUX_INTERNAL_PROTOCOL}//`,
     'chrome-extension://',
     'chrome://',
   ].some((protocol) => url.startsWith(protocol));
@@ -870,7 +870,7 @@ export function getBuiltinViewType(urlInfo: URL | Location) {
     return 'chrome-extension';
   }
   if (
-    RABBY_INTERNAL_PROTOCOL === urlInfo.protocol ||
+    LUX_INTERNAL_PROTOCOL === urlInfo.protocol ||
     urlInfo.href.startsWith(RABBY_LOCAL_URLBASE)
   ) {
     return 'lux-internal';
@@ -881,7 +881,7 @@ export function getBuiltinViewType(urlInfo: URL | Location) {
 
 const ALLOWED_PROTOCOLS = [
   // for internal
-  RABBY_INTERNAL_PROTOCOL,
+  LUX_INTERNAL_PROTOCOL,
   'chrome-extension:',
   'chrome:',
 

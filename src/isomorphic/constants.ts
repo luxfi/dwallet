@@ -1,16 +1,16 @@
 export const IS_RUNTIME_PRODUCTION = process.env.NODE_ENV === 'production';
 export const APP_NAME = !IS_RUNTIME_PRODUCTION
-  ? 'rabby-desktop-dev'
-  : 'rabby-desktop';
+  ? 'lux-desktop-dev'
+  : 'lux-desktop';
 
-export const APP_UA_NAME = 'RabbyDesktop';
+export const APP_UA_NAME = 'LuxDesktop';
 
-export const APP_BRANDNAME = 'Rabby Desktop';
+export const APP_BRANDNAME = 'Lux Desktop';
 
 // drive electron-store, dont use strange characters here becaus it will be used as part of file name
-export const PERSIS_STORE_PREFIX = 'rabby-store-';
+export const PERSIS_STORE_PREFIX = 'lux-store-';
 
-export const RABBY_INTERNAL_PROTOCOL = 'lux-internal:';
+export const LUX_INTERNAL_PROTOCOL = 'lux-internal:';
 export const PROTOCOL_IPFS = 'rabby-ipfs:';
 export const PROTOCOL_ENS = 'rabby-ens:';
 export const PROTOCOL_LOCALFS = 'rabby-fs:';
@@ -18,7 +18,7 @@ export const PROTOCOL_LOCALFS = 'rabby-fs:';
 const FULL_FEATURED_PROTOCOLS = ['chrome-extension:' as const];
 
 export const PROTOCOLS_SUPPORT_IPC_CALL = [
-  RABBY_INTERNAL_PROTOCOL,
+  LUX_INTERNAL_PROTOCOL,
   ...FULL_FEATURED_PROTOCOLS,
 ];
 
@@ -58,7 +58,7 @@ try {
 } catch (e) {}
 export const RABBY_LOCAL_URLBASE =
   IS_RUNTIME_PRODUCTION || !process.env.HTTP_INSTEAD_OF_CUSTOM
-    ? `${RABBY_INTERNAL_PROTOCOL}//local`
+    ? `${LUX_INTERNAL_PROTOCOL}//local`
     : `http://localhost:${DEV_SERVER_PORT}`;
 
 export const RABBY_GETTING_STARTED_URL = `${RABBY_LOCAL_URLBASE}/getting-started.html`;
