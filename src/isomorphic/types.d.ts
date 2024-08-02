@@ -71,15 +71,15 @@ type INextDapp = {
     }
   | {
       type: 'ipfs';
-      origin: string | `rabby-ipfs://${string}${string}`;
+      origin: string | `lux-ipfs://${string}${string}`;
     }
   | {
       type: 'ens';
-      origin: string | `rabby-ens://${string}${string}`;
+      origin: string | `lux-ens://${string}${string}`;
     }
   | {
       type: 'localfs';
-      origin: string | `rabby-fs://${string}${string}`;
+      origin: string | `lux-fs://${string}${string}`;
     }
 );
 

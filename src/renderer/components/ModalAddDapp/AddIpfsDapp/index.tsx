@@ -69,7 +69,7 @@ const useCheckDapp = ({ onReplace }: { onReplace?: (v: string) => void }) => {
           },
         };
       }
-      return detectDapps(`rabby-ipfs://${url}`);
+      return detectDapps(`lux-ipfs://${url}`);
     },
     {
       manual: true,

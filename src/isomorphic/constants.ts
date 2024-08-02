@@ -11,9 +11,9 @@ export const APP_BRANDNAME = 'Lux Desktop';
 export const PERSIS_STORE_PREFIX = 'lux-store-';
 
 export const LUX_INTERNAL_PROTOCOL = 'lux-internal:';
-export const PROTOCOL_IPFS = 'rabby-ipfs:';
-export const PROTOCOL_ENS = 'rabby-ens:';
-export const PROTOCOL_LOCALFS = 'rabby-fs:';
+export const PROTOCOL_IPFS = 'lux-ipfs:';
+export const PROTOCOL_ENS = 'lux-ens:';
+export const PROTOCOL_LOCALFS = 'lux-fs:';
 
 const FULL_FEATURED_PROTOCOLS = ['chrome-extension:' as const];
 
@@ -37,13 +37,13 @@ export const PROTOCOLS_SUPPORTED_TO_OPEN = [
   'https:' as const,
 
   'ipfs:' as const,
-  'rabby-ipfs:' as const,
+  'lux-ipfs:' as const,
 
   'ens:' as const,
-  'rabby-ens:' as const,
+  'lux-ens:' as const,
 
   'localfs:' as const,
-  'rabby-fs:' as const,
+  'lux-fs:' as const,
   // 'file:' as const,
 
   ...FULL_FEATURED_PROTOCOLS,

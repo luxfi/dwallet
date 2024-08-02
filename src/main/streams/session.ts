@@ -221,7 +221,7 @@ firstValueFrom(fromMainSubject('userAppReady')).then(async () => {
         name: 'checkingViewSession',
       },
     ],
-    appInterpretors['rabby-ipfs:']
+    appInterpretors['lux-ipfs:']
   );
   registerSessionProtocol(
     [
@@ -230,7 +230,7 @@ firstValueFrom(fromMainSubject('userAppReady')).then(async () => {
         name: 'checkingViewSession',
       },
     ],
-    appInterpretors['rabby-ens:']
+    appInterpretors['lux-ens:']
   );
   registerSessionProtocol(
     [
@@ -244,7 +244,7 @@ firstValueFrom(fromMainSubject('userAppReady')).then(async () => {
         name: 'checkingViewSession',
       },
     ],
-    appInterpretors['rabby-fs:']
+    appInterpretors['lux-fs:']
   );
 
   emitIpcMainEvent('__internal_main:app:enable-ipfs-support', true);

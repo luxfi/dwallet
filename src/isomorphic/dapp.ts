@@ -21,11 +21,11 @@ export function isValidDappAlias(alias: string) {
 
 export function formatEnsDappOrigin(ensAddr: string, ipfsCid?: string) {
   if (ipfsCid) {
-    // return `rabby-ipfs://${ensAddr}.localens${ipfsCid ? ensurePrefix(ipfsCid, '/') : ''}`;
-    return `rabby-ipfs://${ensAddr}.localens.${ipfsCid}`;
+    // return `lux-ipfs://${ensAddr}.localens${ipfsCid ? ensurePrefix(ipfsCid, '/') : ''}`;
+    return `lux-ipfs://${ensAddr}.localens.${ipfsCid}`;
   }
 
-  return `rabby-ens://${ensAddr}.localens`;
+  return `lux-ens://${ensAddr}.localens`;
 }
 
 // console.debug('test checkoutDappURL', checkoutDappURL(`file:///C:/Users/admin/path/to`));
@@ -81,7 +81,7 @@ export function checkoutDappURL(dappPath: string): ICheckedOutDappURL {
         dappID: makeDappAboutURLs({ type: 'ens', ensAddr }).dappID,
         dappOrigin: formatEnsDappOrigin(ensAddr, ipfsCid),
         dappOriginToShow: `ens://${ensAddr}`,
-        dappURLToPrview: `rabby-ipfs://${ipfsCid}`,
+        dappURLToPrview: `lux-ipfs://${ipfsCid}`,
         pathnameWithQuery: dappInfo.pathnameWithQuery,
         dappHttpID: makeSpecialDappHttpId({ type: 'ens', ensAddr }),
         ipfsCid,
@@ -94,10 +94,10 @@ export function checkoutDappURL(dappPath: string): ICheckedOutDappURL {
     return {
       ...result,
       type: 'ipfs' as const,
-      dappID: `rabby-ipfs://${ipfsCid}`,
-      dappOrigin: `rabby-ipfs://${ipfsCid}`,
+      dappID: `lux-ipfs://${ipfsCid}`,
+      dappOrigin: `lux-ipfs://${ipfsCid}`,
       dappOriginToShow: `ipfs://${ipfsCid}`,
-      dappURLToPrview: `rabby-ipfs://${ipfsCid}`,
+      dappURLToPrview: `lux-ipfs://${ipfsCid}`,
       pathnameWithQuery: dappInfo.pathnameWithQuery,
       dappHttpID: makeSpecialDappHttpId({ type: 'ipfs', ipfsCid }),
       ipfsCid,
@@ -114,11 +114,11 @@ export function checkoutDappURL(dappPath: string): ICheckedOutDappURL {
       ...result,
       type: 'localfs' as const,
       dappID: dappInfo.fileURLPosix || '',
-      dappOrigin: `rabby-fs://${dappInfo.localFSID}`,
+      dappOrigin: `lux-fs://${dappInfo.localFSID}`,
       dappOriginToShow: dappInfo.fileURL || '',
-      // dappURLToPrview: `rabby-fs://${dappInfo.localFSID}`,
-      // dappURLToPrview: `rabby-fs://${dappInfo.localFSID}`,
-      dappURLToPrview: `rabby-fs://${dappInfo.localFSID}`,
+      // dappURLToPrview: `lux-fs://${dappInfo.localFSID}`,
+      // dappURLToPrview: `lux-fs://${dappInfo.localFSID}`,
+      dappURLToPrview: `lux-fs://${dappInfo.localFSID}`,
       pathnameWithQuery: dappInfo.pathnameWithQuery,
       dappHttpID,
       localFSID: dappInfo.localFSID || '',
@@ -138,8 +138,8 @@ export function checkoutDappURL(dappPath: string): ICheckedOutDappURL {
       return {
         ...result,
         type: 'ipfs' as const,
-        dappID: `rabby-ipfs://${ipfsCid}`,
-        dappOrigin: `rabby-ipfs://${ipfsCid}`,
+        dappID: `lux-ipfs://${ipfsCid}`,
+        dappOrigin: `lux-ipfs://${ipfsCid}`,
         dappOriginToShow: `ipfs://${ipfsCid}`,
         dappURLToPrview: makeSpecialDappHttpId({ type: 'ipfs', ipfsCid }), // pointless for this kind of case
         pathnameWithQuery: dappInfo.pathnameWithQuery,
@@ -484,9 +484,9 @@ export function formatDappHttpOrigin(
  *
  * @sample
  * - url = 'http://curve.eth.localens';
- * - url = 'rabby-ens://curve.eth.localens';
- * - url = 'rabby-fs://baa59086abfeb7019dcafc9eeb37c12c19fbb744155ead43478810ee5997c0aa';
- * - url = 'rabby-ipfs://QmPCRt8v4iLrE8mgtPvYrDKj28jyoZMWdnGzXgQCBk59EV';
+ * - url = 'lux-ens://curve.eth.localens';
+ * - url = 'lux-fs://baa59086abfeb7019dcafc9eeb37c12c19fbb744155ead43478810ee5997c0aa';
+ * - url = 'lux-ipfs://QmPCRt8v4iLrE8mgtPvYrDKj28jyoZMWdnGzXgQCBk59EV';
  *
  * @param url
  */
@@ -527,7 +527,7 @@ export function formatDappToStore(
       ensAddr: dappURLInfo.ensAddr,
     };
   } else if (dappURLInfo.type === 'ipfs') {
-    let dappId = `rabby-ipfs://${dappURLInfo.ipfsCid}`;
+    let dappId = `lux-ipfs://${dappURLInfo.ipfsCid}`;
     if (retDapp?.extraInfo?.ensAddr) {
       dappId = makeDappAboutURLs({
         type: 'ens',

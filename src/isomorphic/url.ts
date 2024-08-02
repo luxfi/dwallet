@@ -349,15 +349,15 @@ export function normalizeLocalAbsPath(
 // console.debug('test:: normalizeLocalAbsPath', normalizeLocalAbsPath('/Users/admin/foo/path'))
 
 const DAPP_URL_REGEXPS = {
-  ID_IPFS_REGEX: /^(?:ipfs|rabby-ipfs):\/\/([a-zA-Z0-9]+)(\/.*)?$/i,
-  ID_ENS_REGEX: /^rabby-ens:\/\/(.+).localens(\/[a-zA-Z0-9]+)?(\/.*)?$/i,
-  // rabby-fs:///<realpath>, use slash on all platforms, though on windows
-  ID_LOCALFS_REGEX: /^rabby-fs:\/\/([a-zA-Z0-9]+)(\/.*)?$/i,
+  ID_IPFS_REGEX: /^(?:ipfs|lux-ipfs):\/\/([a-zA-Z0-9]+)(\/.*)?$/i,
+  ID_ENS_REGEX: /^lux-ens:\/\/(.+).localens(\/[a-zA-Z0-9]+)?(\/.*)?$/i,
+  // lux-fs:///<realpath>, use slash on all platforms, though on windows
+  ID_LOCALFS_REGEX: /^lux-fs:\/\/([a-zA-Z0-9]+)(\/.*)?$/i,
 
   INPUT_LOCAL_REGEX: /^file:\/\/(.*)?$/i,
 
   IPFS_ENS_REGEX:
-    /^(?:ipfs|rabby-ipfs):\/\/([^\\]+\.eth)\.localens(\.[a-zA-Z0-9]+)?(\/.*)?$/i,
+    /^(?:ipfs|lux-ipfs):\/\/([^\\]+\.eth)\.localens(\.[a-zA-Z0-9]+)?(\/.*)?$/i,
 
   LOCALIPFS_BRAND_REGEX: /^http:\/\/local\.ipfs\.([a-zA-Z0-9]+)(\/.*)?$/i,
   LOCALIPFS_MAINDOMAIN_REGEX: /^http:\/\/([a-zA-Z0-9]+)\.local\.ipfs(\/.*)?$/i,
@@ -557,7 +557,7 @@ export function makeDappAboutURLs(
     httpOrigin: '',
   };
   if (input.type === 'ens') {
-    result.dappID = `rabby-ens://${input.ensAddr}.localens`;
+    result.dappID = `lux-ens://${input.ensAddr}.localens`;
     result.httpOrigin = makeSpecialDappHttpId(input);
 
     if (
@@ -649,9 +649,9 @@ export function extractIpfsInfo(maybeIpfsDappPath: string) {
  * @sample
  *
  * /ipfs/QmPCRt8v4iLrE8mgtPvYrDKj28jyoZMWdnGzXgQCBk59EV --> QmPCRt8v4iLrE8mgtPvYrDKj28jyoZMWdnGzXgQCBk59EV
- * rabby-ipfs://QmPCRt8v4iLrE8mgtPvYrDKj28jyoZMWdnGzXgQCBk59EV --> QmPCRt8v4iLrE8mgtPvYrDKj28jyoZMWdnGzXgQCBk59EV
+ * lux-ipfs://QmPCRt8v4iLrE8mgtPvYrDKj28jyoZMWdnGzXgQCBk59EV --> QmPCRt8v4iLrE8mgtPvYrDKj28jyoZMWdnGzXgQCBk59EV
  * ipfs://QmPCRt8v4iLrE8mgtPvYrDKj28jyoZMWdnGzXgQCBk59EV --> QmPCRt8v4iLrE8mgtPvYrDKj28jyoZMWdnGzXgQCBk59EV
- * rabby-ens://1inch.eth.localens.QmPCRt8v4iLrE8mgtPvYrDKj28jyoZMWdnGzXgQCBk59EV --> QmPCRt8v4iLrE8mgtPvYrDKj28jyoZMWdnGzXgQCBk59EV
+ * lux-ens://1inch.eth.localens.QmPCRt8v4iLrE8mgtPvYrDKj28jyoZMWdnGzXgQCBk59EV --> QmPCRt8v4iLrE8mgtPvYrDKj28jyoZMWdnGzXgQCBk59EV
  */
 export function extractIpfsCid(ipfsDappPath: string) {
   return extractIpfsInfo(ipfsDappPath).ipfsCid;
