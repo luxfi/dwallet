@@ -91,6 +91,7 @@ export function rewriteSessionWebRequestHeaders(
         (k) => k.toLocaleLowerCase() === 'upgrade-insecure-requests'
       )
     ) {
+      // eslint-disable-next-line no-console
       console.debug(
         `[debug][${sessionName}] pipeCtx.retReqHeaders, details.url`,
         pipeCtx.retReqHeaders,
