@@ -215,7 +215,7 @@ export interface SignTextHistoryItem {
     | 'ethSignTypedDataV4';
 }
 
-export type RabbyXMethod = {
+export type LuxXMethod = {
   'walletController.requestETHRpc': (
     data: { method: string; params: any },
     chainId: string
@@ -655,30 +655,30 @@ export type RabbyXMethod = {
 } & GenOpenApiService<'openapi'> &
   GenOpenApiService<'testnetOpenapi'>;
 
-export type RabbyXMethods = {
-  [K in keyof RabbyXMethod]: (
-    ...args: Parameters<RabbyXMethod[K]>
-  ) => Promise<ReturnType<RabbyXMethod[K]>>;
+export type LuxXMethods = {
+  [K in keyof LuxXMethod]: (
+    ...args: Parameters<LuxXMethod[K]>
+  ) => Promise<ReturnType<LuxXMethod[K]>>;
 };
 
 // extract `walletController.` from keyof walletController.
-export type RabbyXContollerNS = ExtractNS<keyof RabbyXMethods>;
+export type LuxXContollerNS = ExtractNS<keyof LuxXMethods>;
 
-export type RabbyXContollerMeththodNames = {
-  [P in RabbyXContollerNS]: ExtractMember<keyof RabbyXMethods, P> & string;
+export type LuxXContollerMeththodNames = {
+  [P in LuxXContollerNS]: ExtractMember<keyof LuxXMethods, P> & string;
 };
 
 type GetRabbyXMethods<
-  NS extends RabbyXContollerNS,
-  METHOD extends RabbyXContollerMeththodNames[NS]
+  NS extends LuxXContollerNS,
+  METHOD extends LuxXContollerMeththodNames[NS]
 > = {
-  [K in keyof RabbyXMethods]: K extends `${NS}.${METHOD}`
-    ? RabbyXMethods[K]
+  [K in keyof LuxXMethods]: K extends `${NS}.${METHOD}`
+    ? LuxXMethods[K]
     : never;
-}[keyof RabbyXMethods];
+}[keyof LuxXMethods];
 
-export type RabbyXContollerMethods = {
-  [P in RabbyXContollerNS]: {
-    [K in RabbyXContollerMeththodNames[P]]: GetRabbyXMethods<P, K>;
+export type LuxXContollerMethods = {
+  [P in LuxXContollerNS]: {
+    [K in LuxXContollerMeththodNames[P]]: GetRabbyXMethods<P, K>;
   };
 };

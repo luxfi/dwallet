@@ -34,7 +34,7 @@ type RabbyDebugKitsInvokes = {
   ['__internal_invoke:rabbyx:waitExtBgGhostLoaded']: {
     send: [];
     response: {
-      rabbyxExtId: string;
+      luxxExtId: string;
     };
   };
   '__internal_invoke:app:debug-kits-actions': {

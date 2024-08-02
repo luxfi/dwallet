@@ -2,12 +2,12 @@ import Message from './index';
 
 class PortMessage extends Message {
   port: chrome.runtime.Port | null = null;
-  rabbyxExtId: string = '';
+  luxxExtId: string = '';
 
   listenCallback: any;
 
   constructor(opts: {
-    rabbyxExtId: string;
+    luxxExtId: string;
     port?: chrome.runtime.Port,
   }) {
     super();
@@ -15,11 +15,11 @@ class PortMessage extends Message {
     if (opts.port) {
       this.port = opts.port;
     }
-    this.rabbyxExtId = opts.rabbyxExtId || '';
+    this.luxxExtId = opts.luxxExtId || '';
   }
 
   connect = (name: string) => {
-    this.port = chrome.runtime.connect(this.rabbyxExtId, { name });
+    this.port = chrome.runtime.connect(this.luxxExtId, { name });
     this.port.onMessage.addListener(({ _type_, data }) => {
       if (_type_ === `${this._EVENT_PRE}message`) {
         this.emit('message', data);

@@ -1,14 +1,14 @@
 import { IS_RUNTIME_PRODUCTION } from '@/isomorphic/constants';
 import {
-  RabbyXContollerMethods,
-  RabbyXContollerMeththodNames,
-  RabbyXContollerNS,
-  RabbyXMethods,
+  LuxXContollerMethods,
+  LuxXContollerMeththodNames,
+  LuxXContollerNS,
+  LuxXMethods,
 } from '@/isomorphic/types/rabbyx';
 
 function fixArgs(
-  key: keyof RabbyXMethods,
-  args: Parameters<RabbyXMethods[typeof key]>
+  key: keyof LuxXMethods,
+  args: Parameters<LuxXMethods[typeof key]>
 ) {
   const newArgs = [...args] as typeof args;
   switch (key) {
@@ -22,13 +22,13 @@ function fixArgs(
 /**
  * @description make etch rpc client, based on fetch(by default), or Axios Client
  */
-function makeRabbyXController<T extends RabbyXContollerNS>(namespace: T) {
+function makeLuxXController<T extends LuxXContollerNS>(namespace: T) {
   const rabbyxClient = new Proxy<{
-    [P in RabbyXContollerMeththodNames[T]]: RabbyXContollerMethods[T][P];
+    [P in LuxXContollerMeththodNames[T]]: LuxXContollerMethods[T][P];
   }>({} as any, {
-    get(_, prop: RabbyXContollerMeththodNames[T]) {
+    get(_, prop: LuxXContollerMeththodNames[T]) {
       return async function (...args: any[]) {
-        const fixedArgs = fixArgs(prop as keyof RabbyXMethods, args as any);
+        const fixedArgs = fixArgs(prop as keyof LuxXMethods, args as any);
 
         const method = `${namespace}.${prop}`;
         return window.rabbyDesktop?.ipcRenderer
@@ -63,9 +63,9 @@ function makeRabbyXController<T extends RabbyXContollerNS>(namespace: T) {
   return rabbyxClient;
 }
 
-export const walletController = makeRabbyXController('walletController');
-export const walletOpenapi = makeRabbyXController('openapi');
-export const walletTestnetOpenapi = makeRabbyXController(
+export const walletController = makeLuxXController('walletController');
+export const walletOpenapi = makeLuxXController('openapi');
+export const walletTestnetOpenapi = makeLuxXController(
   'testnetOpenapi' as 'openapi'
 );
-export const permissionService = makeRabbyXController('permissionService');
+export const permissionService = makeLuxXController('permissionService');

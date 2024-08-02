@@ -1,6 +1,6 @@
 import { filter, firstValueFrom, Subject } from 'rxjs';
 
-import { RabbyXMethod } from '@/isomorphic/types/rabbyx';
+import { LuxXMethod } from '@/isomorphic/types/rabbyx';
 import { safeParse } from '@/isomorphic/json';
 import { randString } from '@/isomorphic/string';
 import { IS_RUNTIME_PRODUCTION } from '@/isomorphic/constants';
@@ -42,11 +42,11 @@ onIpcMainEvent('rabbyx-rpc-respond', (_, ret) => {
   rabbyXRpcResponse.next({ rpcId, result, error });
 });
 
-export async function rabbyxQuery<T extends keyof RabbyXMethod>(
+export async function rabbyxQuery<T extends keyof LuxXMethod>(
   method: T,
-  params: Parameters<RabbyXMethod[T]> = [] as any,
+  params: Parameters<LuxXMethod[T]> = [] as any,
   rpcId = randString(10)
-): Promise<ReturnType<RabbyXMethod[T]>> {
+): Promise<ReturnType<LuxXMethod[T]>> {
   const backgroundWebContents = await getRabbyxBgWebContents();
 
   const promise = firstValueFrom(

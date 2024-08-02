@@ -551,7 +551,7 @@ type IDappLastOpenInfo = {
 };
 
 type IRabbyxInfo = {
-  rabbyxExtId: string;
+  luxxExtId: string;
   userId?: string;
   requesterIsRabbyx: boolean;
 };

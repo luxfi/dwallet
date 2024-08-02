@@ -186,14 +186,14 @@ export async function parseWebsiteFavicon(
 
 const configURLs = IS_APP_PROD_BUILD
   ? {
-      domain_metas: `https://download.rabby.io/cdn-config/dapps/domain_metas.json`,
-      blockchain_explorers: `https://download.rabby.io/cdn-config/dapps/blockchain_explorers.json`,
-      app_update: `https://download.rabby.io/cdn-config/app/app_update.json`,
+      domain_metas: `https://cdn.lux.network/dwallet/json/domain_metas.json`,
+      blockchain_explorers: `https://cdn.lux.network/dwallet/json/blockchain_explorers.json`,
+      app_update: `https://cdn.lux.network/dwallet/json/app_update.json`,
     }
   : {
-      domain_metas: `https://download.rabby.io/cdn-config-pre/dapps/domain_metas.json`,
-      blockchain_explorers: `https://download.rabby.io/cdn-config-pre/dapps/blockchain_explorers.json`,
-      app_update: `https://download.rabby.io/cdn-config-pre/app/app_update.json`,
+      domain_metas: `https://cdn.lux.network/dwallet/json/cdn-config-pre/domain_metas.json`,
+      blockchain_explorers: `https://cdn.lux.network/dwallet/json/cdn-config-pre/blockchain_explorers.json`,
+      app_update: `https://cdn.lux.network/dwallet/json/cdn-config-pre/app_update.json`,
     };
 
 export const DEFAULT_BLOCKCHAIN_EXPLORERS: Set<string> = new Set();

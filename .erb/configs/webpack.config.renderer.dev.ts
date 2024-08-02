@@ -332,9 +332,9 @@ const configurationShell: webpack.Configuration = {
 
 // const configurationRabby: webpack.Configuration = {
 //   entry: {
-//     // [webpackPaths.entriesRabby['rabby-background'].name]: webpackPaths.entriesRabby['rabby-background'].jsEntry,
-//     // [webpackPaths.entriesRabby['rabby-content-script'].name]: webpackPaths.entriesRabby['rabby-content-script'].jsEntry,
-//     [webpackPaths.entriesRabby['rabby-popup'].name]: webpackPaths.entriesRabby['rabby-popup'].jsEntry,
+//     // [webpackPaths.entriesLux['rabby-background'].name]: webpackPaths.entriesLux['rabby-background'].jsEntry,
+//     // [webpackPaths.entriesLux['rabby-content-script'].name]: webpackPaths.entriesLux['rabby-content-script'].jsEntry,
+//     [webpackPaths.entriesLux['rabby-popup'].name]: webpackPaths.entriesLux['rabby-popup'].jsEntry,
 //   },
 //   output: {
 //     path: path.join(webpackPaths.distExtsPath, 'rabby'),
@@ -387,7 +387,7 @@ const configurationShell: webpack.Configuration = {
 //     ]}]
 //   },
 //   plugins: [
-//     ...Object.values(webpackPaths.entriesRabby).filter(item => !!item.htmlFile).map(({ name, target, htmlFile }) => {
+//     ...Object.values(webpackPaths.entriesLux).filter(item => !!item.htmlFile).map(({ name, target, htmlFile }) => {
 //       return new HtmlWebpackPlugin({
 //         filename: target,
 //         template: htmlFile,

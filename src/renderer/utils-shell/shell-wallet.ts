@@ -1,20 +1,19 @@
 import PortMessage from '@/extension-wallet/utils/message/portMessage';
 import type {
-  RabbyXContollerMethods,
-  RabbyXContollerMeththodNames,
-  RabbyXContollerNS,
+  LuxXContollerMethods,
+  LuxXContollerMeththodNames,
+  LuxXContollerNS,
 } from '@/isomorphic/types/rabbyx';
 import eventBus from './eventBus';
 
-export type ShellWalletType<T extends RabbyXContollerNS = 'walletController'> =
-  {
-    [P in RabbyXContollerMeththodNames[T]]: RabbyXContollerMethods[T][P];
-  };
+export type ShellWalletType<T extends LuxXContollerNS = 'walletController'> = {
+  [P in LuxXContollerMeththodNames[T]]: LuxXContollerMethods[T][P];
+};
 
-export function makeShellWallet<
-  T extends RabbyXContollerNS = 'walletController'
->(rabbyxExtId: string): ShellWalletType<T> {
-  const portMessageChannel = new PortMessage({ rabbyxExtId });
+export function makeShellWallet<T extends LuxXContollerNS = 'walletController'>(
+  luxxExtId: string
+): ShellWalletType<T> {
+  const portMessageChannel = new PortMessage({ luxxExtId });
 
   portMessageChannel.connect('rabbyDesktop');
 

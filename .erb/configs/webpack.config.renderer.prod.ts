@@ -225,8 +225,8 @@ const configurationShell: webpack.Configuration = {
 
 const configurationRabby: webpack.Configuration = {
   entry: {
-    // [webpackPaths.entriesRabby['rabby-background'].name]: webpackPaths.entriesRabby['rabby-background'].jsEntry,
-    // [webpackPaths.entriesRabby['rabby-content-script'].name]: webpackPaths.entriesRabby['rabby-content-script'].jsEntry,
+    // [webpackPaths.entriesLux['rabby-background'].name]: webpackPaths.entriesLux['rabby-background'].jsEntry,
+    // [webpackPaths.entriesLux['rabby-content-script'].name]: webpackPaths.entriesLux['rabby-content-script'].jsEntry,
   },
 
   output: {
@@ -234,7 +234,7 @@ const configurationRabby: webpack.Configuration = {
   },
 
   plugins: [
-    ...Object.values(webpackPaths.entriesRabby)
+    ...Object.values(webpackPaths.entriesLux)
       .filter((item) => !!item.htmlFile)
       .map(({ name, target, htmlFile }) => {
         return new HtmlWebpackPlugin({

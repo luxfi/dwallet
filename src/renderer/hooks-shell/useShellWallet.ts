@@ -19,10 +19,10 @@ export function useShellWallet() {
 
     window.rabbyDesktop?.ipcRenderer
       .invoke('__internal_invoke:rabbyx:waitExtBgGhostLoaded')
-      .then(({ rabbyxExtId }) => {
+      .then(({ luxxExtId }) => {
         if (instanceRef.current) return;
 
-        const wallet = makeShellWallet(rabbyxExtId);
+        const wallet = makeShellWallet(luxxExtId);
         instanceRef.current = wallet;
 
         if (!IS_RUNTIME_PRODUCTION) {

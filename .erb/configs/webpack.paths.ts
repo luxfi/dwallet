@@ -77,7 +77,7 @@ const entriesShell = {
   } as IEntry,
 } as const;
 
-const entriesRabby = {
+const entriesLux = {
   // 'rabby-background': {
   //   name: 'background',
   //   target: 'background.html',
@@ -115,5 +115,5 @@ export default {
   buildPath,
   entriesRenderer,
   entriesShell,
-  entriesRabby,
+  entriesLux,
 };

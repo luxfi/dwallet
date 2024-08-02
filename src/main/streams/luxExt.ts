@@ -160,7 +160,7 @@ handleIpcMainInvoke(
   '__internal_invoke:rabbyx:waitExtBgGhostLoaded',
   async () => {
     return {
-      rabbyxExtId: await getRabbyExtId(),
+      luxxExtId: await getRabbyExtId(),
     };
   }
 );
@@ -184,11 +184,11 @@ handleIpcMainInvoke('rabbyx:get-app-version', (_) => {
 });
 
 handleIpcMainInvoke('get-rabbyx-info', async (evt) => {
-  const rabbyxExtId = await getRabbyExtId();
+  const luxxExtId = await getRabbyExtId();
   const currentURL = evt.sender.getURL();
 
-  if (isRabbyXPage(currentURL, rabbyxExtId)) {
-    return { rabbyxExtId, requesterIsRabbyx: true, userId: undefined };
+  if (isRabbyXPage(currentURL, luxxExtId)) {
+    return { luxxExtId, requesterIsRabbyx: true, userId: undefined };
   }
 
   const result = await rabbyxExecuteJs<{ extensionId?: string } | null>(`
@@ -204,7 +204,7 @@ handleIpcMainInvoke('get-rabbyx-info', async (evt) => {
   `);
 
   return {
-    rabbyxExtId,
+    luxxExtId,
     requesterIsRabbyx: false,
     userId: result?.extensionId,
   };

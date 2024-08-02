@@ -4,8 +4,8 @@
     "target": "es2021",
     "module": "Node16",
     "lib": ["dom", "es2021"],
-    "declaration": true,
-    "declarationMap": true,
+    // "declaration": true,
+    // "declarationMap": true,
     "jsx": "react-jsx",
     "strict": true,
     "pretty": true,
@@ -21,6 +21,7 @@
     "resolveJsonModule": true,
     "allowJs": true,
     "outDir": "release/app/dist",
+    "preserveSymlinks": true,
     "paths": {
       "@/*": ["./*"],
       "@root": ["../*"]
