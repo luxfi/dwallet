@@ -139,7 +139,7 @@ export const TxItem: React.FC<Props> = ({
         </RabbyButton>
         <RabbyButton
           onClick={() => onSubmit(data)}
-          prefixCls="rabby-button"
+          prefixCls="lux-button"
           disabled={!canExecute}
         >
           Submit transaction

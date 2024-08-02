@@ -7,7 +7,7 @@ export const RabbyButton: React.FC<ButtonProps> = (props) => {
   const { className, ...rest } = props;
   return (
     <AntdButton
-      prefixCls="rabby-button"
+      prefixCls="lux-button"
       type="primary"
       className={classNames(
         'w-[172px] text-[13px] h-[34px] rounded-[5px]',
