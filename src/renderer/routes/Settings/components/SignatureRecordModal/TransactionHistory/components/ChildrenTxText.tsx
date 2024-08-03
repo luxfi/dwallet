@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-shadow */
 import styled from 'styled-components';
 
-import { TransactionHistoryItem } from '@/isomorphic/types/rabbyx';
+import { TransactionHistoryItem } from '@/isomorphic/types/luxx';
 import { isSameAddress } from '@/renderer/utils/address';
 
 export const ChildrenTxText = ({

@@ -11,7 +11,7 @@ import {
 import styles from './index.module.less';
 import { DappFavicon } from '../DappFavicon';
 import { Modal } from '../Modal/Modal';
-import RabbyInput from '../AntdOverwrite/Input';
+import LuxInput from '../AntdOverwrite/Input';
 
 // const ALIAS_LIMIT = 15;
 
@@ -93,7 +93,7 @@ export default function ModalRenameDapp({
             {formatDappURLToShow(dapp.id || dapp.origin, { dapps })}
           </div>
           <div className={styles.modifyWrapper}>
-            <RabbyInput
+            <LuxInput
               className={styles.aliasInput}
               value={alias}
               onChange={onAliasChange}

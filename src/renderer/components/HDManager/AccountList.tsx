@@ -4,7 +4,7 @@ import React from 'react';
 import dayjs from 'dayjs';
 import clsx from 'clsx';
 import { useCopyToClipboard } from 'react-use';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { isSameAddress } from '@/renderer/utils/address';
 import { splitNumberByStep } from '@/renderer/utils/number';
 import { isNil } from 'lodash';

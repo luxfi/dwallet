@@ -2,8 +2,8 @@ import { useCallback, useEffect, useMemo, useRef } from 'react';
 import { atom, useAtom, useAtomValue } from 'jotai';
 import * as Sentry from '@sentry/react';
 
-import { Account, RabbyAccount } from '@/isomorphic/types/rabbyx';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { Account, RabbyAccount } from '@/isomorphic/types/luxx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import {
   MatteredChainBalancesType,
   formatAccountTotalBalance,

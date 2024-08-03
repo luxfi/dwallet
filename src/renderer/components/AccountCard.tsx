@@ -7,10 +7,10 @@ import {
   WALLET_BRAND_CONTENT,
   KEYRING_CLASS,
 } from '@/renderer/utils/constant';
-import { RabbyAccount } from '@/isomorphic/types/rabbyx';
+import { RabbyAccount } from '@/isomorphic/types/luxx';
 import AddressViewer from './AddressViewer';
 import { useCurrentAccount } from '../hooks/rabbyx/useAccount';
-import { walletController } from '../ipcRequest/rabbyx';
+import { walletController } from '../ipcRequest/luxx';
 import useCurrentBalance from '../hooks/useCurrentBalance';
 
 const AccountCardWrapper = styled.div`

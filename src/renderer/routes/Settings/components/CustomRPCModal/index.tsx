@@ -1,4 +1,4 @@
-import { RPCItem } from '@/isomorphic/types/rabbyx';
+import { RPCItem } from '@/isomorphic/types/luxx';
 import { Modal } from '@/renderer/components/Modal/Modal';
 import { useCustomRPC } from '@/renderer/hooks/useCustomRPC';
 import { useSwitchChainModal } from '@/renderer/hooks/useSwitchChainModal';

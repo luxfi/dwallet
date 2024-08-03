@@ -29,7 +29,7 @@ onIpcMainEvent('rabby-extension-id', async (event) => {
   });
 });
 
-handleIpcMainInvoke('__internal_rpc:rabbyx-rpc:query', async (_, query) => {
+handleIpcMainInvoke('__internal_rpc:luxx-rpc:query', async (_, query) => {
   const reqId = randString();
 
   return rabbyxQuery(query.method as any, query.params, reqId)

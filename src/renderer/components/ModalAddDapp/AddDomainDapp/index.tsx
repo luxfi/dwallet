@@ -12,7 +12,7 @@ import classNames from 'classnames';
 import { debounce } from 'lodash';
 import { useDapps } from 'renderer/hooks/useDappsMngr';
 import { useUnmount } from 'react-use';
-import RabbyInput from '../../AntdOverwrite/Input';
+import LuxInput from '../../AntdOverwrite/Input';
 import { Props as ModalProps } from '../../Modal/Modal';
 import { DomainExample } from '../DomainExample';
 import { PreviewDapp } from '../PreviewDapp';
@@ -401,7 +401,7 @@ export function AddDomainDapp({
             state?.validateStatus !== 'error' && state?.help ? state?.help : ''
           }
         >
-          <RabbyInput
+          <LuxInput
             className={styles.input}
             placeholder="Input the Dapp domain name"
             autoFocus

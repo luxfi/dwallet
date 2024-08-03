@@ -3,7 +3,7 @@ import React from 'react';
 import { SafeTransactionItem } from '@rabby-wallet/gnosis-sdk/dist/api';
 import { toChecksumAddress, numberToHex } from 'web3-utils';
 import { intToHex } from 'ethereumjs-util';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { useCurrentAccount } from '@/renderer/hooks/rabbyx/useAccount';
 import { message } from 'antd';
 import { LoadingOutlined } from '@ant-design/icons';

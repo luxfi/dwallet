@@ -1,4 +1,4 @@
-import RabbyInput from '@/renderer/components/AntdOverwrite/Input';
+import LuxInput from '@/renderer/components/AntdOverwrite/Input';
 import { Modal as RModal } from '@/renderer/components/Modal/Modal';
 import { Button, Form, FormInstance, Modal, Radio } from 'antd';
 import classNames from 'classnames';
@@ -57,7 +57,7 @@ function FormCustomType({
         label={<span className="form-item-label">Hostname: </span>}
         rules={[]}
       >
-        <RabbyInput
+        <LuxInput
           disabled={!isUsingCustomProxy}
           spellCheck={false}
           placeholder="Hostname or IP"
@@ -71,7 +71,7 @@ function FormCustomType({
         label={<span className="form-item-label">Port: </span>}
         rules={[]}
       >
-        <RabbyInput
+        <LuxInput
           disabled={!isUsingCustomProxy}
           spellCheck={false}
           placeholder="Port"
@@ -86,7 +86,7 @@ function FormCustomType({
           label={<span className="form-item-label">(optional) Username: </span>}
           rules={[]}
         >
-          <RabbyInput
+          <LuxInput
             disabled={!isUsingCustomProxy}
             spellCheck={false}
             placeholder="Proxy Server Username"
@@ -100,7 +100,7 @@ function FormCustomType({
           label={<span className="form-item-label">(optional) Password: </span>}
           rules={[]}
         >
-          <RabbyInput
+          <LuxInput
             disabled={!isUsingCustomProxy}
             spellCheck={false}
             type="password"
@@ -112,7 +112,7 @@ function FormCustomType({
         label={<span className="form-item-label">Checking: </span>}
         className="input-field"
       >
-        <RabbyInput
+        <LuxInput
           disabled={!isUsingCustomProxy || !checkingTarget}
           className="mr-[4px]"
           prefix="https://"

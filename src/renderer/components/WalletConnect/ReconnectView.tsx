@@ -6,13 +6,13 @@ import {
   KEYRING_CLASS,
   WALLET_BRAND_TYPES,
 } from '@/renderer/utils/constant';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { useDisplayBrandName } from './useDisplayBrandName';
 import { useSessionStatus } from './useSessionStatus';
 import { QRCodeContainer } from './QRCodeContainer';
 import { useCommonPopupView } from '../CommonPopup/useCommonPopupView';
 
-type Account = import('@/isomorphic/types/rabbyx').Account;
+type Account = import('@/isomorphic/types/luxx').Account;
 
 export const ReconnectView: React.FC = () => {
   const wallet = walletController;

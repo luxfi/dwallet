@@ -1,7 +1,7 @@
 import { UIContactBookItem } from '@/isomorphic/types/contact';
-import RabbyInput from '@/renderer/components/AntdOverwrite/Input';
+import LuxInput from '@/renderer/components/AntdOverwrite/Input';
 import { Modal } from '@/renderer/components/Modal/Modal';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { Button } from 'antd';
 import { useCallback, useEffect, useState } from 'react';
 import styled from 'styled-components';
@@ -107,7 +107,7 @@ export const ContactEditModal = ({
       className="inherit"
       centered
     >
-      <RabbyInput
+      <LuxInput
         className="nameInput"
         value={name}
         onChange={(e) => setName(e.target.value)}

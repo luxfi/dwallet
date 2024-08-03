@@ -1,4 +1,4 @@
-import { walletController, walletOpenapi } from '@/renderer/ipcRequest/rabbyx';
+import { walletController, walletOpenapi } from '@/renderer/ipcRequest/luxx';
 import { isSameAddress } from '@/renderer/utils/address';
 import { CHAINS, CHAINS_ENUM } from '@debank/common';
 import {

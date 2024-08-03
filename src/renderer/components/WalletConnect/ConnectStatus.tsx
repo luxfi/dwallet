@@ -5,7 +5,7 @@ import { useSessionStatus } from './useSessionStatus';
 import { useDisplayBrandName } from './useDisplayBrandName';
 import { useBrandNameHasWallet } from './useBrandNameHasWallet';
 
-type Account = import('@/isomorphic/types/rabbyx').Account;
+type Account = import('@/isomorphic/types/luxx').Account;
 const TipInfoSVG = 'lux-internal://assets/icons/walletconnect/tip-info.svg';
 const TipWarningSVG =
   'lux-internal://assets/icons/walletconnect/tip-warning.svg';

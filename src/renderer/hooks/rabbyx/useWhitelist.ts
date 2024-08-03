@@ -1,4 +1,4 @@
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { isSameAddress } from '@/renderer/utils/address';
 import { atom, useAtom } from 'jotai';
 import React, { useEffect } from 'react';

@@ -15,7 +15,7 @@ import classNames from 'classnames';
 import { debounce } from 'lodash';
 import { useUnmount } from 'react-use';
 import { stats } from '@/isomorphic/stats';
-import RabbyInput from '../../AntdOverwrite/Input';
+import LuxInput from '../../AntdOverwrite/Input';
 import { Props as ModalProps } from '../../Modal/Modal';
 import { PreviewDapp } from '../PreviewDapp';
 import { useAddDappURL } from '../useAddDapp';
@@ -244,7 +244,7 @@ export function AddIpfsDapp({
             state?.validateStatus !== 'error' && state?.help ? state?.help : ''
           }
         >
-          <RabbyInput
+          <LuxInput
             className={styles.input}
             placeholder="Input the IPFS"
             autoFocus

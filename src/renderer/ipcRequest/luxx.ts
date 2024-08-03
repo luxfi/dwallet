@@ -4,7 +4,7 @@ import {
   LuxXContollerMeththodNames,
   LuxXContollerNS,
   LuxXMethods,
-} from '@/isomorphic/types/rabbyx';
+} from '@/isomorphic/types/luxx';
 
 function fixArgs(
   key: keyof LuxXMethods,
@@ -23,7 +23,7 @@ function fixArgs(
  * @description make etch rpc client, based on fetch(by default), or Axios Client
  */
 function makeLuxXController<T extends LuxXContollerNS>(namespace: T) {
-  const rabbyxClient = new Proxy<{
+  const luxxClient = new Proxy<{
     [P in LuxXContollerMeththodNames[T]]: LuxXContollerMethods[T][P];
   }>({} as any, {
     get(_, prop: LuxXContollerMeththodNames[T]) {
@@ -32,22 +32,22 @@ function makeLuxXController<T extends LuxXContollerNS>(namespace: T) {
 
         const method = `${namespace}.${prop}`;
         return window.rabbyDesktop?.ipcRenderer
-          .invoke('__internal_rpc:rabbyx-rpc:query', {
+          .invoke('__internal_rpc:luxx-rpc:query', {
             method,
             params: fixedArgs,
           })
           .then((event) => {
             // leave here for debug
             // console.debug(
-            //   '[debug] __internal_rpc:rabbyx-rpc:query event back',
+            //   '[debug] __internal_rpc:luxx-rpc:query event back',
             //   event
             // );
             if (event.error) {
-              // const err = new Error(`[rabbyx-controller] message: '${event.error.message}'; code: '${event.error.code}';`);
+              // const err = new Error(`[luxx-controller] message: '${event.error.message}'; code: '${event.error.code}';`);
               // (err as any).rpcError = event.error;
               if (!IS_RUNTIME_PRODUCTION) {
                 console.error(
-                  `[rabbyx-controller] error on calling '${method}'`,
+                  `[luxx-controller] error on calling '${method}'`,
                   event.error
                 );
               }
@@ -60,7 +60,7 @@ function makeLuxXController<T extends LuxXContollerNS>(namespace: T) {
     },
   });
 
-  return rabbyxClient;
+  return luxxClient;
 }
 
 export const walletController = makeLuxXController('walletController');

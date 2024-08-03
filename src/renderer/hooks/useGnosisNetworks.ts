@@ -1,6 +1,6 @@
 import { useRequest } from 'ahooks';
 import type { Options } from 'ahooks/lib/useRequest/src/types';
-import { walletController } from '../ipcRequest/rabbyx';
+import { walletController } from '../ipcRequest/luxx';
 
 export const useGnosisNetworks = (
   params: { address?: string },

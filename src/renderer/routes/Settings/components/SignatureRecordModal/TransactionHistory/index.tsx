@@ -2,9 +2,9 @@
 import minBy from 'lodash/minBy';
 import { useEffect, useMemo, useState } from 'react';
 
-import { TransactionGroup } from '@/isomorphic/types/rabbyx';
+import { TransactionGroup } from '@/isomorphic/types/luxx';
 import { useCurrentAccount } from '@/renderer/hooks/rabbyx/useAccount';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import eventBus from '@/renderer/utils-shell/eventBus';
 import { isSameAddress } from '@/renderer/utils/address';
 import { findChainByID } from '@/renderer/utils/chain';

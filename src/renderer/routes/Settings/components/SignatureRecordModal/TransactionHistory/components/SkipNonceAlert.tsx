@@ -1,7 +1,7 @@
 import { findMaxGasTx } from '@/isomorphic/tx';
-import { TransactionGroup } from '@/isomorphic/types/rabbyx';
+import { TransactionGroup } from '@/isomorphic/types/luxx';
 import { useCurrentAccount } from '@/renderer/hooks/rabbyx/useAccount';
-import { walletController, walletOpenapi } from '@/renderer/ipcRequest/rabbyx';
+import { walletController, walletOpenapi } from '@/renderer/ipcRequest/luxx';
 import { findChainByID } from '@/renderer/utils/chain';
 import { intToHex } from '@/renderer/utils/number';
 import { CHAINS } from '@debank/common';

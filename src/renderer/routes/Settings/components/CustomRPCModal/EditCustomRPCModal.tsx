@@ -1,8 +1,8 @@
-import { RPCItem } from '@/isomorphic/types/rabbyx';
-import RabbyInput from '@/renderer/components/AntdOverwrite/Input';
+import { RPCItem } from '@/isomorphic/types/luxx';
+import LuxInput from '@/renderer/components/AntdOverwrite/Input';
 import ChainIcon from '@/renderer/components/ChainIcon';
 import { Modal } from '@/renderer/components/Modal/Modal';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { CHAINS } from '@/renderer/utils/constant';
 import { isValidateUrl } from '@/renderer/utils/url';
 import { useRequest } from 'ahooks';
@@ -102,7 +102,7 @@ export const EditCustomRPCModal = ({
                 },
               ]}
             >
-              <RabbyInput
+              <LuxInput
                 className={styles.input}
                 placeholder="Enter the RPC URL"
                 autoFocus

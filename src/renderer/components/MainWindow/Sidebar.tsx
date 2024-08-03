@@ -23,7 +23,7 @@ import { showMainwinPopupview } from '@/renderer/ipcRequest/mainwin-popupview';
 import { useTransactionPendingCount } from '@/renderer/hooks/rabbyx/useTransaction';
 import { Badge } from 'antd';
 import { usePrevious } from 'react-use';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { getLastOpenOriginByOrigin } from '@/renderer/ipcRequest/dapps';
 import { useCurrentConnectedSite } from '@/renderer/hooks/useRabbyx';
 import { useApprovalRiskAlertCount } from '@/renderer/hooks/rabbyx/useApprovals';

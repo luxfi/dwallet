@@ -1,6 +1,6 @@
 import { useAccountToDisplay } from '@/renderer/hooks/rabbyx/useAccountToDisplay';
 import { useWalletRequest } from '@/renderer/hooks/useWalletRequest';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import eventBus from '@/renderer/utils-shell/eventBus';
 import {
   EVENTS,
@@ -14,7 +14,7 @@ import styles from './WalletConnectModal.module.less';
 import { useSessionStatus } from './useSessionStatus';
 import { QRCodeContainer } from './QRCodeContainer';
 
-type Account = import('@/isomorphic/types/rabbyx').Account;
+type Account = import('@/isomorphic/types/luxx').Account;
 
 export const DEFAULT_BRIDGE = '';
 

@@ -2,7 +2,7 @@ import { toastMessage } from '@/renderer/components/TransparentToast';
 import { useCurrentAccount } from '@/renderer/hooks/rabbyx/useAccount';
 import { useTabedDapps } from '@/renderer/hooks/useDappsMngr';
 import { showMainwinPopupview } from '@/renderer/ipcRequest/mainwin-popupview';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { useOnTxFinished } from '@/renderer/routes/SendToken/hooks';
 import { ellipsis } from '@/renderer/utils/address';
 import classNames from 'classnames';

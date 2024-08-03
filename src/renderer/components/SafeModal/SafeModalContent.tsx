@@ -1,4 +1,4 @@
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { LoadingOutlined } from '@ant-design/icons';
 import { CHAINS, Chain } from '@debank/common';
 import { useRequest } from 'ahooks';
@@ -8,10 +8,10 @@ import clsx from 'clsx';
 import { isValidAddress } from 'ethereumjs-util';
 import React, { useState } from 'react';
 import { KEYRING_TYPE } from '@/renderer/utils/constant';
-import RabbyInput from '../AntdOverwrite/Input';
+import LuxInput from '../AntdOverwrite/Input';
 import { RabbyButton } from '../Button/RabbyButton';
 
-type Account = import('@/isomorphic/types/rabbyx').Account;
+type Account = import('@/isomorphic/types/luxx').Account;
 
 export interface Props {
   onSuccess: (accounts: Account[]) => void;
@@ -111,7 +111,7 @@ export const SafeModalContent: React.FC<Props> = ({ onSuccess }) => {
         className="mb-[20px]"
         validateStatus={errorMessage ? 'error' : undefined}
       >
-        <RabbyInput
+        <LuxInput
           placeholder="Please input Address"
           className={classNames(
             'py-[15px] px-[24px] rounded-[8px]',

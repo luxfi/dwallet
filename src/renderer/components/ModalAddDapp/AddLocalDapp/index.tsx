@@ -17,7 +17,7 @@ import { useUnmount } from 'react-use';
 import { stats } from '@/isomorphic/stats';
 import { openDirectory } from '@/renderer/ipcRequest/app';
 import { ensurePrefix } from '@/isomorphic/string';
-import RabbyInput from '../../AntdOverwrite/Input';
+import LuxInput from '../../AntdOverwrite/Input';
 import { Props as ModalProps } from '../../Modal/Modal';
 import { toastMessage } from '../../TransparentToast';
 import { PreviewDapp } from '../PreviewDapp';
@@ -256,7 +256,7 @@ export function AddLocalDapp({
             state?.validateStatus !== 'error' && state?.help ? state?.help : ''
           }
         >
-          <RabbyInput
+          <LuxInput
             className={styles.input}
             autoFocus
             spellCheck={false}

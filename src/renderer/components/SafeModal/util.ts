@@ -1,4 +1,4 @@
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { Chain } from '@debank/common';
 import semver from 'semver-compare';
 

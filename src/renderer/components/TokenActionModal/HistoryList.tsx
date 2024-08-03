@@ -1,5 +1,5 @@
 import { useCurrentAccount } from '@/renderer/hooks/rabbyx/useAccount';
-import { walletOpenapi } from '@/renderer/ipcRequest/rabbyx';
+import { walletOpenapi } from '@/renderer/ipcRequest/luxx';
 import { TokenItem, TxHistoryResult } from '@rabby-wallet/rabby-api/dist/types';
 import { useInfiniteScroll } from 'ahooks';
 import { last } from 'lodash';

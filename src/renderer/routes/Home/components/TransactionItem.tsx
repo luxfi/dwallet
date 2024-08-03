@@ -12,12 +12,12 @@ import {
 import { maxBy, minBy } from 'lodash';
 import { IconWithChain } from '@/renderer/components/TokenWithChain';
 import NameAndAddress from '@/renderer/components/NameAndAddress';
-import { walletController, walletOpenapi } from '@/renderer/ipcRequest/rabbyx';
+import { walletController, walletOpenapi } from '@/renderer/ipcRequest/luxx';
 import { sinceTime } from '@/renderer/utils/time';
 import {
   TransactionDataItem,
   TransactionHistoryItem,
-} from '@/isomorphic/types/rabbyx';
+} from '@/isomorphic/types/luxx';
 import { ellipsis, isSameAddress } from '@/renderer/utils/address';
 import { TransactionWebsite } from '@/renderer/components/TransactionWebsite';
 import moment from 'moment';

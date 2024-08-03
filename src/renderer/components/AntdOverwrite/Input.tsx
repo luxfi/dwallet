@@ -15,6 +15,6 @@ const TextArea = React.forwardRef<TextAreaRef, TextAreaProps>(function (
   return <Input.TextArea spellCheck={false} {...props} ref={ref} />;
 });
 
-const RabbyInput = Object.assign(NewInput, { TextArea });
+const LuxInput = Object.assign(NewInput, { TextArea });
 
-export default RabbyInput;
+export default LuxInput;

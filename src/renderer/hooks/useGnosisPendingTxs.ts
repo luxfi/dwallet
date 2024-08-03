@@ -2,7 +2,7 @@ import { useRequest } from 'ahooks';
 import type { Options } from 'ahooks/lib/useRequest/src/types';
 // import { WalletController, useWallet } from '../utils';
 import { SafeTransactionItem } from '@rabby-wallet/gnosis-sdk/dist/api';
-import { walletController } from '../ipcRequest/rabbyx';
+import { walletController } from '../ipcRequest/luxx';
 
 export const useGnosisPendingTxs = (
   params: { address?: string },

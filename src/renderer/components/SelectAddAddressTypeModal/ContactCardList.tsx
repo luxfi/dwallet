@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import React from 'react';
 import { WALLET_BRAND_TYPES } from '@/renderer/utils/constant';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { Modal } from 'antd';
 import styles from './index.module.less';
 

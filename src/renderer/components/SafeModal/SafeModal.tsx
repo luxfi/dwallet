@@ -3,7 +3,7 @@ import { Modal, Props as ModalProps } from '../Modal/Modal';
 import { SuccessContent } from '../SelectAddAddressTypeModal/SuccessContent';
 import { SafeModalContent } from './SafeModalContent';
 
-type Account = import('@/isomorphic/types/rabbyx').Account;
+type Account = import('@/isomorphic/types/luxx').Account;
 
 interface Props extends ModalProps {
   onSuccess: () => void;

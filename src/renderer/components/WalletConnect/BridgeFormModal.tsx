@@ -1,6 +1,6 @@
 import { Button, Form } from 'antd';
 import React from 'react';
-import RabbyInput from '../AntdOverwrite/Input';
+import LuxInput from '../AntdOverwrite/Input';
 import { Modal } from '../Modal/Modal';
 import styles from './WalletConnectModal.module.less';
 
@@ -63,7 +63,7 @@ export const BridgeFormModal: React.FC<Props> = ({
           ]}
           className="mb-16"
         >
-          <RabbyInput
+          <LuxInput
             className={styles.Input}
             placeholder="Host"
             size="large"

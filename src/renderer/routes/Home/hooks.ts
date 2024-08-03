@@ -3,7 +3,7 @@ import { ServerChain, TokenItem } from '@rabby-wallet/rabby-api/dist/types';
 import BigNumber from 'bignumber.js';
 import { cloneDeep, sortBy } from 'lodash';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { walletController, walletOpenapi } from '@/renderer/ipcRequest/rabbyx';
+import { walletController, walletOpenapi } from '@/renderer/ipcRequest/luxx';
 import { useTokenAtom } from '@/renderer/hooks/rabbyx/useToken';
 import { isSameAddress } from '@/renderer/utils/address';
 import { CHAINS } from '@debank/common';

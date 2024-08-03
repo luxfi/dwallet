@@ -1,5 +1,5 @@
 import { Switch } from '@/renderer/components/Switch/Switch';
-import { RPCItem } from '@/isomorphic/types/rabbyx';
+import { RPCItem } from '@/isomorphic/types/luxx';
 import { CHAINS } from '@/renderer/utils/constant';
 import { useMemo, useState } from 'react';
 import ChainIcon from '@/renderer/components/ChainIcon';

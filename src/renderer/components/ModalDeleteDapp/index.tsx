@@ -2,7 +2,7 @@ import React, { useCallback, useState } from 'react';
 import classnames from 'classnames';
 import { ModalProps, Button } from 'antd';
 
-import { permissionService } from '@/renderer/ipcRequest/rabbyx';
+import { permissionService } from '@/renderer/ipcRequest/luxx';
 import { navigateToDappRoute } from '@/renderer/utils/react-router';
 import { useNavigate } from 'react-router-dom';
 import { useZPopupViewState } from '@/renderer/hooks/usePopupWinOnMainwin';

@@ -11,9 +11,9 @@ import { checkIsPendingTxGroup, findMaxGasTx } from '@/isomorphic/tx';
 import {
   TransactionGroup,
   TransactionHistoryItem,
-} from '@/isomorphic/types/rabbyx';
+} from '@/isomorphic/types/luxx';
 import { openExternalUrl } from '@/renderer/ipcRequest/app';
-import { walletController, walletOpenapi } from '@/renderer/ipcRequest/rabbyx';
+import { walletController, walletOpenapi } from '@/renderer/ipcRequest/luxx';
 import { getTokenSymbol } from '@/renderer/utils';
 import { isSameAddress } from '@/renderer/utils/address';
 import { CANCEL_TX_TYPE, CHAINS } from '@/renderer/utils/constant';

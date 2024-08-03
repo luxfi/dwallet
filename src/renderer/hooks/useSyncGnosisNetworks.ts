@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { walletController } from '../ipcRequest/rabbyx';
+import { walletController } from '../ipcRequest/luxx';
 
 export const useSyncGnosisNetworks = (address?: string) => {
   useEffect(() => {

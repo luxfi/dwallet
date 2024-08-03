@@ -1,7 +1,7 @@
 import { CHAINS_ENUM, CHAINS_LIST } from '@debank/common';
 
 import { getOriginFromUrl } from '@/isomorphic/url';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { atom, useAtom } from 'jotai';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { usePreference } from './usePreference';

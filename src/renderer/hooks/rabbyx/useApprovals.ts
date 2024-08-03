@@ -1,7 +1,7 @@
 import {
   walletOpenapi,
   walletTestnetOpenapi,
-} from '@/renderer/ipcRequest/rabbyx';
+} from '@/renderer/ipcRequest/luxx';
 import { atom, useAtom } from 'jotai';
 import { useAsync } from 'react-use';
 import { ApprovalStatus } from '@rabby-wallet/rabby-api/dist/types';

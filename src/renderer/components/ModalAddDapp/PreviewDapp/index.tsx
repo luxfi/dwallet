@@ -2,7 +2,7 @@ import { LoadingOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
 import { useEffect, useRef, useState } from 'react';
 import { checkoutDappURL } from '@/isomorphic/dapp';
-import RabbyInput from '../../AntdOverwrite/Input';
+import LuxInput from '../../AntdOverwrite/Input';
 
 import { DappFavicon } from '../../DappFavicon';
 import { PreviewWebview } from '../../DappView/PreviewWebview';
@@ -52,7 +52,7 @@ export const PreviewDapp = ({
         />
         <div>
           <div className={styles.previewTitle}>
-            <RabbyInput
+            <LuxInput
               className={styles.aliasInput}
               value={input}
               autoFocus

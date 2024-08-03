@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-shadow */
 import React from 'react';
 
-import { TransactionHistoryItem } from '@/isomorphic/types/rabbyx';
+import { TransactionHistoryItem } from '@/isomorphic/types/luxx';
 import { isSameAddress } from '@/renderer/utils/address';
 import { splitNumberByStep } from '@/renderer/utils/number';
 import { ExplainTxResponse } from '@rabby-wallet/rabby-api/dist/types';

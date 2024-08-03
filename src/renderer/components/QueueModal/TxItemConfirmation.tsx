@@ -1,5 +1,5 @@
-import { RabbyAccount } from '@/isomorphic/types/rabbyx';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { RabbyAccount } from '@/isomorphic/types/luxx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { isSameAddress } from '@/renderer/utils/address';
 import { SafeTransactionItem } from '@rabby-wallet/gnosis-sdk/dist/api';
 import classNames from 'classnames';

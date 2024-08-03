@@ -16,12 +16,12 @@ import {
 import { useAddressSource } from '@/renderer/hooks/rabbyx/useAddressSource';
 import QRCode from 'qrcode.react';
 import { Popover, message } from 'antd';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { useForwardTo } from '@/renderer/hooks/useViewsMessage';
 import styles from './index.module.less';
 import { AccountDetailItem } from './AccountDetailItem';
 import { useAccountInfo } from '../AddressManagementModal/useAccountInfo';
-import RabbyInput from '../AntdOverwrite/Input';
+import LuxInput from '../AntdOverwrite/Input';
 import { SafeItem } from './SafeItem';
 import { WhitelistSwitch } from './WhitelistSwitch';
 import { TipsWrapper } from '../TipWrapper';
@@ -111,7 +111,7 @@ export const AccountDetail: React.FC<Props> = ({
         <AccountDetailItem headline="Address" description={renderDesc} />
         <AccountDetailItem headline="Address Note">
           {editing ? (
-            <RabbyInput
+            <LuxInput
               className="alias-input"
               defaultValue={aliasInput}
               onBlur={updateAliasName}

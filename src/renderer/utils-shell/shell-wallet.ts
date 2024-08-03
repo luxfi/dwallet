@@ -3,7 +3,7 @@ import type {
   LuxXContollerMethods,
   LuxXContollerMeththodNames,
   LuxXContollerNS,
-} from '@/isomorphic/types/rabbyx';
+} from '@/isomorphic/types/luxx';
 import eventBus from './eventBus';
 
 export type ShellWalletType<T extends LuxXContollerNS = 'walletController'> = {

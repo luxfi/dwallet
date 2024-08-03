@@ -1,4 +1,4 @@
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { CHAINS } from '@debank/common';
 import { useRequest } from 'ahooks';
 import { useMemo } from 'react';

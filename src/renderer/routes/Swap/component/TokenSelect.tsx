@@ -9,9 +9,9 @@ import TokenWithChain from '@/renderer/components/TokenWithChain';
 import IconRcSearch from '@/../assets/icons/swap/search.svg?rc';
 import { formatUsdValue, splitNumberByStep } from '@/renderer/utils/number';
 import { useAsync, useDebounce } from 'react-use';
-import { walletController, walletOpenapi } from '@/renderer/ipcRequest/rabbyx';
+import { walletController, walletOpenapi } from '@/renderer/ipcRequest/luxx';
 import IconClose from '@/../assets/icons/swap/modal-close.svg?rc';
-import RabbyInput from '@/renderer/components/AntdOverwrite/Input';
+import LuxInput from '@/renderer/components/AntdOverwrite/Input';
 import { getChain, getTokenSymbol } from '@/renderer/utils';
 import { Chain, formatTokenAmount } from '@debank/common';
 import { isNil } from 'lodash';
@@ -536,7 +536,7 @@ const TokenSelectModal = ({
           <IconClose className="closeIcon" onClick={onClose} />
         </TitleWrapper>
 
-        <RabbyInput
+        <LuxInput
           prefix={<IconRcSearch className="searchIcon" />}
           value={query}
           placeholder={placeholder}
@@ -898,7 +898,7 @@ export const TokenSelect = ({
           </div>
         ) : (
           <div className="inlinePrizeBox">
-            <RabbyInput
+            <LuxInput
               ref={inputRef}
               className="amountInput"
               readOnly={type === 'swapTo'}

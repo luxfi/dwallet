@@ -1,6 +1,6 @@
 import React from 'react';
 import { message } from 'antd';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { WALLET_BRAND_TYPES } from '@/renderer/utils/constant';
 import { SessionSignal } from './SessionSignal';
 import { useSessionStatus } from './useSessionStatus';

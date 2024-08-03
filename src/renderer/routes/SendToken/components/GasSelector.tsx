@@ -11,7 +11,7 @@ import {
 import { GasLevel, TokenItem } from '@rabby-wallet/rabby-api/dist/types';
 import { formatAmount } from '@/renderer/utils/number';
 import { Modal } from '@/renderer/components/Modal/Modal';
-import RabbyInput from '@/renderer/components/AntdOverwrite/Input';
+import LuxInput from '@/renderer/components/AntdOverwrite/Input';
 
 const StyledModal = styled(Modal)`
   .ant-modal-header {
@@ -312,7 +312,7 @@ const GasSelector = ({
                   })}
                 >
                   {item.level === 'custom' ? (
-                    <RabbyInput
+                    <LuxInput
                       className="cursor-pointer"
                       value={customGas}
                       defaultValue={customGas}

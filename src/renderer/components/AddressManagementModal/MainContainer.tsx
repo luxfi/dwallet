@@ -21,7 +21,7 @@ import { AddAddress } from './AddAddress';
 import { Header } from './Header';
 import { RefreshButton } from './RefreshButton';
 import { CommonPopupProvider } from '../CommonPopup/CommonPopupProvider';
-import RabbyInput from '../AntdOverwrite/Input';
+import LuxInput from '../AntdOverwrite/Input';
 import ManageAddress from './ManageAddress';
 
 export const MainContainer: React.FC = () => {
@@ -234,7 +234,7 @@ export const MainContainer: React.FC = () => {
           isUpdatingBalance={isUpdateAllBalanceLoading}
         />
         <div className={styles.search}>
-          <RabbyInput
+          <LuxInput
             className={styles.keyword}
             placeholder="Search"
             prefix={

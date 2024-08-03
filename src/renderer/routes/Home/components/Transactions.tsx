@@ -2,13 +2,13 @@ import type {
   TransactionDataItem,
   TransactionGroup,
   TransactionHistoryItem,
-} from '@/isomorphic/types/rabbyx';
+} from '@/isomorphic/types/luxx';
 import { useCurrentAccount } from '@/renderer/hooks/rabbyx/useAccount';
 import {
   walletController,
   walletOpenapi,
   walletTestnetOpenapi,
-} from '@/renderer/ipcRequest/rabbyx';
+} from '@/renderer/ipcRequest/luxx';
 import { CHAINS, CHAINS_LIST } from '@debank/common';
 import {
   TokenItem,

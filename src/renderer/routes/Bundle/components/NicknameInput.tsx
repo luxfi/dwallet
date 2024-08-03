@@ -1,4 +1,4 @@
-import RabbyInput from '@/renderer/components/AntdOverwrite/Input';
+import LuxInput from '@/renderer/components/AntdOverwrite/Input';
 import { useBundle } from '@/renderer/hooks/useBundle/useBundle';
 import clsx from 'clsx';
 import React, { useEffect } from 'react';
@@ -59,7 +59,7 @@ export const NicknameInput: React.FC<Props> = ({
     >
       {edit ? (
         <div>
-          <RabbyInput
+          <LuxInput
             onChange={(e) => setNickname(e.target.value)}
             onBlur={onUpdateNickname}
             onKeyDownCapture={onUpdateNickname}

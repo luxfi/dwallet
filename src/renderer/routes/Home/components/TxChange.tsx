@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 import { numberWithCommasIsLtOne } from '@/renderer/utils/number';
 import { getTokenSymbol } from '@/renderer/utils';
-import { TransactionDataItem } from '@/isomorphic/types/rabbyx';
+import { TransactionDataItem } from '@/isomorphic/types/luxx';
 
 const TxChangeWrapper = styled.div`
   margin-left: 27px;

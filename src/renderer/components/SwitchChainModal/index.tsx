@@ -14,7 +14,7 @@ import { useAccountBalanceMap } from '@/renderer/hooks/rabbyx/useAccount';
 import { varyAndSortChainItems } from '@/isomorphic/wallet/chain';
 import { formatUsdValue } from '@/renderer/utils/number';
 import styles from './index.module.less';
-import RabbyInput from '../AntdOverwrite/Input';
+import LuxInput from '../AntdOverwrite/Input';
 import { TipsWrapper } from '../TipWrapper';
 import ChainIcon from '../ChainIcon';
 
@@ -215,7 +215,7 @@ function SwitchChainModalInner({
           <NetSwitchTabs value={selectedTab} onTabChange={onTabChange} />
         </div>
       )}
-      <RabbyInput
+      <LuxInput
         autoCorrect="false"
         autoComplete="false"
         size="large"

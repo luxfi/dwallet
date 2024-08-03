@@ -112,7 +112,7 @@ export const useGetSpecialDomain = () => {
   // const { data } = useRequest(
   //   () => {
   //     return Axios.get<{ ids: string[] }>(
-  //       `https://api.rabby.io/v1/domain/share_list`
+  //       `https://cdn.lux.network/dwallet/json/share_list.json`
   //     );
   //   },
   //   {

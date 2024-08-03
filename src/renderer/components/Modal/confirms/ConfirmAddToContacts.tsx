@@ -2,11 +2,11 @@ import React, { useCallback, useLayoutEffect, useRef } from 'react';
 import { InputRef, Modal, ModalProps, message } from 'antd';
 import clsx from 'clsx';
 import styled from 'styled-components';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import styles from './confirmPortal.module.less';
 import { wrapModalPromise } from '../WrapPromise';
 
-import RabbyInput from '../../AntdOverwrite/Input';
+import LuxInput from '../../AntdOverwrite/Input';
 import NameAndAddress from '../../NameAndAddress';
 
 interface ModalConfirmAddToContactsProps extends ModalProps {
@@ -99,7 +99,7 @@ export const ModalConfirmAddToContacts = ({
       <div className="block text-left text-[13px] text-r-neutral-foot">
         Edit address note
         <div className="w-[100%] pt-8 pb-[16px]">
-          <RabbyInput
+          <LuxInput
             ref={inputRef}
             value={addressNote}
             className={clsx(styles.input, 'w-[100%]')}

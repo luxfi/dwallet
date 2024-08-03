@@ -1,7 +1,7 @@
 import { forwardMessageTo } from '@/renderer/hooks/useViewsMessage';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import React from 'react';
-import RabbyInput from '../AntdOverwrite/Input';
+import LuxInput from '../AntdOverwrite/Input';
 import styles from './AddressItem.module.less';
 
 interface Props {
@@ -41,7 +41,7 @@ export const AddressItem: React.FC<Props> = ({ address, type, brandName }) => {
   return (
     <div className={styles.AddressItem}>
       <div className={styles.name}>
-        <RabbyInput
+        <LuxInput
           ref={inputRef}
           value={aliasName}
           onChange={(e) => setAliasName(e.target.value)}

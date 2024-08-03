@@ -1,5 +1,5 @@
 import { Modal, Props as ModalProps } from '@/renderer/components/Modal/Modal';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { Button } from 'antd';
 import React from 'react';
 import { ZORE_MINT_FEE } from './util';

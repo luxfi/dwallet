@@ -1,6 +1,6 @@
 import { useAtom, useAtomValue } from 'jotai';
 import React, { useEffect } from 'react';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { validate, Network } from 'bitcoin-address-validation';
 import { bundleAccountsAtom, bundleAccountsNumAtom } from './shared';
 import { ERROR } from './error';

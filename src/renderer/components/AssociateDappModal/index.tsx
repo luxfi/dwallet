@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import React, { useMemo, useState } from 'react';
 import { useOpenDapp } from '@/renderer/utils/react-router';
 import styled from 'styled-components';
-import RabbyInput from '@/renderer/components/AntdOverwrite/Input';
+import LuxInput from '@/renderer/components/AntdOverwrite/Input';
 import ModalAddDapp from '@/renderer/components/ModalAddDapp';
 import {
   useProtocolDappsBinding,
@@ -263,7 +263,7 @@ const BindDapp = ({
     <BindDappWrapper>
       <div className="header">Bind Dapp for {protocol.name}</div>
       <div className="body">
-        <RabbyInput
+        <LuxInput
           value={kw}
           onChange={(e) => setKw(e.target.value)}
           className={styles.input}

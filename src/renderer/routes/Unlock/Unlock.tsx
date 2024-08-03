@@ -1,6 +1,6 @@
-import RabbyInput from '@/renderer/components/AntdOverwrite/Input';
+import LuxInput from '@/renderer/components/AntdOverwrite/Input';
 import { useUnlocked } from '@/renderer/hooks/rabbyx/useUnlocked';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { Button, message, Form } from 'antd';
 import React, { useCallback, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -98,7 +98,7 @@ export const Unlock: React.FC = () => {
               },
             ]}
           >
-            <RabbyInput
+            <LuxInput
               className={clsx(styles.input, 'w-[100%] h-[56px]')}
               placeholder="Enter the Password to Unlock"
               type="password"

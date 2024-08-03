@@ -303,7 +303,7 @@ type ChannelInvokePayload = {
     send: [reason: 'trezor-like-used' | 'media-access-updated'];
     response: void;
   };
-  [`__internal_rpc:rabbyx-rpc:query`]: {
+  [`__internal_rpc:luxx-rpc:query`]: {
     send: [query: Omit<IRabbyxRpcQuery, 'rpcId'>];
     response: {
       result: any;

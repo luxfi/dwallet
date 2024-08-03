@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import clsx from 'clsx';
 
 import { usePopupViewInfo } from '@/renderer/hooks/usePopupWinOnMainwin';
-import RabbyInput from '@/renderer/components/AntdOverwrite/Input';
+import LuxInput from '@/renderer/components/AntdOverwrite/Input';
 import { useBodyClassNameOnMounted } from '@/renderer/hooks/useMountedEffect';
 import { Divider, InputRef } from 'antd';
 
@@ -115,7 +115,7 @@ export default function InDappFindWindow() {
     <div className={clsx(styles.InDappFindWindow, 'InDappFindWindow')}>
       <Gasket />
       <div className={styles.inputWrapper}>
-        <RabbyInput
+        <LuxInput
           value={searchInput}
           placeholder="Find in Dapp"
           size="large"

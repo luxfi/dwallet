@@ -2,7 +2,7 @@ import { BasicSafeInfo } from '@rabby-wallet/gnosis-sdk';
 import { useRequest } from 'ahooks';
 import type { Options } from 'ahooks/lib/useRequest/src/types';
 import { crossCompareOwners } from '../components/QueueModal/util';
-import { walletController } from '../ipcRequest/rabbyx';
+import { walletController } from '../ipcRequest/luxx';
 import { KEYRING_CLASS } from '../utils/constant';
 
 export const useGnosisSafeInfo = (

@@ -1,4 +1,4 @@
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import {
   KEYRING_CLASS,
   WALLET_BRAND_CONTENT,

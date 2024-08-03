@@ -27,7 +27,7 @@ import { getChain, getTokenSymbol } from '@/renderer/utils';
 import { ReceiveModal } from '@/renderer/components/ReceiveModal';
 import { splitNumberByStep } from '@/renderer/utils/number';
 // eslint-disable-next-line import/no-cycle
-import { walletOpenapi } from '@/renderer/ipcRequest/rabbyx';
+import { walletOpenapi } from '@/renderer/ipcRequest/luxx';
 import { useCurrentAccount } from '@/renderer/hooks/rabbyx/useAccount';
 import { copyText } from '@/renderer/utils/clipboard';
 // eslint-disable-next-line import/no-cycle

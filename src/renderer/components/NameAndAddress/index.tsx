@@ -2,7 +2,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import './index.less';
 import clsx from 'classnames';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { useCopyAddress } from '@/renderer/hooks/useCopyAddress';
 // import IconCopy from '@/../assets/icons/common/copy.svg?rc';
 import IconCopySrc from '@/../assets/icons/common/copy.svg';

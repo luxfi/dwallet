@@ -1,5 +1,5 @@
-import { ContactBookItem } from '@/isomorphic/types/rabbyx';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { ContactBookItem } from '@/isomorphic/types/luxx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { atom, useAtom } from 'jotai';
 import { useCallback, useEffect } from 'react';
 import { KEYRING_CLASS } from '@/renderer/utils/constant';

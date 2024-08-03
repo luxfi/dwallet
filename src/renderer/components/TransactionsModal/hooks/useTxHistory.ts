@@ -1,7 +1,7 @@
 import {
   walletOpenapi,
   walletTestnetOpenapi,
-} from '@/renderer/ipcRequest/rabbyx';
+} from '@/renderer/ipcRequest/luxx';
 import { useInfiniteScroll } from 'ahooks';
 import { last } from 'lodash';
 

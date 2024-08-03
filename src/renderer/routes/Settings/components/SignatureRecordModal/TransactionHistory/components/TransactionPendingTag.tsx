@@ -2,7 +2,7 @@ import { checkIsPendingTxGroup, findMaxGasTx } from '@/isomorphic/tx';
 import {
   TransactionGroup,
   TransactionHistoryItem,
-} from '@/isomorphic/types/rabbyx';
+} from '@/isomorphic/types/luxx';
 import { TooltipWithMagnetArrow } from '@/renderer/components/Tooltip/TooltipWithMagnetArrow';
 import { sinceTime } from '@/renderer/utils/time';
 import { TxRequest } from '@rabby-wallet/rabby-api/dist/types';

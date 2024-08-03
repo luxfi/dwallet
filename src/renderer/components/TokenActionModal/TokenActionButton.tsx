@@ -1,9 +1,9 @@
 import { TokenItem } from '@rabby-wallet/rabby-api/dist/types';
 import React from 'react';
 import { isSameAddress } from '@/renderer/utils/address';
-import { Token } from '@/isomorphic/types/rabbyx';
+import { Token } from '@/isomorphic/types/luxx';
 import { usePreference } from '@/renderer/hooks/rabbyx/usePreference';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { CustomizedButton } from './CustomizedButton';
 import { BlockedButton } from './BlockedButton';
 

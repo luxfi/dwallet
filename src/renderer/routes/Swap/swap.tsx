@@ -10,7 +10,7 @@ import {
 } from 'react';
 import styled from 'styled-components';
 import IconSwapArrow from '@/../assets/icons/swap/swap-arrow.svg?rc';
-import RabbyInput from '@/renderer/components/AntdOverwrite/Input';
+import LuxInput from '@/renderer/components/AntdOverwrite/Input';
 import { Button, message, Modal } from 'antd';
 import { useSearchParams } from 'react-router-dom';
 import clsx from 'clsx';
@@ -22,7 +22,7 @@ import IconRcClose from '@/../assets/icons/swap/close.svg?rc';
 import IconRcLoading from '@/../assets/icons/swap/loading.svg?rc';
 import IconRcError from '@/../assets/icons/swap/error.svg?rc';
 
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { useRbiSource } from '@/renderer/hooks/useRbiSource';
 import BigNumber from 'bignumber.js';
 import { isSameAddress } from '@/renderer/utils/address';
@@ -872,7 +872,7 @@ export const SwapToken = () => {
                   Balance: {formatAmount(payToken?.amount || 0)}
                 </div>
               </div>
-              <RabbyInput
+              <LuxInput
                 className="amountInput"
                 placeholder="0"
                 showCount={false}

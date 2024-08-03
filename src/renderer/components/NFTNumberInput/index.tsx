@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { InputRef, Tooltip } from 'antd';
 import clsx from 'clsx';
 import { NFTItem } from '@rabby-wallet/rabby-api/dist/types';
-import RabbyInput from '../AntdOverwrite/Input';
+import LuxInput from '../AntdOverwrite/Input';
 
 const NumberInputStyled = styled.div`
   &.number-input {
@@ -113,7 +113,7 @@ const NumberInput = forwardRef<Pick<InputRef, 'focus'>, Props>(
         >
           -
         </div>
-        <RabbyInput
+        <LuxInput
           type="number"
           value={value}
           onChange={handleInputValueChange}

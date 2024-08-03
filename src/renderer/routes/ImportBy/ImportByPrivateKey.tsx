@@ -2,10 +2,10 @@
 import { Form, message } from 'antd';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { useAccountToDisplay } from '@/renderer/hooks/rabbyx/useAccountToDisplay';
 import { useAddressManagement } from '@/renderer/hooks/rabbyx/useAddressManagement';
-import RabbyInput from '@/renderer/components/AntdOverwrite/Input';
+import LuxInput from '@/renderer/components/AntdOverwrite/Input';
 import ImportView from '../Import/components/ImportView/ImportView';
 import BlockButton from '../Import/components/BlockButton/BlockButton';
 import styles from './ImportByPrivateKey.module.less';
@@ -68,7 +68,7 @@ const ImportByPrivateKey = () => {
               },
             ]}
           >
-            <RabbyInput.TextArea
+            <LuxInput.TextArea
               className={styles.input}
               spellCheck={false}
               placeholder="Enter your Private Key"

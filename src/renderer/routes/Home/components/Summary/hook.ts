@@ -1,7 +1,7 @@
 import { useAsync } from 'react-use';
 import { useEffect, useMemo } from 'react';
 import { atom, useAtomValue, useSetAtom } from 'jotai';
-import { walletOpenapi } from '@/renderer/ipcRequest/rabbyx';
+import { walletOpenapi } from '@/renderer/ipcRequest/luxx';
 import {
   sumGrossWorth,
   groupAssets,

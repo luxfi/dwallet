@@ -1,4 +1,4 @@
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { KEYRING_CLASS } from '@/renderer/utils/constant';
 import Safe from '@rabby-wallet/gnosis-sdk';
 import { atom, useAtom } from 'jotai';

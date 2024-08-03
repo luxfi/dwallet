@@ -1,6 +1,6 @@
-import { RabbyAccount } from '@/isomorphic/types/rabbyx';
+import { RabbyAccount } from '@/isomorphic/types/luxx';
 import { useCurrentAccount } from '@/renderer/hooks/rabbyx/useAccount';
-import { walletController, walletOpenapi } from '@/renderer/ipcRequest/rabbyx';
+import { walletController, walletOpenapi } from '@/renderer/ipcRequest/luxx';
 import {
   INTERNAL_REQUEST_ORIGIN,
   KEYRING_CLASS,

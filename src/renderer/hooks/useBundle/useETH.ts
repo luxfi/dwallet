@@ -1,6 +1,6 @@
 import React from 'react';
 import { TokenItem } from '@rabby-wallet/rabby-api/dist/types';
-import { walletOpenapi } from '@/renderer/ipcRequest/rabbyx';
+import { walletOpenapi } from '@/renderer/ipcRequest/luxx';
 import { formatUsedChain, DisplayUsedChain } from '@/isomorphic/wallet/chain';
 import { useTotalBalance, calcAssetNetWorth } from '@/renderer/utils/balance';
 import { atom, useAtom } from 'jotai';

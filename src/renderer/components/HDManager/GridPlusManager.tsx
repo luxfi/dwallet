@@ -2,7 +2,7 @@
 import { Modal } from 'antd';
 import React from 'react';
 import { HARDWARE_KEYRING_TYPES } from '@/renderer/utils/constant';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import {
   AdvancedSettings,
   DEFAULT_SETTING_DATA,

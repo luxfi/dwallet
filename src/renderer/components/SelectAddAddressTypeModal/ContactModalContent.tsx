@@ -3,14 +3,14 @@ import { Button } from 'antd';
 import React from 'react';
 import useDebounceValue from '@/renderer/hooks/useDebounceValue';
 import { isValidAddress } from 'ethereumjs-util';
-import { walletController, walletOpenapi } from '@/renderer/ipcRequest/rabbyx';
+import { walletController, walletOpenapi } from '@/renderer/ipcRequest/luxx';
 import { useWalletRequest } from '@/renderer/hooks/useWalletRequest';
 import { useAccountToDisplay } from '@/renderer/hooks/rabbyx/useAccountToDisplay';
 import { useAddressManagement } from '@/renderer/hooks/rabbyx/useAddressManagement';
 import styles from './index.module.less';
-import RabbyInput from '../AntdOverwrite/Input';
+import LuxInput from '../AntdOverwrite/Input';
 
-type Account = import('@/isomorphic/types/rabbyx').Account;
+type Account = import('@/isomorphic/types/luxx').Account;
 type ENS = Awaited<ReturnType<OpenApiService['getEnsAddressByName']>>;
 
 interface Props {
@@ -101,7 +101,7 @@ export const ContactModalContent: React.FC<Props> = ({ onSuccess }) => {
   return (
     <form onSubmit={onSubmit} className={styles.ContactModalContent}>
       <div className={styles.inputWrap}>
-        <RabbyInput
+        <LuxInput
           className={styles.input}
           autoFocus
           value={value}

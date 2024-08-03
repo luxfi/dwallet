@@ -1,11 +1,11 @@
-import RabbyInput from '@/renderer/components/AntdOverwrite/Input';
+import LuxInput from '@/renderer/components/AntdOverwrite/Input';
 import React from 'react';
 import { InputProps } from 'antd';
 import clsx from 'clsx';
 
 export const InputItem: React.FC<InputProps> = (props) => {
   return (
-    <RabbyInput
+    <LuxInput
       placeholder="Please input Address"
       className={clsx(
         'py-[15px] px-[24px] rounded-[8px]',

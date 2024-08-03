@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import { formatNumber, formatUsdValue } from '@/renderer/utils/number';
 import { requestOpenApiWithChainId } from '@/main/utils/openapi';
-import { walletOpenapi } from '../ipcRequest/rabbyx';
+import { walletOpenapi } from '../ipcRequest/luxx';
 
 type CurveList = Array<{ timestamp: number; usd_value: number }>;
 

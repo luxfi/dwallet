@@ -1,4 +1,4 @@
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { useCallback, useEffect, useState } from 'react';
 
 export const useAlias = (address: string) => {

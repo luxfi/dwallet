@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { walletController, walletOpenapi } from '@/renderer/ipcRequest/rabbyx';
+import { walletController, walletOpenapi } from '@/renderer/ipcRequest/luxx';
 import { isSameAddress } from '@/renderer/utils/address';
 import { UsedChain } from '@rabby-wallet/rabby-api/dist/types';
 import { message } from 'antd';

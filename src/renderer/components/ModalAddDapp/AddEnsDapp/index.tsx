@@ -15,11 +15,11 @@ import classNames from 'classnames';
 import { debounce } from 'lodash';
 import { useUnmount } from 'react-use';
 import { stats } from '@/isomorphic/stats';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { extractIpfsCid } from '@/isomorphic/url';
 import { IS_RUNTIME_PRODUCTION } from '@/isomorphic/constants';
 import { formatEnsDappOrigin } from '@/isomorphic/dapp';
-import RabbyInput from '../../AntdOverwrite/Input';
+import LuxInput from '../../AntdOverwrite/Input';
 import { Props as ModalProps } from '../../Modal/Modal';
 import { toastMessage } from '../../TransparentToast';
 import { PreviewDapp } from '../PreviewDapp';
@@ -301,7 +301,7 @@ export function AddEnsDapp({
             state?.validateStatus !== 'error' && state?.help ? state?.help : ''
           }
         >
-          <RabbyInput
+          <LuxInput
             className={styles.input}
             placeholder="Input the ENS"
             autoFocus

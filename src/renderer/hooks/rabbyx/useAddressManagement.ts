@@ -1,5 +1,5 @@
-import type { Account, IHighlightedAddress } from '@/isomorphic/types/rabbyx';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import type { Account, IHighlightedAddress } from '@/isomorphic/types/luxx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { atom, useAtom } from 'jotai';
 import React from 'react';
 import { useAccountToDisplay } from './useAccountToDisplay';

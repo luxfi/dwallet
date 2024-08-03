@@ -8,7 +8,7 @@ import { KEYRING_CLASS } from '@/renderer/utils/constant';
 import { sortAccountsByBalance } from '@/renderer/utils/account';
 import useDebounceValue from '@/renderer/hooks/useDebounceValue';
 import AddressItem from './AddressItem';
-import RabbyInput from '../AntdOverwrite/Input';
+import LuxInput from '../AntdOverwrite/Input';
 import styles from './index.module.less';
 
 function useSearchAccount(searchKeyword?: string) {
@@ -206,7 +206,7 @@ const AccountSearchInput = React.forwardRef<InputRef, AccountSearchInputProps>(
           destroyTooltipOnHide
           content={content}
         >
-          <RabbyInput
+          <LuxInput
             autoComplete="off"
             autoFocus
             spellCheck={false}

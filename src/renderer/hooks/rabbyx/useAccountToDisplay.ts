@@ -1,5 +1,5 @@
-import type { DisplayedKeyring } from '@/isomorphic/types/rabbyx';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import type { DisplayedKeyring } from '@/isomorphic/types/luxx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { sortAccountsByBalance } from '@/renderer/utils/account';
 import { atom, useAtom } from 'jotai';
 import PQueue from 'p-queue';

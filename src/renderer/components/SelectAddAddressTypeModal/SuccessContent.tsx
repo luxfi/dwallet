@@ -3,7 +3,7 @@ import { AddressItem } from '@/renderer/components/AddressItem/AddressItem';
 import { Button } from 'antd';
 import styles from './index.module.less';
 
-type Account = import('@/isomorphic/types/rabbyx').Account;
+type Account = import('@/isomorphic/types/luxx').Account;
 
 export interface Props {
   onSuccess: () => void;

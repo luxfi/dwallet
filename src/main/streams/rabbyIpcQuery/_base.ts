@@ -1,6 +1,6 @@
 import { filter, firstValueFrom, Subject } from 'rxjs';
 
-import { LuxXMethod } from '@/isomorphic/types/rabbyx';
+import { LuxXMethod } from '@/isomorphic/types/luxx';
 import { safeParse } from '@/isomorphic/json';
 import { randString } from '@/isomorphic/string';
 import { IS_RUNTIME_PRODUCTION } from '@/isomorphic/constants';

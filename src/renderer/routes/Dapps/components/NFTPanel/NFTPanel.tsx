@@ -1,5 +1,5 @@
 import Hide from '@/renderer/components/MainWindow/Hide';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import classNames from 'classnames';
 import React from 'react';
 import clsx from 'clsx';

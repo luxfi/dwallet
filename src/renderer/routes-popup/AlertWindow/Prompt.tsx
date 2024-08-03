@@ -6,7 +6,7 @@ import '@/renderer/css/style.less';
 import '@/renderer/css/windicss';
 import '@/renderer/utils/rendererReport';
 
-import RabbyInput from '@/renderer/components/AntdOverwrite/Input';
+import LuxInput from '@/renderer/components/AntdOverwrite/Input';
 
 import { parseQueryString } from '@/isomorphic/url';
 
@@ -70,7 +70,7 @@ export default function AlertWindowPrompt() {
           </div>
 
           <div className="mt-0">
-            <RabbyInput
+            <LuxInput
               className="prompt-input"
               disabled={disableOp}
               onChange={(evt) => {

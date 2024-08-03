@@ -1,5 +1,5 @@
-import { TransactionHistoryItem } from '@/isomorphic/types/rabbyx';
-import { walletOpenapi } from '@/renderer/ipcRequest/rabbyx';
+import { TransactionHistoryItem } from '@/isomorphic/types/luxx';
+import { walletOpenapi } from '@/renderer/ipcRequest/luxx';
 import { CHAINS_LIST } from '@debank/common';
 import { useRequest } from 'ahooks';
 import { Spin } from 'antd';

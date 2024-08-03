@@ -43,7 +43,7 @@ import { useCustomRPC } from '@/renderer/hooks/useCustomRPC';
 import { NFT } from '@/renderer/routes/NFT';
 import SendNFT from '@/renderer/routes/SendNFT';
 import ApprovalManagePage from '@/renderer/routes/ApprovalManagePage';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { MainWindowSettingsDeveloperKits } from '@/renderer/routes/Settings/Developer';
 import { IS_RUNTIME_PRODUCTION } from '@/isomorphic/constants';
 import Home from '@/renderer/routes/Home';

@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { memo, useMemo, useCallback, ChangeEventHandler } from 'react';
 import { useToggle } from 'react-use';
 import styled from 'styled-components';
-import RabbyInput from '@/renderer/components/AntdOverwrite/Input';
+import LuxInput from '@/renderer/components/AntdOverwrite/Input';
 import BigNumber from 'bignumber.js';
 
 export const SlippageItem = styled.div<{
@@ -207,7 +207,7 @@ export const Slippage = memo((props: SlippageProps) => {
           }}
           className="flex-1"
         >
-          <RabbyInput
+          <LuxInput
             className={clsx('input')}
             bordered={false}
             value={value}

@@ -1,7 +1,7 @@
-import { RPCItem } from '@/isomorphic/types/rabbyx';
+import { RPCItem } from '@/isomorphic/types/luxx';
 import { atom, useAtom } from 'jotai';
 import { useCallback } from 'react';
-import { walletController } from '../ipcRequest/rabbyx';
+import { walletController } from '../ipcRequest/luxx';
 
 const customRPCAtom = atom<Record<CHAINS_ENUM, RPCItem>>({});
 const customRPCStatusAtom = atom<
@@ -23,14 +23,14 @@ export function useCustomRPC() {
         return true;
       }
       try {
-        setStatus((pre) => {
+        setStatus((pre: any) => {
           return {
             ...pre,
             [chain]: 'pending',
           };
         });
         const v = await walletController.pingCustomRPC(chain);
-        setStatus((pre) => {
+        setStatus((pre: any) => {
           return {
             ...pre,
             [chain]: v ? 'avaliable' : 'unavaliable',
@@ -38,7 +38,7 @@ export function useCustomRPC() {
         });
         return v;
       } catch (e) {
-        setStatus((pre) => {
+        setStatus((pre: any) => {
           return {
             ...pre,
             [chain]: 'unavaliable',
@@ -73,7 +73,7 @@ export function useCustomRPC() {
     async (chain: CHAINS_ENUM) => {
       await walletController.removeCustomRPC(chain);
       await getAllRPC();
-      setStatus((pre) => {
+      setStatus((pre: any) => {
         const current = { ...pre };
         delete current[chain];
         return current;

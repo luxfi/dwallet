@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { atom, useAtom } from 'jotai';
 import { DisplayChainWithWhiteLogo, formatChain } from '../utils/chain';
 

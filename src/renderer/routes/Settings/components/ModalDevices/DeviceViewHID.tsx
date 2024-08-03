@@ -5,7 +5,7 @@ import {
 } from '@/isomorphic/string';
 
 import { useEffect, useMemo } from 'react';
-import RabbyInput from '@/renderer/components/AntdOverwrite/Input';
+import LuxInput from '@/renderer/components/AntdOverwrite/Input';
 import { numberToHex } from '@/isomorphic/primitive';
 import { usePrevious } from 'react-use';
 import SvgIconDeviceManufacturer from './device-manufacturer.svg?rc';
@@ -57,7 +57,7 @@ export default function DeviceViewHID() {
       <div className={styles.devicesFilters}>
         <Form>
           <Form.Item>
-            <RabbyInput
+            <LuxInput
               value={filterKeyword}
               placeholder="Local filter by ID, VendorId, Path, SN, etc"
               onChange={(e) => {

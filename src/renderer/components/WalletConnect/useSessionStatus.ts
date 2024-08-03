@@ -1,4 +1,4 @@
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import eventBus from '@/renderer/utils-shell/eventBus';
 import { isSameAddress } from '@/renderer/utils/address';
 import { EVENTS } from '@/renderer/utils/constant';

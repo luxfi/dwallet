@@ -1,4 +1,4 @@
-import { TransactionHistoryItem } from '@/isomorphic/types/rabbyx';
+import { TransactionHistoryItem } from '@/isomorphic/types/luxx';
 import { Modal } from '@/renderer/components/Modal/Modal';
 import { CANCEL_TX_TYPE } from '@/renderer/utils/constant';
 import { Tooltip } from 'antd';

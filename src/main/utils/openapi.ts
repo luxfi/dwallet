@@ -1,7 +1,7 @@
 import {
   walletOpenapi,
   walletTestnetOpenapi,
-} from '@/renderer/ipcRequest/rabbyx';
+} from '@/renderer/ipcRequest/luxx';
 
 export type IExtractFromPromise<T> = T extends Promise<infer U> ? U : T;
 

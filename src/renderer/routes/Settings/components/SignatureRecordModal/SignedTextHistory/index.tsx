@@ -1,9 +1,9 @@
 import { formatDappURLToShow, makeDappURLToOpen } from '@/isomorphic/dapp';
-import { SignTextHistoryItem } from '@/isomorphic/types/rabbyx';
+import { SignTextHistoryItem } from '@/isomorphic/types/luxx';
 import { DappFavicon } from '@/renderer/components/DappFavicon';
 import { useCurrentAccount } from '@/renderer/hooks/rabbyx/useAccount';
 import { useMatchDappByOrigin } from '@/renderer/hooks/useDappsMngr';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { hex2Text } from '@/renderer/utils';
 import { useOpenDapp } from '@/renderer/utils/react-router';
 import { sinceTime } from '@/renderer/utils/time';

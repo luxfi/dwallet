@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { message } from 'antd';
 import React from 'react';
 import { AccountList, Props as AccountListProps } from './AccountList';

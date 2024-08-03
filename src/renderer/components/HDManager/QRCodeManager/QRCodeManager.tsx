@@ -1,5 +1,5 @@
 import React from 'react';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { useAsyncRetry } from 'react-use';
 import { HARDWARE_KEYRING_TYPES } from '@/renderer/utils/constant';
 import { Modal as AntdModal } from 'antd';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { walletController } from '../ipcRequest/rabbyx';
+import { walletController } from '../ipcRequest/luxx';
 import {
   KEYRING_CLASS,
   WALLET_BRAND_CONTENT,

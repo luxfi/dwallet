@@ -32,7 +32,7 @@ import { NFTApprovalContract } from '@rabby-wallet/rabby-api/dist/types';
 import {
   walletOpenapi,
   walletTestnetOpenapi,
-} from '@/renderer/ipcRequest/rabbyx';
+} from '@/renderer/ipcRequest/luxx';
 import eventBus from '@/renderer/utils-shell/eventBus';
 import IconUnknownNFT from './icons/unknown-nft.svg';
 

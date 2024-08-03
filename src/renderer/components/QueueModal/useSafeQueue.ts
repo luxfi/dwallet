@@ -1,6 +1,6 @@
 import { useCurrentAccount } from '@/renderer/hooks/rabbyx/useAccount';
 import { useGnosisSafeInfo } from '@/renderer/hooks/useGnosisSafeInfo';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { SafeTransactionDataPartial } from '@gnosis.pm/safe-core-sdk-types';
 import { BasicSafeInfo } from '@rabby-wallet/gnosis-sdk';
 import { SafeTransactionItem } from '@rabby-wallet/gnosis-sdk/dist/api';

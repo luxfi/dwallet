@@ -2,12 +2,12 @@ import { getPendingGroupCategory } from '@/isomorphic/tx';
 import {
   TransactionGroup,
   TransactionHistoryItem,
-} from '@/isomorphic/types/rabbyx';
+} from '@/isomorphic/types/luxx';
 import {
   walletController,
   walletOpenapi,
   walletTestnetOpenapi,
-} from '@/renderer/ipcRequest/rabbyx';
+} from '@/renderer/ipcRequest/luxx';
 import { getTokenSymbol } from '@/renderer/utils';
 import { findChainByID } from '@/renderer/utils/chain';
 import { CHAINS } from '@debank/common';

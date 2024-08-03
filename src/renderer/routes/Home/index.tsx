@@ -13,7 +13,7 @@ import { useTotalBalance } from '@/renderer/utils/balance';
 import { useCurrentAccount } from '@/renderer/hooks/rabbyx/useAccount';
 import useCurve from '@/renderer/hooks/useCurve';
 import useHistoryTokenList from '@/renderer/hooks/useHistoryTokenList';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import useHistoryProtocol from '@/renderer/hooks/useHistoryProtocol';
 import { copyText } from '@/renderer/utils/clipboard';
 import {

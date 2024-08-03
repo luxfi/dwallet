@@ -1,7 +1,7 @@
-import { RabbyAccount } from '@/isomorphic/types/rabbyx';
+import { RabbyAccount } from '@/isomorphic/types/luxx';
 import { useAccountToDisplay } from '@/renderer/hooks/rabbyx/useAccountToDisplay';
 import { useSyncGnosisNetworks } from '@/renderer/hooks/useSyncGnosisNetworks';
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { isSameAddress } from '@/renderer/utils/address';
 import { LoadingOutlined } from '@ant-design/icons';
 import { CHAINS, Chain } from '@debank/common';

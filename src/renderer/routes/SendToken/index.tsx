@@ -17,8 +17,8 @@ import {
 import { TokenItem, GasLevel } from '@rabby-wallet/rabby-api/dist/types';
 import { UIContactBookItem } from '@/isomorphic/types/contact';
 import { useWhitelist } from '@/renderer/hooks/rabbyx/useWhitelist';
-import { walletController, walletOpenapi } from '@/renderer/ipcRequest/rabbyx';
-import { ChainGas } from '@/isomorphic/types/rabbyx';
+import { walletController, walletOpenapi } from '@/renderer/ipcRequest/luxx';
+import { ChainGas } from '@/isomorphic/types/luxx';
 import { isSameAddress } from '@/renderer/utils/address';
 import { formatAmount, splitNumberByStep } from '@/renderer/utils/number';
 import AccountCard from '@/renderer/components/AccountCard';

@@ -218,7 +218,7 @@ export async function fetchDynamicConfig(options?: {
     app_update = {},
   ] = await Promise.all([
     fetchClient
-      .get(`https://api.rabby.io/v1/domain/share_list`, {
+      .get(`https://cdn.lux.network/dwallet/json/share_list.json`, {
         timeout: timeoutV,
         proxy,
       })

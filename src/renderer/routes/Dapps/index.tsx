@@ -12,7 +12,7 @@ import { ModalConfirm } from '@/renderer/components/Modal/Confirm';
 import { toastMessage } from '@/renderer/components/TransparentToast';
 import { useConnectedSite } from '@/renderer/hooks/useRabbyx';
 import { Dropdown, Menu } from 'antd';
-import RabbyInput from '@/renderer/components/AntdOverwrite/Input';
+import LuxInput from '@/renderer/components/AntdOverwrite/Input';
 import { useDebounce } from 'ahooks';
 import { formatDappURLToShow } from '@/isomorphic/dapp';
 import { Empty } from './components/Empty';
@@ -179,7 +179,7 @@ export default function DApps() {
             security for your Dapp use.
           </div>
           <div className={style.extra}>
-            <RabbyInput
+            <LuxInput
               value={search}
               onChange={(e) => {
                 setSearch(e.target.value);

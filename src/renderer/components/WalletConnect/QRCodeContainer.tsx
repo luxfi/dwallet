@@ -6,7 +6,7 @@ import { URLPanel } from './URLPanel';
 import { ConnectStatus } from './ConnectStatus';
 import { useSessionStatus } from './useSessionStatus';
 
-type Account = import('@/isomorphic/types/rabbyx').Account;
+type Account = import('@/isomorphic/types/luxx').Account;
 
 interface Props {
   uri: string;

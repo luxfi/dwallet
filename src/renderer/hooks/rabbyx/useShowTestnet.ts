@@ -1,4 +1,4 @@
-import { walletController } from '@/renderer/ipcRequest/rabbyx';
+import { walletController } from '@/renderer/ipcRequest/luxx';
 import { onBackgroundStoreChanged } from '@/renderer/utils/broadcastToUI';
 import { useRequest } from 'ahooks';
 import { atom, useAtom } from 'jotai';
