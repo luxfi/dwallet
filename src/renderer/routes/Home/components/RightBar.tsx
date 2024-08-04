@@ -28,13 +28,20 @@ const ActionList = styled.ul`
   gap: 50px;
   li {
     border-radius: 14px;
+    height: 36px;
+    border: 1px solid #545454;
     /* margin-right: 25px; */
     cursor: pointer;
+
+    &:hover {
+      border: 1px solid #fff;
+      background-color: #ffffff24;
+    }
     svg {
       &:hover {
         rect:nth-child(1) {
-          fill: #8697ff;
-          fill-opacity: 0.8;
+          fill: #ffffff24;
+          border: 1px solid #fff;
         }
         g {
           opacity: 0.7;
