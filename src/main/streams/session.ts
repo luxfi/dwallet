@@ -4,7 +4,7 @@ import path from 'path';
 import { app, protocol, session, shell } from 'electron';
 import { firstValueFrom } from 'rxjs';
 import { ElectronChromeExtensions } from '@rabby-wallet/electron-chrome-extensions';
-import { isRabbyXPage } from '@/isomorphic/url';
+import { isLuxXPage } from '@/isomorphic/url';
 import { trimWebContentsUserAgent } from '@/isomorphic/string';
 import {
   IS_RUNTIME_PRODUCTION,
@@ -26,7 +26,7 @@ import {
 } from './tabbedBrowserWindow';
 import { firstEl } from '../../isomorphic/array';
 import {
-  getRabbyExtId,
+  getLuxExtId,
   getSessionInsts,
   getWebuiExtId,
 } from '../utils/stream-helpers';
@@ -71,7 +71,7 @@ async function loadExtensions(sess: Electron.Session, extensionsPath: string) {
   const extensionDirectories = await Promise.all(
     subDirectories
       // // TODO: block on hybrid compilation stage
-      // .filter((dirEnt) => !dirEnt.name.includes('rabby'))
+      // .filter((dirEnt) => !dirEnt.name.includes('lux'))
       .filter((dirEnt) => dirEnt.isDirectory())
       .map(async (dirEnt) => {
         const extPath = path.join(extensionsPath, dirEnt.name);
@@ -112,6 +112,7 @@ async function loadExtensions(sess: Electron.Session, extensionsPath: string) {
           luxExt = ext;
         }
       } catch (e) {
+        // eslint-disable-next-line no-console
         console.error(e);
       }
     })
@@ -294,13 +295,13 @@ firstValueFrom(fromMainSubject('userAppReady')).then(async () => {
       const fromWindow = getWindowFromWebContents(ctx.event.sender);
 
       const fromURL = fromWc.getURL();
-      const rabbyExtId = await getRabbyExtId();
+      const luxExtId = await getLuxExtId();
 
       const actionInfo = checkOpenAction(win.tabs, {
         fromUrl: fromURL || '',
         toUrl: details.url || '',
         fromSameWindow: fromWindow === win.window,
-        rabbyExtId,
+        luxExtId,
         blockchainExplorers: getBlockchainExplorers(),
       });
 
@@ -413,8 +414,8 @@ firstValueFrom(fromMainSubject('userAppReady')).then(async () => {
       const tabUrl =
         inputUrl || getShellPageUrl('debug-new-tab', await getWebuiExtId());
 
-      const rabbyExtId = await getRabbyExtId();
-      const isNotification = isRabbyXPage(inputUrl, rabbyExtId, 'notification');
+      const luxExtId = await getLuxExtId();
+      const isNotification = isLuxXPage(inputUrl, luxExtId, 'notification');
 
       if (isNotification) {
         return createLuxxNotificationWindow({

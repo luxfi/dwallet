@@ -101,7 +101,7 @@ export function isRabbyShellURL(url: string) {
   return url.startsWith('chrome-extension://') && url.includes('/webui.html');
 }
 
-export function isRabbyXPage(
+export function isLuxXPage(
   url: string,
   extid: string,
   type?: 'background' | 'notification'

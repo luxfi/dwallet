@@ -3,7 +3,7 @@ import {
   IS_RUNTIME_PRODUCTION,
   LUX_POPUP_GHOST_VIEW_URL,
 } from '@/isomorphic/constants';
-import { isRabbyXPage } from '@/isomorphic/url';
+import { isLuxXPage } from '@/isomorphic/url';
 import { randString } from '@/isomorphic/string';
 import { valueToMainSubject } from './_init';
 
@@ -15,7 +15,7 @@ import {
   sendToWebContents,
 } from '../utils/ipcMainEvents';
 import {
-  getRabbyExtId,
+  getLuxExtId,
   onMainWindowReady,
   __internalToggleLuxxGasketMask,
 } from '../utils/stream-helpers';
@@ -25,7 +25,7 @@ import { getMainProcessAppChannel } from '../utils/app';
 
 onIpcMainEvent('rabby-extension-id', async (event) => {
   event.reply('rabby-extension-id', {
-    rabbyExtensionId: await getRabbyExtId(),
+    rabbyExtensionId: await getLuxExtId(),
   });
 });
 
@@ -77,7 +77,7 @@ onIpcMainEvent(
   }
 );
 
-const maskReady = getRabbyExtId().then(async () => {
+const maskReady = getLuxExtId().then(async () => {
   const rabbyNotificationGasket = createPopupView();
   rabbyNotificationGasket.setBounds({ x: -100, y: -100, width: 1, height: 1 });
 
@@ -88,13 +88,13 @@ const maskReady = getRabbyExtId().then(async () => {
   return rabbyNotificationGasket;
 });
 
-const blankPageReady = getRabbyExtId().then(async () => {
+const blankPageReady = getLuxExtId().then(async () => {
   const rabbyxBlankPage = createPopupView();
   rabbyxBlankPage.setBounds({ x: -100, y: -100, width: 1, height: 1 });
 
-  const rabbyExtId = await getRabbyExtId();
+  const luxExtId = await getLuxExtId();
   await rabbyxBlankPage.webContents.loadURL(
-    `chrome-extension://${rabbyExtId}/blank.html`
+    `chrome-extension://${luxExtId}/blank.html`
   );
 
   if (!IS_RUNTIME_PRODUCTION) {
@@ -134,9 +134,9 @@ const bgWcReady = new Promise<Electron.WebContents>((resolve) => {
 
     if (!retUrl) return;
 
-    const extId = await getRabbyExtId();
+    const extId = await getLuxExtId();
     // we should make sure the webContents is the background page of rabby extension
-    if (isRabbyXPage(retUrl, extId, 'background')) {
+    if (isLuxXPage(retUrl, extId, 'background')) {
       if (!IS_RUNTIME_PRODUCTION) {
         // webContents.openDevTools({ mode: 'detach', activate: true });
       }
@@ -160,7 +160,7 @@ handleIpcMainInvoke(
   '__internal_invoke:rabbyx:waitExtBgGhostLoaded',
   async () => {
     return {
-      luxxExtId: await getRabbyExtId(),
+      luxxExtId: await getLuxExtId(),
     };
   }
 );
@@ -184,10 +184,10 @@ handleIpcMainInvoke('rabbyx:get-app-version', (_) => {
 });
 
 handleIpcMainInvoke('get-rabbyx-info', async (evt) => {
-  const luxxExtId = await getRabbyExtId();
+  const luxxExtId = await getLuxExtId();
   const currentURL = evt.sender.getURL();
 
-  if (isRabbyXPage(currentURL, luxxExtId)) {
+  if (isLuxXPage(currentURL, luxxExtId)) {
     return { luxxExtId, requesterIsRabbyx: true, userId: undefined };
   }
 

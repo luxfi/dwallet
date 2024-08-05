@@ -37,7 +37,7 @@ export async function forwardToMainWebContents<
   mainWin.window.webContents.send(eventName, payload);
 }
 
-export async function getRabbyExtId() {
+export async function getLuxExtId() {
   const ext = await firstValueFrom(fromMainSubject('luxExtensionLoaded'));
 
   return ext.id;

@@ -1,4 +1,4 @@
-import { checkHardwareConnectPage, isRabbyXPage } from '@/isomorphic/url';
+import { checkHardwareConnectPage, isLuxXPage } from '@/isomorphic/url';
 import { isProtocolLeaveInApp } from '@/isomorphic/dapp';
 import { Tabs } from '../browser/tabs';
 
@@ -8,7 +8,7 @@ export function checkOpenAction(
     fromUrl: string;
     toUrl: string;
     fromSameWindow: boolean;
-    rabbyExtId: string;
+    luxExtId: string;
     blockchainExplorers: Set<
       (IAppDynamicConfig['blockchain_explorers'] & object)[number]
     >;
@@ -37,11 +37,7 @@ export function checkOpenAction(
   const isFromExt = opts.fromUrl.startsWith('chrome-extension://');
   const isToExt = opts.toUrl.startsWith('chrome-extension://');
 
-  const isFromRabbyxBg = isRabbyXPage(
-    opts.fromUrl,
-    opts.rabbyExtId,
-    'background'
-  );
+  const isFromRabbyxBg = isLuxXPage(opts.fromUrl, opts.luxExtId, 'background');
   const hardwareConnectInfo = checkHardwareConnectPage(opts.toUrl);
 
   // maybe click behavior on notitication window
@@ -65,7 +61,7 @@ export function checkOpenAction(
   }
 
   if (
-    isRabbyXPage(opts.fromUrl, opts.rabbyExtId) &&
+    isLuxXPage(opts.fromUrl, opts.luxExtId) &&
     (opts.toUrl.startsWith('http') || !opts.toUrl)
   ) {
     // http(s) url

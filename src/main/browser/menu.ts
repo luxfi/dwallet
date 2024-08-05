@@ -5,7 +5,7 @@ import {
 } from '../../isomorphic/constants';
 import { emitIpcMainEvent } from '../utils/ipcMainEvents';
 import { getFocusedWindow } from '../utils/tabbedBrowserWindow';
-import { getRabbyExtId, onMainWindowReady } from '../utils/stream-helpers';
+import { getLuxExtId, onMainWindowReady } from '../utils/stream-helpers';
 import { safeOpenExternalURL } from '../utils/security';
 
 const isDarwin = process.platform === 'darwin';
@@ -110,7 +110,7 @@ export async function setupAppMenu() {
             accelerator: isDarwin ? 'Alt+Command+I' : 'Ctrl+Shift+I',
             nonNativeMacOSRole: true,
             click: async () => {
-              const topbarExtId = await getRabbyExtId();
+              const topbarExtId = await getLuxExtId();
 
               const tab = getFocusedTab();
               let webContents: Electron.WebContents | null | undefined =
