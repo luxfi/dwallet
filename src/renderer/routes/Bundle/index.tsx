@@ -27,7 +27,7 @@ const HomeBundleInner = () => {
           <div
             className={classNames(
               'border-0 border-b border-solid border-white',
-              'opacity-[0.06]'
+              'opacity-[0.3]'
             )}
           />
           <BTCAccountList />

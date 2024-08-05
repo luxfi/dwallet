@@ -94,7 +94,7 @@ export const TabTxList: React.FC<Props> = ({ onClose }) => {
               className={clsx(
                 'pt-[6px] py-[4px]  text-[14px] cursor-pointer border-0 border-b-2  border-solid',
                 activeKey === tab?.key
-                  ? 'border-[#8697FF] text-[#8697FF]'
+                  ? 'border-[#ffff] text-[#fff]'
                   : 'border-transparent text-white'
               )}
               onClick={() => {

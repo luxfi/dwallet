@@ -88,7 +88,7 @@ export const SafeItem: React.FC<{ account: RabbyAccount }> = ({ account }) => {
                   className={clsx(
                     'cursor-pointer border-0 border-b-2 border-solid pt-[4px] pb-2px text-[12px] leading-[14px]',
                     activeData?.chain?.enum === item?.chain?.enum
-                      ? 'border-b-[#8697FF] text-[#8697FF]'
+                      ? 'border-b-[#fff] text-[#fff]'
                       : 'border-b-transparent'
                   )}
                   onClick={() => {
@@ -119,7 +119,7 @@ export const SafeItem: React.FC<{ account: RabbyAccount }> = ({ account }) => {
                     className={classNames(
                       `flex text-white
                       border-solid border-0 border-b
-                      border-[rgba(255,255,255,0.1)]
+                      border-[rgba(255,255,255,0.3)]
                       last:border-b-0 py-[12px]
                       mt-0`
                     )}

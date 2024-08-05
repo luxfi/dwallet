@@ -36,7 +36,7 @@ export const HomeTab: React.FC = () => {
     <nav
       className={clsx(
         'flex space-x-[38px] items-center',
-        'border-t-0 border-l-0 border-r-0 border-b border-solid border-[#FFFFFF0D]',
+        'border-t-0 border-l-0 border-r-0 border-b border-solid border-[#545454]',
         'mb-[44px]',
         'text-white'
       )}

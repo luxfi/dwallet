@@ -17,7 +17,7 @@ const RowItem = ({
   value: string;
 }) => {
   return (
-    <div className="border-0 border-[#ffffff06] border-solid flex justify-between py-[15px]">
+    <div className="border-0 border-[#545454] border-solid flex justify-between py-[15px]">
       <span>{label}</span>
       <span>{value}</span>
     </div>

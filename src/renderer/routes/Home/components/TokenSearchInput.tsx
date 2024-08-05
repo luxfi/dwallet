@@ -11,10 +11,10 @@ export interface Props {
 
 const InputStyled = styled(Input)`
   &.ant-input-affix-wrapper-focused {
-    border-color: #7084ff !important;
+    border-color: #545454 !important;
   }
   &:hover {
-    border-color: #7084ff !important;
+    border-color: #fff !important;
   }
 `;
 
