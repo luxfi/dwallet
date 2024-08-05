@@ -16,9 +16,15 @@ import useCurrentBalance from '../hooks/useCurrentBalance';
 const AccountCardWrapper = styled.div`
   height: 72px;
   padding: 0;
-  background: rgba(134, 151, 255, 0.2);
+  background: none;
+  border: 1px solid #545454;
   border-radius: 4px;
   margin-bottom: 10px;
+
+  &:hover {
+    border: 1px solid #fff;
+    background-color: #ffffff24;
+  }
   .icon-account {
     width: 32px;
     height: 32px;

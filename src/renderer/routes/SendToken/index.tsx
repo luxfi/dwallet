@@ -112,9 +112,9 @@ const SendTokenWrapper = styled.div`
     display: flex;
     align-items: center;
     padding: 3px 6px;
-    border: 0.5px solid rgba(134, 151, 255, 0.5);
+    border: 0.5px solid #fff;
     border-radius: 2px;
-    color: #8697ff;
+    color: #fff;
     font-size: 12px;
     line-height: 14px;
     cursor: pointer;
@@ -195,7 +195,7 @@ const SendTokenWrapper = styled.div`
     }
 
     &[disabled] {
-      background: #8697ff;
+      background: #ffffff24;
       color: white;
       opacity: 0.6;
       box-shadow: none;
@@ -1005,7 +1005,7 @@ const SendTokenInner = () => {
                       />
                       <span
                         title={contactInfo.name}
-                        className="inline-block align-middle truncate max-w-[240px]"
+                        className="inline-block align-middle truncate max-w-[240px] text-[#fff]"
                       >
                         {contactInfo.name}
                       </span>

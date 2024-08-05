@@ -27,13 +27,13 @@ const TokenWrapper = styled.div`
   border-radius: 4px;
   &:hover {
     & > .text {
-      color: #8697ff;
+      color: #ffffff24;
     }
 
     & > .arrow-icon {
       path {
-        fill: #8697ff;
-        stroke: #8697ff;
+        fill: #ffffff24;
+        stroke: #ffffff24;
       }
     }
   }

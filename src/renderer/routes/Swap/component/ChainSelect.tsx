@@ -110,22 +110,18 @@ export const ChainSelect = ({
 
 const ChainWrapper = styled.div`
   height: 48px;
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
+  background: none;
+  border: 1px solid #545454;
+  border-radius: 4px;
   padding: 12px 16px;
   width: 100%;
   display: flex;
   align-items: center;
   gap: 12px;
-  border: 1px solid transparent;
+
   &:hover {
-    background: linear-gradient(
-        0deg,
-        rgba(134, 151, 255, 0.3),
-        rgba(134, 151, 255, 0.3)
-      ),
-      rgba(0, 0, 0, 0.3);
-    border-color: rgba(255, 255, 255, 0.2);
+    background: #ffffff24;
+    border-color: #fff;
   }
   & > {
     .logo {

@@ -174,7 +174,7 @@ export const ContactListModal = ({
             <Button
               type="primary"
               size="large"
-              className="editBtn"
+              className="editBtn text-[#000]"
               onClick={() => setEditWhitelistVisible(true)}
             >
               Edit Whitelist
