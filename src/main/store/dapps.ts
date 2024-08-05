@@ -157,7 +157,7 @@ export const dappStore = makeStore<{
   },
 
   // TODO: if want to obfuscat, uncomment it
-  // encryptionKey: 'rabby-desktop'
+  // encryptionKey: 'lux-desktop'
 
   serialize: shortStringify,
 

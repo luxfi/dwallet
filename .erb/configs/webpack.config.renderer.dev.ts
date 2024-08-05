@@ -330,14 +330,14 @@ const configurationShell: webpack.Configuration = {
   ],
 };
 
-// const configurationRabby: webpack.Configuration = {
+// const configurationLux: webpack.Configuration = {
 //   entry: {
-//     // [webpackPaths.entriesLux['rabby-background'].name]: webpackPaths.entriesLux['rabby-background'].jsEntry,
-//     // [webpackPaths.entriesLux['rabby-content-script'].name]: webpackPaths.entriesLux['rabby-content-script'].jsEntry,
-//     [webpackPaths.entriesLux['rabby-popup'].name]: webpackPaths.entriesLux['rabby-popup'].jsEntry,
+//     // [webpackPaths.entriesLux['lux-background'].name]: webpackPaths.entriesLux['lux-background'].jsEntry,
+//     // [webpackPaths.entriesLux['lux-content-script'].name]: webpackPaths.entriesLux['lux-content-script'].jsEntry,
+//     [webpackPaths.entriesLux['lux-popup'].name]: webpackPaths.entriesLux['lux-popup'].jsEntry,
 //   },
 //   output: {
-//     path: path.join(webpackPaths.distExtsPath, 'rabby'),
+//     path: path.join(webpackPaths.distExtsPath, 'lux'),
 //   },
 //   module: {
 //     rules: [{ oneOf: [

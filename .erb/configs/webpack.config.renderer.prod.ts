@@ -225,8 +225,8 @@ const configurationShell: webpack.Configuration = {
 
 const configurationRabby: webpack.Configuration = {
   entry: {
-    // [webpackPaths.entriesLux['rabby-background'].name]: webpackPaths.entriesLux['rabby-background'].jsEntry,
-    // [webpackPaths.entriesLux['rabby-content-script'].name]: webpackPaths.entriesLux['rabby-content-script'].jsEntry,
+    // [webpackPaths.entriesLux['lux-background'].name]: webpackPaths.entriesLux['lux-background'].jsEntry,
+    // [webpackPaths.entriesLux['lux-content-script'].name]: webpackPaths.entriesLux['lux-content-script'].jsEntry,
   },
 
   output: {

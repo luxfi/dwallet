@@ -1,9 +1,7 @@
 /// <reference path="../renderer/preload.d.ts" />
 
 window.rabbyDesktop.ipcRenderer.on('rabby-extension-id', function (event) {
-  const anchor = document.querySelector(
-    '#rabby-item > a'
-  )! as HTMLAnchorElement;
+  const anchor = document.querySelector('#lux-item > a')! as HTMLAnchorElement;
 
   const extId = event.rabbyExtensionId;
   anchor.href = `chrome-extension://${extId}/background.html`;

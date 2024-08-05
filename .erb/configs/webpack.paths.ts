@@ -78,18 +78,18 @@ const entriesShell = {
 } as const;
 
 const entriesLux = {
-  // 'rabby-background': {
+  // 'lux-background': {
   //   name: 'background',
   //   target: 'background.html',
   //   htmlFile: path.join(srcPath, `extension-wallet/background/background.html`),
   //   jsEntry: path.join(srcPath, 'extension-wallet/background/index.ts'),
   // } as IEntry,
-  // 'rabby-content-script': {
+  // 'lux-content-script': {
   //   name: 'content-script',
   //   jsEntry: path.join(srcPath, 'extension-wallet/content-script/index.ts'),
   // } as IEntry,
-  'rabby-popup': {
-    name: 'rabby-popup',
+  'lux-popup': {
+    name: 'lux-popup',
     target: 'popup.html',
     htmlFile: path.join(srcPath, `extension-wallet/popup/index.ejs`),
     jsEntry: path.join(srcPath, 'extension-wallet/popup/index.ts'),
