@@ -59,7 +59,7 @@ export function useCurrentAccount() {
             break;
           case 'unlock':
           case 'accountsChanged':
-          case 'rabby:chainChanged': {
+          case 'lux:chainChanged': {
             fetchCurrentAccount();
           }
         }

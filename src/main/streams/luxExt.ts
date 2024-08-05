@@ -62,7 +62,7 @@ onIpcMainEvent(
     );
 
     switch (payload.event) {
-      case 'rabby:chainChanged': {
+      case 'lux:chainChanged': {
         break;
       }
       case 'lock': {

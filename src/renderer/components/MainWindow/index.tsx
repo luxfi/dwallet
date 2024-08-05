@@ -370,7 +370,7 @@ function useAccountsAndLockGuard() {
           default:
             break;
           case 'accountsChanged':
-          case 'rabby:chainChanged': {
+          case 'lux:chainChanged': {
             fetchAccounts();
           }
         }

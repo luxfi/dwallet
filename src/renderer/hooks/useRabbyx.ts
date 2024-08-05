@@ -71,7 +71,7 @@ export function useConnectedSite(currentOrigin?: string) {
         switch (payload.event) {
           default:
             break;
-          case 'rabby:chainChanged': {
+          case 'lux:chainChanged': {
             const chain =
               CHAINS_LIST.find(
                 (chainItem) =>

@@ -98,7 +98,7 @@ export const useAccountToDisplay = () => {
             break;
           case 'unlock':
           case 'accountsChanged':
-          case 'rabby:chainChanged': {
+          case 'lux:chainChanged': {
             console.log('accountsChanged');
             getAllAccountsToDisplay();
           }

@@ -51,7 +51,7 @@ export function useCurrentConnection(
         switch (payload.event) {
           default:
             break;
-          case 'rabby:chainChanged': {
+          case 'lux:chainChanged': {
             getCurrentSite();
           }
         }
