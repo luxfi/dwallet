@@ -178,7 +178,7 @@ export const EditWhitelist = ({
           <Button
             type="primary"
             size="large"
-            className="editBtn"
+            className="editBtn text-[#000]"
             onClick={handleSaveWhitelist}
           >
             Save to Whitelist ({checkedList.length})
