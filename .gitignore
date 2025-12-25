@@ -45,3 +45,11 @@ minio-root
 macos/vendor/*
 
 scripts/code-signing/*.p12
+
+
+
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+GROK.md
+QWEN.md
